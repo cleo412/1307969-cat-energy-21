@@ -1,1 +1,10 @@
-// Начните писать стили здесь
+// Global
+@import "other/footer.scss";
+@import "other/header.scss";
+@import "other/global.scss";
+
+// Index
+@import "index/description.scss";
+@import "index/illustration.scss";
+@import "index/intro.scss";
+@import "index/program.scss";

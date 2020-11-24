@@ -1,0 +1,57 @@
+@import "../other/global.scss";
+
+.intro {
+  position: relative;
+  width: auto;
+  padding: 0 0 177px 0;
+  margin: 0 auto;
+}
+
+.intro__img {
+  height: 302px;
+  background-image: linear-gradient($green-85, $green-85), url("../../img/bg_index.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center, center;
+}
+
+.intro__slogan {
+  text-align: center;
+  padding: 28px;
+}
+
+.intro__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $white;
+  margin: 0 0 25px;
+}
+
+.intro__subtitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+.intro__main-img {
+  position: absolute;
+  bottom: 35px;
+  left: calc(50% - 140px);
+}
+
+.intro__toggle {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 160px);
+
+  @include button;
+  font-size: 14px;
+  line-height: 18px;
+  color: $white;
+  margin: 0 20px;
+}

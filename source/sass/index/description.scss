@@ -1,0 +1,39 @@
+@import "../other/global.scss";
+
+.description__wrapper {
+  padding: 0 20px 25px;
+}
+
+.description__title {
+  @include title-small;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 15px 5px 11px 0;
+  margin: 0 0 25px 0;
+}
+
+.description__list {
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.description__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description__icon {
+  width: 65px;
+  height: 60px;
+  background-color: $green;
+  margin: 0 20px 15px 0;
+}
+
+.description__text {
+  @include text;
+  width: 77%;
+  padding: 0 0 10px 0;
+  margin: 3px 0 14px 0;
+}

@@ -1,0 +1,141 @@
+@import "../other/global.scss";
+
+.illustration__wrapper {
+  background-color: $smoky-grey;
+  padding: 21px;
+  margin: 0 auto;
+}
+
+.illustration__title {
+  @include title-small;
+  font-size: 36px;
+  line-height: 40px;
+  padding: 5px 0;
+  margin: 0 0 30px 0;
+}
+
+.illustration__text {
+  @include text;
+  margin: 0 0 30px 0;
+}
+
+.illustration__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.illustration__fieldset {
+  position: relative;
+  width: 44%;
+  border: 1px $grey solid;
+  border-radius: 3px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px 7px;
+}
+
+.illustration__fieldset:first-child::before {
+  @include text;
+  position: absolute;
+  left: -3%;
+  bottom: -45%;
+  content: "снижение веса";
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #eaeaea;
+  padding: 5px 24px;
+  margin: 0 13px;
+  z-index: 2;
+}
+
+.illustration__fieldset:nth-child(2)::before {
+  @include text;
+  position: absolute;
+  left: -3%;
+  bottom: -45%;
+  content: "затрачено времени";
+  font-size: 12px;
+  line-height: 12px;
+  background-color: #eaeaea;
+  padding: 5px 24px;
+  margin: 0 13px;
+  z-index: 2;
+}
+
+.illustration__item {
+  @include title-big;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.illustration__legend {
+  @include text;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: senter;
+  margin: 0 20px;
+}
+
+.illustration__total {
+  @include title-big;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 25px 0;
+  margin: 10px auto 10px;
+}
+
+.illustration__slider {
+  display: flex;
+  flex-direction: column;
+}
+
+.illustration__foto {
+  background-size: cover;
+  box-sizing: border-box;
+  background-color: $grey;
+  margin: 33px 20px;
+}
+
+.illustration__items {
+  display: flex;
+  width: 78%;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.illustration__phrase {
+  @include title-big;
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0 5px;
+}
+
+.illustration__phrase:first-child {
+  margin: 0 0 0 15px;
+}
+
+.illustration__toggle {
+  width: 37%;
+  border: 1px $grey solid;
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: $white;
+  padding: 1px 4px;
+  margin: 5px 5px 18px;
+}
+
+.illustration__scale {
+  width: 43%;
+  border-radius: 6px;
+  background-color: $green;
+  padding: 4px;
+}

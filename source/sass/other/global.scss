@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald"), url("../../fonts/oswaldregular.woff") format("woff"),
+    url("../../fonts/oswaldregular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Oswald"), url("../../fonts/oswaldmedium.woff") format("woff"),
+    url("../../fonts/oswaldmedium.woff2") format("woff2");
+}
+
+$white: #ffffff;
+$black: #000000;
+$green: #68b738;
+$green-85: rgba(104, 183, 56, 0.85);
+$special-grey: #f2f2f2;
+$grey: #cdcdcd;
+$dull-grey: #d9d9d9;
+$light-grey: #ebebeb;
+$dark-grey: #666666;
+$basic-grey: #444444;
+$extra-dark-grey: #222222;
+$error-pink: #ff8282;
+$smoky-grey: #eaeaea;
+$secondary-grey: #e6e6e6;
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-width: 320px;
+  min-height: 100%;
+  font-family: "Oswald", "Arial", sans-serif;
+  background-color: $white;
+  color: $black;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin title-big {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+@mixin title-small {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+@mixin text {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: $basic-grey;
+  box-sizing: border-box;
+}
+
+@mixin button {
+  width: 280px;
+  height: 40px;
+  background-color: $green;
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 12px 25px;
+}

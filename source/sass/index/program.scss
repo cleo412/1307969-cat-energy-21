@@ -1,0 +1,40 @@
+@import "../other/global.scss";
+
+.program-wrapper {
+  margin: 0 20px 15px;
+}
+
+.program__item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $special-grey;
+  box-sizing: border-box;
+  padding: 30px 20px 10px;
+  margin: 23px auto 0;
+}
+
+.program__title {
+  @include title-big;
+  font-size: 24px;
+  line-height: 37px;
+  padding: 0 0 10px 70px;
+  margin: 0 0 20px 0;
+}
+
+.program__subtitle {
+  @include text;
+  margin: 0 0 22px 0;
+}
+
+.program__link {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $black;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: $special-grey;
+  border-top: 2px $dull-grey solid;
+  padding: 17px 30px 12px 0;
+}
