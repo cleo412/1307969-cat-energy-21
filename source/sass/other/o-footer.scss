@@ -1,11 +1,16 @@
-@import "./global.scss";
+@import "./o-global.scss";
 
 .page-footer__wrapper {
   display: block;
   width: auto;
   text-align: center;
+  background-color: $special-grey;
   padding: 0;
   margin: 0 auto;
+}
+
+.cooperate--index {
+  background-color: $white;
 }
 
 .page-footer__list {
@@ -16,27 +21,30 @@
 
 .cooperate {
   display: flex;
+  justify-content: space-between;
   list-style: none;
   text-align: left;
   box-sizing: border-box;
-  padding: 0;
-  margin: 5px 0;
+  padding: 31px 20px 20px;
+}
+
+.cooperate--main {
+  background-color: $white;
 }
 
 .cooperate__title {
   @include title-big;
   font-size: 16px;
   line-height: 19px;
-  width: 45%;
-  padding: 25px 1px 20px 20px;
+  width: 50%;
   margin: 0;
 }
 
 .cooperate__address {
   @include text;
-  width: 55%;
+  width: 50%;
   line-height: 20px;
-  padding: 25px 2px 20px 20px;
+  text-align: left;
   margin: 0;
 }
 
@@ -58,7 +66,7 @@
 }
 
 .page-footer__item--logo {
-  padding: 27px 0;
+  padding: 30px 0;
   margin: 0 auto;
 }
 
@@ -84,7 +92,7 @@
 }
 
 .copyright {
-  padding: 32px 20px;
+  padding: 28px 20px;
 }
 
 .copyright__link {

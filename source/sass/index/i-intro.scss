@@ -1,4 +1,4 @@
-@import "../other/global.scss";
+@import "../other/o-global.scss";
 
 .intro {
   position: relative;
@@ -53,5 +53,6 @@
   font-size: 14px;
   line-height: 18px;
   color: $white;
+  padding: 13px 25px;
   margin: 0 20px;
 }

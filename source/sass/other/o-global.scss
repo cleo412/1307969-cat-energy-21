@@ -28,6 +28,7 @@ $extra-dark-grey: #222222;
 $error-pink: #ff8282;
 $smoky-grey: #eaeaea;
 $secondary-grey: #e6e6e6;
+$aluminum-grey: #e7e7e7;
 
 .page {
   height: 100%;
@@ -85,13 +86,47 @@ img {
   box-sizing: border-box;
 }
 
+@mixin text-big {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
+@mixin form {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  font-style: normal;
+  font-weight: 400;
+  color: $basic-grey;
+  text-transform: uppercase;
+  box-sizing: border-box;
+}
+
 @mixin button {
+  display: block;
   width: 280px;
   height: 40px;
   background-color: $green;
   box-sizing: border-box;
   text-align: center;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  color: $white;
   text-decoration: none;
   text-transform: uppercase;
-  padding: 12px 25px;
+  border: none;
+  outline: none;
+  padding: 7px 25px;
+}
+
+@mixin line {
+  position: absolute;
+  content: "";
+  height: 2px;
+  background-color: $green;
 }
