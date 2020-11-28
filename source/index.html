@@ -11,34 +11,29 @@
 <body class="page-body">
   <!--header-->
   <header class="page-header">
-    <div class="page-header__wrapper">
-      <ul class="page-header__list">
-        <li class="page-header__item">
-          <img src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
+    <div class="page-header__list">
+      <a class="page-header__link">
+        <img src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
+      </a>
+      <a class="page-header__link">
+        <img src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
+      </a>
+    </div>
+    <!--nav-->
+    <nav class="page-header__navigation navigation navigation--closed">
+      <button tabindex="-" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
+          меню</span></button>
+      <ul class="navigation__list">
+        <li class="navigation__item navigation__item--current"><a class="navigation__link">Главная</a>
         </li>
-        <li class="page-header__item">
-          <img src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
+        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="catalog.html">Каталог
+            продукции</a>
         </li>
-        <li class="page-header__item">
-          <button tabindex="-" class="page-header__burger" type="button"><span class="visually-hidden">Скрыть
-              меню</span></button>
+        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="form.html">Подбор
+            программы</a>
         </li>
       </ul>
-      <!--todo: nav-->
-      <nav class="page-nav">
-        <ul class="page-nav__list">
-          <li class="page-nav__item page-nav__item--button"><a class="page-nav__link">Главная</a>
-          </li>
-          <li class="page-nav__item page-nav__item--catalog"><a class="page-nav__link" tabindex="-"
-              href="catalog.html">Каталог
-              продукции</a>
-          </li>
-          <li class="page-nav__item page-nav__item--button"><a class="page-nav__link" tabindex="-"
-              href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    </nav>
   </header>
   <main class="page-main">
     <!--todo: intro-->
