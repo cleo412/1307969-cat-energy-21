@@ -1,4 +1,4 @@
-@import "../other/o-global.scss";
+@import "../other/global.scss";
 
 .illustration__wrapper {
   background-color: $smoky-grey;
@@ -11,12 +11,12 @@
   font-size: 36px;
   line-height: 40px;
   padding: 5px 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
 }
 
 .illustration__text {
   @include text;
-  margin: 0 0 30px 0;
+  margin: 0 0 26px 0;
 }
 
 .illustration__list {
@@ -36,7 +36,7 @@
   border-radius: 3px;
   box-sizing: border-box;
   text-align: center;
-  padding: 10px 7px;
+  padding: 13px 7px;
 }
 
 .illustration__fieldset:first-child::before {
@@ -95,10 +95,9 @@
 }
 
 .illustration__foto {
-  background-size: cover;
-  box-sizing: border-box;
+  width: 100%;
   background-color: $grey;
-  margin: 33px 20px;
+  margin: 32px auto;
 }
 
 .illustration__items {
@@ -139,4 +138,3 @@
   background-color: $green;
   padding: 4px;
 }
-

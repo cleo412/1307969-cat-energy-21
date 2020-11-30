@@ -1,0 +1,51 @@
+@import "../other/global.scss";
+
+.form__title {
+  @include title-small;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 19px;
+  margin: 0;
+}
+
+.form__text {
+  @include text-big;
+  padding: 10px 20px;
+  margin: 0 0 30px 0;
+}
+
+.form__list {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+}
+
+.input::placeholder {
+  @include form;
+}
+
+.form__submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+.form__button {
+  @include button;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 9px 25px;
+  margin: 25px 0;
+}
+
+.form__subtitle {
+  @include text;
+  line-height: 16px;
+  color: $black;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}

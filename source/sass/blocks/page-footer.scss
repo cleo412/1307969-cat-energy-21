@@ -1,6 +1,6 @@
-@import "./o-global.scss";
+@import "../other/global.scss";
 
-.page-footer__wrapper {
+.page-footer {
   display: block;
   width: auto;
   text-align: center;
@@ -9,38 +9,29 @@
   margin: 0 auto;
 }
 
-.cooperate--index {
-  background-color: $white;
-}
-
-.page-footer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.cooperate {
+.page-footer__cooperate {
   display: flex;
-  justify-content: space-between;
   list-style: none;
   text-align: left;
+  background-color: $special-grey;
   box-sizing: border-box;
-  padding: 31px 20px 20px;
+  padding: 34px 20px 20px;
 }
 
-.cooperate--main {
+.page-footer__cooperate--index {
   background-color: $white;
+  padding: 30px 20px 20px;
 }
 
-.cooperate__title {
+.page-footer__cooperate-title {
   @include title-big;
   font-size: 16px;
   line-height: 19px;
   width: 50%;
-  margin: 0;
+  margin: 0 2% 0 0;
 }
 
-.cooperate__address {
+.page-footer__cooperate-address {
   @include text;
   width: 50%;
   line-height: 20px;
@@ -48,34 +39,23 @@
   margin: 0;
 }
 
-.page-footer__item--map {
-  position: relative;
+.page-footer__map {
   overflow: hidden;
   padding: 0;
   margin: 0 auto;
 }
 
-.page-footer__item--map::before {
-  /*for logo in map*/
-  content: "";
-  // position: absolute;
-  // width: ;
-  // height: ;
-  // background-image: url() ;
-  // text-align: center;
-}
-
-.page-footer__item--logo {
+.page-footer__logo {
   padding: 30px 0;
   margin: 0 auto;
 }
 
-.social {
+.page-footer__social {
   padding: 0 20px;
   margin: 0;
 }
 
-.social__list {
+.page-footer__social-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -86,24 +66,23 @@
   margin: 0;
 }
 
-.social__button {
+.page-footer__social-button {
   width: 7%;
   margin: 0 23px 0 0;
 }
 
-.copyright {
+.page-footer__copyright {
   padding: 28px 20px;
 }
 
-.copyright__link {
+.page-footer__copyright-link {
   display: flex;
   justify-content: space-between;
   text-decoration: none;
 }
 
-.copyright__item {
+.page-footer__copyright-text {
   @include text;
   font-size: 16px;
-  // padding: 32px 0;
   margin: 0;
 }

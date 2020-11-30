@@ -9,7 +9,7 @@
 </head>
 
 <body class="page-body">
-  <!--header-->
+  <!--todo header-->
   <header class="page-header">
     <div class="page-header__list">
       <a class="page-header__link">
@@ -19,7 +19,7 @@
         <img src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
       </a>
     </div>
-    <!--nav-->
+    <!--todo nav-->
     <nav class="page-header__navigation navigation navigation--closed">
       <button tabindex="-" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
           меню</span></button>
@@ -44,10 +44,13 @@
           <p class="intro__subtitle">Занялся собой? Займись котом!</p>
         </div>
       </div>
-      <div class="intro__main-img">
-        <img src="https://via.placeholder.com/280x270" alt="Изображение упаковки Кэт энерджи с курицей">
+      <div class="intro__wrapper-img">
+        <img class="intro__main-img" src="https://via.placeholder.com/280x270" width="280" height="270"
+          alt="Изображение упаковки Кэт энерджи с курицей">
       </div>
-      <a class="intro__toggle" tabindex="-" href="#">Подобрать программу</a>
+      <div class="intro__wrapper-toggle">
+        <a class="intro__toggle" tabindex="-" href="#">Подобрать программу</a>
+      </div>
     </section>
     <!--todo: program-->
     <section class="page-main__program program">
@@ -123,8 +126,9 @@
           </div>
         </div>
         <div class="illustration__slider">
-          <img class="illustration__foto" src="https://via.placeholder.com/311x232" alt="изображение толстого кота">
-          <!-- <img class="illustration__foto" src="https://via.placeholder.com/311x232" alt="изображение худого кота"> -->
+          <img class="illustration__foto" src="https://via.placeholder.com/311x232" width="311" height="232"
+            alt="изображение толстого кота">
+          <!-- <img class="illustration__foto illustration__foto-closed" src="https://via.placeholder.com/311x232" width="311" height="232" alt="изображение худого кота"> -->
           <ul class="illustration__items">
             <li class="illustration__phrase">Было</li>
             <li class="illustration__toggle">
@@ -136,58 +140,61 @@
       </div>
     </section>
   </main>
-  <!--todo: footer-->
+  <!--todo footer-->
   <footer class="page-footer">
-    <div class="page-footer__wrapper">
-      <ul class="page-footer__list">
-        <li class="page-footer__item cooperate cooperate--index">
-          <h2 class="cooperate__title">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</h2>
-          <p class="cooperate__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <!--todo cooperate-->
+    <div class="page-footer__cooperate page-footer__cooperate--index">
+      <h2 class="page-footer__cooperate-title">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</h2>
+      <p class="page-footer__cooperate-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    </div>
+    <!--todo map-->
+    <section class="page-footer__map">
+      <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1606071148828!5m2!1sru!2sru"
+        width="1440" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>
+    </section>
+    <!--todo logo-->
+    <section class="page-footer__logo">
+      <h3 class="visually-hidden">логотип Кэт энерджи</h3>
+      <img src="https://via.placeholder.com/128x24" alt="логотип-текст Кэт энерджи">
+    </section>
+    <!--todo social-->
+    <section class="page-footer__social">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <ul class="page-footer__social-list">
+        <!--todo vk-->
+        <li class="page-footer__social-item">
+          <a tabindex="-" class="page-footer__social-button page-footer__social-button--vk" href="#">
+            <h3 class="visually-hidden">Вконтакте</h3>
+            <img src="https://via.placeholder.com/22x22" alt="">
+          </a>
         </li>
-
-        <li class="page-footer__item page-footer__item--map">
-          <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
-          <!--map-->
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1606071148828!5m2!1sru!2sru"
-            width="1440" height="363" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-            tabindex="0"></iframe>
+        <!--todo inst-->
+        <li class="page-footer__social-item">
+          <a tabindex="-" class="page-footer__social-button page-footer__social-button--inst" href="#">
+            <h3 class="visually-hidden">Инстаграм</h3>
+            <img src="https://via.placeholder.com/22x22" alt="">
+          </a>
         </li>
-        <li class="page-footer__item page-footer__item--logo">
-          <img src="https://via.placeholder.com/128x24" alt="логотип-текст Кэт энерджи">
-        </li>
-        <li class="page-footer__item social">
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a tabindex="-" class="social__button social__button--vk" href="#">
-                <h3 class="visually-hidden">Вконтакте</h3>
-                <img src="https://via.placeholder.com/22x22" alt="">
-              </a>
-            </li>
-            <li class="social__item">
-              <a tabindex="-" class="social__button social__button--inst" href="#">
-                <h3 class="visually-hidden">Инстаграм</h3>
-                <img src="https://via.placeholder.com/22x22" alt="">
-              </a>
-            </li>
-            <li class="social__item">
-              <a tabindex="-" class="social__button social__button--fb" href="#">
-                <h3 class="visually-hidden">Фейсбук</h3>
-                <img src="https://via.placeholder.com/22x22" alt="">
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li class="page-footer__item copyright">
-          <h2 class="visually-hidden"> Копирайт</h2>
-          <a class="copyright__link" tabindex="-" href="https://htmlacademy.ru/intensive/adaptive">
-            <span class="copyright__item">HTML Academy</span>
-            <img src="https://via.placeholder.com/27x34" alt="">
+        <!--todo fb-->
+        <li class="page-footer__social-item">
+          <a tabindex="-" class="page-footer__social-button page-footer__social-button--fb" href="#">
+            <h3 class="visually-hidden">Фейсбук</h3>
+            <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
       </ul>
-    </div>
+    </section>
+    <!--todo copyright-->
+    <section class="page-footer__copyright">
+      <h2 class="visually-hidden"> Копирайт</h2>
+      <a class="page-footer__copyright-link" tabindex="-" href="https://htmlacademy.ru/intensive/adaptive">
+        <span class="page-footer__copyright-text">HTML Academy</span>
+        <img src="https://via.placeholder.com/27x34" alt="">
+      </a>
+    </section>
   </footer>
 </body>
 

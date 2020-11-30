@@ -1,0 +1,28 @@
+@import "../other/global.scss";
+
+.stock {
+  box-sizing: border-box;
+  padding: 40px 20px 35px;
+  margin: 0 auto;
+}
+
+.stock__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 289px;
+  // background-image: url();
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  background-color: $green;
+  margin: 0 auto;
+}
+
+.stock__text {
+  @include text;
+  font-size: 16px;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}

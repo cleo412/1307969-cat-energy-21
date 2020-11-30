@@ -1,0 +1,55 @@
+@import "../other/global.scss";
+@import "./form.scss";
+
+.owner-data {
+  width: 100%;
+  border: none;
+  border-top: 2px $green solid;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.owner-data__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.owner-data__title {
+  @include title-form;
+  padding: 28px 22px 0 18px;
+  margin: 0 0 35px -20px;
+}
+
+.owner-data__option {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0 0 12px 0;
+}
+
+.owner-data__label {
+  @include form;
+  flex-grow: 0;
+  padding: 12px 0;
+  margin: 0 10px 0 0;
+}
+
+.owner-data__input {
+  flex-grow: 1;
+  border: 1px $grey solid;
+  padding: 14px;
+}
+
+.owner-data__fieldset {
+  border: none;
+  border-top: 2px $green solid;
+  padding: 28px 20px 10px;
+  margin: 0 auto;
+}

@@ -1,0 +1,48 @@
+@import "../other/global.scss";
+@import "./form.scss";
+
+.way__list {
+  border-top: 1px $dull-grey solid;
+  border-bottom: 1px $dull-grey solid;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  list-style: none;
+  padding: 19px 20px 6px;
+  margin: 0;
+}
+
+.way__option {
+  position: relative;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0 0 9px 40px;
+}
+
+.way__label {
+  @include form;
+}
+
+.way__input + .way__label::before {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: 1px $grey solid;
+  border-radius: 50%;
+}
+
+.way__input:checked + .way__label::after {
+  position: absolute;
+  top: 10px;
+  left: -31px;
+  content: "";
+  width: 13px;
+  height: 13px;
+  background-color: $green;
+  border-radius: 50%;
+  box-sizing: border-box;
+  background-image: none;
+}

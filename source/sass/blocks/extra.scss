@@ -1,0 +1,51 @@
+@import "../other/global.scss";
+@import "./form.scss";
+
+.extra {
+  width: 100%;
+  border: none;
+  border-top: 2px $green solid;
+  box-sizing: border-box;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.extra__title {
+  @include title-form;
+  padding: 33px 21px 33px 20px;
+  margin: 0 0 0 -20px;
+}
+
+.extra__option {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 5px;
+  margin: 0 0 14px 40px;
+}
+
+.extra__label {
+  @include form;
+  position: relative;
+}
+
+.extra__input + .extra__label::before {
+  position: absolute;
+  top: -4px;
+  left: -44px;
+  content: "";
+  width: 26px;
+  height: 26px;
+  border: 1px $grey solid;
+}
+
+// .extra__input:checked + .extra__label::after {
+//   position: absolute;
+//   top: -2px;
+//   left: -40px;
+//   content: "";
+//   width: 18px;
+//   height: 14px;
+//   background-image: url();
+// }

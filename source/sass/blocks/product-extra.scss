@@ -1,0 +1,50 @@
+@import "../other/global.scss";
+
+.product-extra {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px $light-grey solid;
+}
+
+.product-extra:last-of-type {
+  border-bottom: 1px $light-grey solid;
+}
+
+.product-extra__list {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 17px 0;
+}
+
+.product-extra__title {
+  @include title-big;
+  width: 100%;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 13px 0;
+  margin: 0;
+}
+
+.product-extra__name {
+  @include text;
+  width: 50%;
+  line-height: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.product-extra__value {
+  @include text;
+  width: 50%;
+  line-height: 14px;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+}
+
+.product-extra__button {
+  @include button;
+  margin: 0;
+}

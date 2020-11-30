@@ -1,0 +1,136 @@
+@import "../other/global.scss";
+
+.product__title-main {
+  @include title-small;
+  font-size: 36px;
+  line-height: 36px;
+  padding: 27px 19px;
+  margin: 0 0 15px 0;
+}
+
+.product__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product__item {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 1px $light-grey solid;
+  box-sizing: border-box;
+  padding: 18px 20px 23px;
+  margin: 0 auto;
+}
+
+.product__link {
+  width: 50%;
+  color: $extra-dark-grey;
+  text-decoration: none;
+}
+
+.product__foto {
+  width: 68px;
+  height: 86px;
+  line-height: 0;
+  background-color: $light-grey;
+  background-size: cover;
+  margin: 17px 36px;
+}
+
+.product__foto--big {
+  width: 84px;
+  height: 100px;
+  margin: 10px 28px;
+}
+
+.product__list {
+  width: 50%;
+}
+
+.product__title {
+  @include text-big;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 13px 0;
+}
+
+.product__description {
+  @include text;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  line-height: 16px;
+  list-style: none;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.product__name,
+.product__value {
+  @include text;
+  width: 50%;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product__value {
+  text-align: right;
+}
+
+.button {
+  @include button;
+  width: 100%;
+  padding: 9px 25px;
+}
+
+.product__item--special {
+  position: relative;
+  text-align: center;
+  border-bottom: 1px $light-grey solid;
+  padding: 79px 20px 0;
+  margin: 0 auto;
+}
+
+.product__item--special::before {
+  position: absolute;
+  top: 40px;
+  left: 45%;
+  content: " ";
+  width: 10%;
+  height: 2px;
+  background-color: $secondory-grey;
+}
+
+.product__item--special::after {
+  position: absolute;
+  top: 40px;
+  left: 45%;
+  content: " ";
+  width: 10%;
+  height: 2px;
+  background-color: $secondory-grey;
+  transform: rotate(90deg);
+}
+
+.product__item--special .product__link {
+  width: 100%;
+}
+
+.product__item--special .product__title {
+  margin: 0 0 8px 0;
+}
+
+.product__item--special .product__name {
+  width: 100%;
+  margin: 0 0 25px 0;
+}
+
+.product__item--special .button {
+  @include button;
+  color: $basic-grey;
+  background-color: $special-grey;
+  padding: 16px;
+  margin: 0 auto 26px;
+}
