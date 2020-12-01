@@ -1,4 +1,5 @@
 @import "../other/global.scss";
+@import "./button.scss";
 
 .form__title {
   @include title-small;
@@ -29,23 +30,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
-  margin: 0 0 30px 0;
-}
-
-.form__button {
-  @include button;
-  width: 280px;
-  font-size: 16px;
-  line-height: 20px;
-  padding: 9px 25px;
-  margin: 25px 0;
+  padding: 0 20px;
+  margin: 0 0 25px 0;
 }
 
 .form__subtitle {
   @include text;
   line-height: 16px;
   color: $black;
-  padding: 0 0 0 0;
-  margin: 0 0 0 0;
+  padding: 0;
+  margin: 20px 0 0 0;
 }

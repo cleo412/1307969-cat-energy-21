@@ -43,14 +43,22 @@
         <div class="form__item cat-data">
           <!--todo: cat-data-->
           <h2 class="visually-hidden">Данные кота</h2>
-          <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
-          <input class="cat-data__input input" tabindex="-" type="text" name="cat-name" id="cat-name"
-            placeholder="Барсик" required>
-          <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-          <input class="cat-data__input input" tabindex="-" type="text" name="cat-weight" id="cat-weight"
-            placeholder="7" required>
-          <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-          <input class="cat-data__input input" tabindex="-" type="text" name="cat-age" id="cat-age" placeholder="7">
+          <ul class="cat-data__list">
+            <li class="cat-data__input-wrapper">
+              <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
+              <input class="cat-data__input input" tabindex="-" type="text" name="cat-name" id="cat-name"
+                placeholder="Барсик" required>
+            </li>
+            <li class="cat-data__input-wrapper">
+              <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
+              <input class="cat-data__input input" tabindex="-" type="text" name="cat-weight" id="cat-weight"
+                placeholder="7" required>
+            </li>
+            <li class="cat-data__input-wrapper">
+              <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
+              <input class="cat-data__input input" tabindex="-" type="text" name="cat-age" id="cat-age" placeholder="7">
+            </li>
+          </ul>
         </div>
         <div class="form__item way">
           <!--todo: way-->
@@ -75,11 +83,11 @@
           <legend class="owner-data__title"> Контактные данные<br>(владельца кота)</legend>
           <h2 class="visually-hidden"> Контактные данные<br>(владельца кота)</h2>
           <ul class="owner-data__list">
-            <li class="owner-data__option">
-              <label class="owner-data__label" for="owner-email">E-mail:*</label>
+            <li class="owner-data__input-wrapper">
+              <label class="owner-data__label">E-mail:*</label>
               <input class="owner-data__input input" tabindex="-" type="email" name="owner-email" id="owner-email"
                 placeholder="kuklachev@gmail.com" required>
-            <li class="owner-data__option">
+            <li class="owner-data__input-wrapper">
               <label class="owner-data__label" for="owner-tel">Телефон:*</label>
               <input class="owner-data__input input" tabindex="-" type="tel" name="owner-tel" id="owner-tel"
                 placeholder="8 (960) 900-60-90" required>
@@ -114,8 +122,8 @@
           </div>
         </fieldset>
         <div class="form__submit">
-          <button class="form__button" tabindex="-" type="submit">Отправить заявку</button>
-          <div class="form__subtitle">* — Обязательные поля</div>
+          <button class="button" tabindex="-" type="submit">Отправить заявку</button>
+          <p class="form__subtitle">* — Обязательные поля</p>
         </div>
       </div>
     </form>

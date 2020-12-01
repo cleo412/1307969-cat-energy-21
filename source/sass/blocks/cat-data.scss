@@ -6,24 +6,31 @@
   flex-wrap: wrap;
   align-items: baseline;
   padding: 0 20px;
-  margin: 0 0 11px 0;
+  margin: 0 0 10px 0;
+}
+
+.cat-data__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cat-data__input-wrapper {
+  @include input-wrapper;
+  margin: 0 0 12px 0;
 }
 
 .cat-data__label {
   @include form;
-  flex-grow: 0;
   padding: 12px 0;
-  margin: 0 12px 12px 0;
+  margin: 0 10px 0 0;
 }
 
 .cat-data__input {
-  flex-grow: 1;
-  border: 1px $aluminum-grey solid;
-  padding: 12px 0 12px 18px;
-  margin: 0 0 14px 0;
-}
-
-.cat-data__input:last-child {
-  flex-grow: 0;
-  padding: 12px 0 12px 16px;
+  @include input;
+  border-color: $aluminum-grey;
+  padding: 13px 0 12px 18px;
+  margin: 0 0 2px 0;
 }

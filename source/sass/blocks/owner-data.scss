@@ -10,6 +10,12 @@
   margin: 0 auto;
 }
 
+.owner-data__title {
+  @include title-form;
+  padding: 28px 22px 0 18px;
+  margin: 0 0 34px -20px;
+}
+
 .owner-data__list {
   display: flex;
   flex-wrap: wrap;
@@ -18,32 +24,20 @@
   margin: 0;
 }
 
-.owner-data__title {
-  @include title-form;
-  padding: 28px 22px 0 18px;
-  margin: 0 0 35px -20px;
-}
-
-.owner-data__option {
-  position: relative;
-  display: flex;
-  align-items: baseline;
-  flex-basis: 100%;
-  box-sizing: border-box;
-  padding: 0;
+.owner-data__input-wrapper {
+  @include input-wrapper;
   margin: 0 0 12px 0;
 }
 
 .owner-data__label {
   @include form;
-  flex-grow: 0;
   padding: 12px 0;
   margin: 0 10px 0 0;
 }
 
 .owner-data__input {
-  flex-grow: 1;
-  border: 1px $grey solid;
+  @include input;
+  border-color: $grey;
   padding: 14px;
 }
 

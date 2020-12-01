@@ -8,7 +8,7 @@
 
 .intro__img {
   height: 302px;
-  background-image: linear-gradient($green-85, $green-85), url("../../img/bg_index.jpg");
+  background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
@@ -21,6 +21,7 @@
 }
 
 .intro__title {
+  font-family: $oswald;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
@@ -29,7 +30,7 @@
 }
 
 .intro__subtitle {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald;
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
@@ -52,14 +53,4 @@
 
 .intro__wrapper-toggle {
   padding: 0 20px;
-}
-
-.intro__toggle {
-  @include button;
-  display: inline-block;
-  width: 100%;
-  font-size: 14px;
-  line-height: 18px;
-  color: $white;
-  padding: 11px 25px;
 }
