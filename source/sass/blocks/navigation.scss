@@ -1,0 +1,77 @@
+@import "../other/global.scss";
+@import "../other/fonts.scss";
+@import "../other/variables.scss";
+
+.navigation__toggle {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  width: 18px;
+  height: 18px;
+  background-color: $white;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__toggle::before {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: " ";
+  width: 25px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(45deg);
+}
+
+.navigation__toggle::after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  content: " ";
+  width: 25px;
+  height: 2px;
+  background-color: $black;
+  transform: rotate(-45deg);
+}
+
+// .navigation--closed .navigation__toggle {
+//   position: absolute;
+//   top: 22px;
+//   right: 20px;
+//   content: " ";
+//   width: 24px;
+//   height: 2px;
+//   background-color: $black;
+//   box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
+// }
+
+.navigation__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation__item {
+  @include title-big;
+  width: 100%;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 500;
+  text-align: center;
+  border-bottom: 1px $secondary-grey solid;
+  box-sizing: border-box;
+  padding: 22px 20px;
+  margin: 0;
+}
+
+.navigation__link {
+  color: $black;
+  text-decoration: none;
+  list-style: none;
+}

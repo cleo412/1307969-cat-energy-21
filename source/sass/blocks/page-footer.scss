@@ -1,0 +1,102 @@
+@import "../other/global.scss";
+@import "../other/fonts.scss";
+@import "../other/variables.scss";
+
+.page-footer {
+  display: block;
+  width: auto;
+  text-align: center;
+  background-color: $special-grey;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.page-footer__cooperate {
+  display: flex;
+  list-style: none;
+  text-align: left;
+  background-color: $special-grey;
+  box-sizing: border-box;
+  padding: 40px 20px 20px;
+}
+
+.page-footer__cooperate--index {
+  background-color: $white;
+  padding: 30px 20px 20px;
+}
+
+.page-footer__cooperate-title {
+  @include title-big;
+  font-size: 16px;
+  line-height: 19px;
+  width: 50%;
+  margin: 0 2% 0 0;
+}
+
+.page-footer__cooperate-address {
+  @include text;
+  width: 50%;
+  line-height: 20px;
+  text-align: left;
+  margin: 0;
+}
+
+.page-footer__map {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+
+// for catalog
+// .page-footer__logo {
+//   padding: 26px 0;
+//   margin: 0 auto;
+// }
+
+// for form
+// .page-footer__logo {
+//   padding: 30px 0;
+//   margin: 0 auto;
+// }
+
+.page-footer__logo {
+  padding: 35px 0;
+  margin: 0 auto;
+}
+
+.page-footer__social {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.page-footer__social-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  border-top: 1px $dull-grey solid;
+  border-bottom: 1px $dull-grey solid;
+  padding: 18px 10px;
+  margin: 0;
+}
+
+.page-footer__social-button {
+  width: 7%;
+  margin: 0 23px 0 0;
+}
+
+.page-footer__copyright {
+  padding: 28px 20px;
+}
+
+.page-footer__copyright-link {
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.page-footer__copyright-text {
+  @include text;
+  font-size: 16px;
+  margin: 0;
+}
