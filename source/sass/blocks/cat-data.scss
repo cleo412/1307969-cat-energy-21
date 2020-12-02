@@ -1,13 +1,8 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .cat-data {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  padding: 0 20px;
-  margin: 0 0 10px 0;
+  padding: 0 20px 10px;
 }
 
 .cat-data__list {

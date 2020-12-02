@@ -1,11 +1,3 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
-.description__wrapper {
-  padding: 0 20px 25px;
-}
-
 .description__title {
   @include title-small;
   font-size: 36px;

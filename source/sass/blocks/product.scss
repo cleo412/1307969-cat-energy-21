@@ -1,13 +1,9 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .product__title-main {
   @include title-small;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 19px;
-  margin: 0 0 16px 0;
+  padding: 27px 19px 43px;
+  margin: 0;
 }
 
 .product__menu {
