@@ -1,0 +1,11 @@
+@import "../other/global.scss";
+@import "../other/fonts.scss";
+@import "../other/variables.scss";
+
+.page-body {
+  min-width: 320px;
+  min-height: 100%;
+  background-color: $white;
+  color: $black;
+  margin: 0 auto;
+}

@@ -1,5 +1,6 @@
 @import "../other/global.scss";
-@import "./form.scss";
+@import "../other/fonts.scss";
+@import "../other/variables.scss";
 
 .way__list {
   border-top: 1px $dull-grey solid;
@@ -25,7 +26,7 @@
 
 .way__input + .way__label::before {
   position: absolute;
-  top: -2px;
+  top: 0;
   left: -40px;
   content: "";
   width: 30px;
@@ -36,11 +37,11 @@
 
 .way__input:checked + .way__label::after {
   position: absolute;
-  top: 11px;
+  top: 9px;
   left: -31px;
   content: "";
-  width: 13px;
-  height: 13px;
+  width: 14px;
+  height: 14px;
   background-color: $green;
   border-radius: 50%;
   box-sizing: border-box;

@@ -1,24 +1,29 @@
-//General
+//General(other)
 @import "../sass/other/global.scss";
+@import "../sass/other/variables.scss";
+@import "../sass/other/fonts.scss";
+
+//Other
+@import "../sass/blocks/page-body.scss";
+@import "../sass/blocks/page-main.scss";
 @import "../sass/blocks/page-footer.scss";
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/navigation.scss";
-@import "../sass/blocks/intro.scss";
-@import "../sass/blocks/form.scss";
+@import "../sass/blocks/button.scss";
 
 // Index
+@import "../sass/blocks/intro.scss";
 @import "../sass/blocks/program.scss";
 @import "../sass/blocks/description.scss";
 @import "../sass/blocks/illustration.scss";
 
 // Form
+@import "../sass/blocks/form.scss";
 @import "../sass/blocks/cat-data.scss";
 @import "../sass/blocks/way.scss";
 @import "../sass/blocks/owner-data.scss";
 @import "../sass/blocks/habits.scss";
 @import "../sass/blocks/extra.scss";
-@import "../sass/blocks/button.scss";
-
 
 // Catalog
 @import "../sass/blocks/product.scss";

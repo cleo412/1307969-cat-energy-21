@@ -1,5 +1,6 @@
-@import "../other/global.scss";
-@import "./button.scss";
+@import "../other";
+@import "../other/fonts.scss";
+@import "../other/variables.scss";
 
 .form__title {
   @include title-small;
