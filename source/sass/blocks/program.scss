@@ -1,4 +1,5 @@
 .program__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -6,6 +7,27 @@
   box-sizing: border-box;
   padding: 30px 20px 10px;
   margin: 22px auto 0;
+}
+
+.program__icon {
+  position: absolute;
+  background-repeat: no-repeat;
+}
+
+.program__icon--slim {
+  top: 22px;
+  left: 22px;
+  width: 50px;
+  height: 53px;
+  background-image: url("../../img/icon-index-cat1.svg");
+}
+
+.program__icon--fat {
+  top: 25px;
+  left: 13px;
+  width: 67px;
+  height: 50px;
+  background-image: url("../../img/icon-index-cat2.svg");
 }
 
 .program__title {

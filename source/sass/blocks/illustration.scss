@@ -58,56 +58,6 @@
   @include title-big;
   font-size: 14px;
   line-height: 20px;
-  padding: 25px 0;
-  margin: 10px auto 10px;
-}
-
-.illustration__slider {
-  display: flex;
-  flex-direction: column;
-}
-
-.illustration__foto {
-  width: 100%;
-  background-color: $grey;
-  margin: 32px auto;
-}
-
-.illustration__items {
-  display: flex;
-  width: 78%;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
+  padding: 35px 0;
   margin: 0 auto;
-}
-
-.illustration__phrase {
-  @include title-big;
-  display: block;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  margin: 0 5px;
-}
-
-.illustration__phrase:first-child {
-  margin: 0 0 0 15px;
-}
-
-.illustration__toggle {
-  width: 37%;
-  border: 1px $grey solid;
-  box-sizing: border-box;
-  border-radius: 6px;
-  background-color: $white;
-  padding: 1px 4px;
-  margin: 5px 5px 18px;
-}
-
-.illustration__scale {
-  width: 43%;
-  border-radius: 6px;
-  background-color: $green;
-  padding: 4px;
 }

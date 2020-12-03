@@ -3,13 +3,13 @@
   border: none;
   border-top: 2px $green solid;
   box-sizing: border-box;
-  padding: 0 20px 25px;
+  padding: 0 20px 22px;
   margin: 0 auto;
 }
 
 .extra__title {
   @include title-form;
-  padding: 30px 21px 33px 20px;
+  padding: 30px 21px 36px 20px;
   margin: 0 0 0 -20px;
 }
 
@@ -37,12 +37,12 @@
   border: 1px $grey solid;
 }
 
-// .extra__input:checked + .extra__label::after {
-//   position: absolute;
-//   top: -2px;
-//   left: -40px;
-//   content: "";
-//   width: 18px;
-//   height: 14px;
-//   background-image: url();
-// }
+.extra__input:checked + .extra__label::after {
+  position: absolute;
+  top: 5px;
+  left: -40px;
+  content: "";
+  width: 18px;
+  height: 14px;
+  background-image: url("../../img/vector.svg");
+}
