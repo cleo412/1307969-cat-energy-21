@@ -1,7 +1,3 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .page-header {
   position: relative;
   margin: 0 auto;
@@ -15,6 +11,10 @@
   padding: 12px 20px;
 }
 
-.page-header__link:nth-child(2) {
+.page-header__logo {
   margin: 0 30px 0 55px;
+}
+
+.page-header__navigation {
+  margin: 0 auto;
 }

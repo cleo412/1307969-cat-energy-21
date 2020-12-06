@@ -1,11 +1,5 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .intro {
-  position: relative;
   width: 100%;
-  margin: 1px auto;
 }
 
 .intro__img {
@@ -14,6 +8,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
+  background-color: $green;
   margin: 0 0 139px 0;
 }
 

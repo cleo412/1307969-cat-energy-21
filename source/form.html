@@ -12,21 +12,21 @@
   <!--todo header-->
   <header class="page-header">
     <div class="page-header__list">
-      <a class="page-header__link" tabindex="1" href="index.html">
-        <img src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
+      <a class="page-header__link">
+        <img class="page-header__icon" src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
       </a>
-      <a class="page-header__link" tabindex="1" href="index.html">
-        <img src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
+      <a tabindex="1" class="page-header__link">
+        <img class="page-header__logo logo" src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
       </a>
     </div>
     <!--todo nav-->
     <nav class="page-header__navigation navigation navigation--closed">
-      <button tabindex="-" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
+      <button tabindex="2" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
           меню</span></button>
       <ul class="navigation__list">
-        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="index.html">Главная</a>
+        <li class="navigation__item"><a class="navigation__link" tabindex="3" href="index.html">Главная</a>
         </li>
-        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="catalog.html">Каталог
+        <li class="navigation__item"><a class="navigation__link" tabindex="4" href="catalog.html">Каталог
             продукции</a>
         </li>
         <li class="navigation__item navigation__item--current"><a class="navigation__link">Подбор
@@ -40,89 +40,88 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота </p>
       <div class="form__list">
-        <div class="form__item cat-data">
+        <section class="form__cat-data cat-data">
           <!--todo: cat-data-->
           <h2 class="visually-hidden">Данные кота</h2>
           <ul class="cat-data__list">
             <li class="cat-data__input-wrapper">
               <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
-              <input class="cat-data__input input" tabindex="-" type="text" name="cat-name" id="cat-name"
+              <input class="cat-data__input input" tabindex="5" type="text" name="cat-name" id="cat-name"
                 placeholder="Барсик" required>
             </li>
             <li class="cat-data__input-wrapper">
               <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-              <input class="cat-data__input input" tabindex="-" type="text" name="cat-weight" id="cat-weight"
+              <input class="cat-data__input input" tabindex="6" type="text" name="cat-weight" id="cat-weight"
                 placeholder="7" required>
             </li>
             <li class="cat-data__input-wrapper">
               <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-              <input class="cat-data__input input" tabindex="-" type="text" name="cat-age" id="cat-age" placeholder="7">
+              <input class="cat-data__input input" tabindex="7" type="text" name="cat-age" id="cat-age" placeholder="7">
             </li>
           </ul>
-        </div>
-        <div class="form__item way">
+        </section>
+        <section class="form__way way">
           <!--todo: way-->
           <h2 class="visually-hidden">Виды программ для кота</h2>
           <ul class="way__list">
             <li class="way__option">
-              <input class="way__input visually-hidden" tabindex="-" type="radio" name="cat-slim" id="cat-slim" checked>
+              <input class="way__input visually-hidden" tabindex="8" type="radio" name="way" id="cat-slim" checked>
               <label class="way__label" for="cat-slim">Похудение</label>
             </li>
             <li class="way__option">
-              <input class="way__input visually-hidden" tabindex="-" type="radio" name="cat-fat" id="cat-fat">
+              <input class="way__input visually-hidden" tabindex="9" type="radio" name="way" id="cat-fat">
               <label class="way__label" for="cat-fat">Набор массы</label>
             </li>
             <li class="way__option">
-              <input class="way__input visually-hidden" tabindex="-" type="radio" name="cat-advice" id="cat-advice">
+              <input class="way__input visually-hidden" tabindex="10" type="radio" name="way" id="cat-advice">
               <label class="way__label" for="cat-advice">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
-        </div>
+        </section>
         <!--todo: owner-data-->
-        <fieldset class="form__item owner-data">
+        <fieldset class="form__owner-data owner-data">
           <legend class="owner-data__title"> Контактные данные<br>(владельца кота)</legend>
-          <h2 class="visually-hidden"> Контактные данные<br>(владельца кота)</h2>
           <ul class="owner-data__list">
             <li class="owner-data__input-wrapper">
               <label class="owner-data__label">E-mail:*</label>
-              <input class="owner-data__input input" tabindex="-" type="email" name="owner-email" id="owner-email"
+              <input class="owner-data__input input" tabindex="11" type="email" name="owner-email" id="owner-email"
                 placeholder="kuklachev@gmail.com" required>
             <li class="owner-data__input-wrapper">
               <label class="owner-data__label" for="owner-tel">Телефон:*</label>
-              <input class="owner-data__input input" tabindex="-" type="tel" name="owner-tel" id="owner-tel"
+              <input class="owner-data__input input" tabindex="12" type="tel" name="owner-tel" id="owner-tel"
                 placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <!--todo: habits-->
-        <fieldset class="form__item habits">
+        <fieldset class="form__habits habits">
           <legend class="habits__title">Комментарий</legend>
-          <textarea class="habits__text" name="comment" cols="38" rows="9"
+          <label class="visually-hidden" for="habits-cat">Расскажите обо всех повадках кота</label>
+          <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <!--todo: extra-->
-        <fieldset class="form__item extra">
+        <fieldset class="form__extra extra">
           <legend class="extra__title">Дополнительно</legend>
-          <h2 class="visually-hidden">Дополнительно</h2>
           <div class="extra__option">
-            <input class="extra__input visually-hidden" tabindex="-" type="checkbox" name="sugar" id="sugar" checked>
+            <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar" checked>
             <label class="extra__label" for="sugar">Сахарозаменитель</label>
           </div>
           <div class="extra__option">
-            <input class="extra__input visually-hidden" tabindex="-" type="checkbox" name="water" id="water">
+            <input class="extra__input visually-hidden" tabindex="14" type="checkbox" name="water" id="water">
             <label class="extra__label" for="water">Питьевая вода</label>
           </div>
           <div class="extra__option">
-            <input class="extra__input visually-hidden" tabindex="-" type="checkbox" name="milk" id="milk">
+            <input class="extra__input visually-hidden" tabindex="15" type="checkbox" name="milk" id="milk">
             <label class="extra__label" for="milk">Молоко</label>
           </div>
           <div class="extra__option">
-            <input class="extra__input visually-hidden" tabindex="-" type="checkbox" name="vitamins" id="vitamins">
+            <input class="extra__input visually-hidden" tabindex="16" type="checkbox" name="vitamins" id="vitamins">
             <label class="extra__label" for="vitamins">Витамины</label>
           </div>
         </fieldset>
         <div class="form__submit">
-          <button class="button" tabindex="-" type="submit">Отправить заявку</button>
+          <button class="button" tabindex="17" type="submit">Отправить заявку</button>
           <p class="form__subtitle">* — Обязательные поля</p>
         </div>
       </div>
@@ -144,34 +143,34 @@
         tabindex="0"></iframe>
     </section>
     <!--todo logo-->
-    <section class="page-footer__logo">
-      <h3 class="visually-hidden">логотип Кэт энерджи, переход на главную страницу</h3>
-      <a class="page-footer__logo-link" href="index.html">
-        <img src="https://via.placeholder.com/128x24" alt="логотип-текст Кэт энерджи">
+    <div class="page-footer__logo page-footer__logo--form">
+      <a href="index.html">
+        <img class="logo logo--footer" src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
+          aria-label="переход на главную страницу">
       </a>
-    </section>
+    </div>
     <!--todo social-->
     <section class="page-footer__social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="page-footer__social-list">
         <!--todo vk-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--vk" href="#">
-            <h3 class="visually-hidden">Вконтакте</h3>
+          <a tabindex="18" class="page-footer__social-button page-footer__social-button--vk" href="#">
+            <p class="visually-hidden">Вконтакте</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
         <!--todo inst-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--inst" href="#">
-            <h3 class="visually-hidden">Инстаграм</h3>
+          <a tabindex="19" class="page-footer__social-button page-footer__social-button--inst" href="#">
+            <p class="visually-hidden">Инстаграм</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
         <!--todo fb-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--fb" href="#">
-            <h3 class="visually-hidden">Фейсбук</h3>
+          <a tabindex="20" class="page-footer__social-button page-footer__social-button--fb" href="#">
+            <p class="visually-hidden">Фейсбук</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
@@ -180,7 +179,7 @@
     <!--todo copyright-->
     <section class="page-footer__copyright">
       <h2 class="visually-hidden"> Копирайт</h2>
-      <a class="page-footer__copyright-link" tabindex="-" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__copyright-link" tabindex="21" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="page-footer__copyright-text">HTML Academy</span>
         <img src="https://via.placeholder.com/27x34" alt="">
       </a>

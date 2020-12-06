@@ -1,7 +1,22 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .page-main {
+  margin: 0 auto;
+}
+
+// index
+.page-main__intro {
+  position: relative;
+  margin: 1px auto;
+}
+
+.page-main__program {
+  margin: 0 20px 15px;
+}
+
+.page-main__description {
+  padding: 0 20px 25px;
+}
+
+.page-main__illustration {
+  padding: 21px;
   margin: 0 auto;
 }

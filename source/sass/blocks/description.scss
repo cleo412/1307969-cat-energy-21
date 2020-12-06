@@ -1,17 +1,9 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
-.description__wrapper {
-  padding: 0 20px 25px;
-}
-
 .description__title {
   @include title-small;
   font-size: 36px;
   line-height: 40px;
   padding: 14px 5px 11px 0;
-  margin: 1px 0 26px 0;
+  margin: 0 0 28px 0;
 }
 
 .description__list {
@@ -28,11 +20,37 @@
   margin: 0 0 19px;
 }
 
-.description__icon {
+.description__icon-box {
+  position: relative;
   width: 60px;
   height: 60px;
   background-color: $green;
 }
+
+.description__icon {
+  position: absolute;
+  top: 16px;
+  left: 17px;
+  width: 32px;
+  height: 33px;
+  background-repeat: no-repeat;
+}
+
+// .description__icon--leaf {
+//   background-image: url("../../img/icon-leaf1.svg");
+// }
+
+// .description__icon--tub {
+//   background-image: url("../../img/icon-tub2.svg");
+// }
+
+// .description__icon--eat {
+//   background-image: url("../../img/icon-eat3.svg");
+// }
+
+// .description__icon--alarm {
+//   background-image: url("../../img/icon-alarm.svg");
+// }
 
 .description__text {
   @include text;

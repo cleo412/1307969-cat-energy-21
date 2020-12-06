@@ -1,31 +1,52 @@
-@import "../other/global.scss";
-@import "../other/fonts.scss";
-@import "../other/variables.scss";
-
 .product-extra {
+  // position: relative;
   display: flex;
   flex-direction: column;
   border: none;
-  border-top: 2px $green solid;
   box-sizing: border-box;
-  padding: 0 20px;
+  z-index: 1;
+  padding: 0;
   margin: 0 auto;
 }
 
 .product-extra__title-main {
   @include title-small;
+  position: relative;
   font-size: 24px;
   line-height: 24px;
   padding: 22px 21px 34px 20px;
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 0;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    left: 266px;
+    content: "";
+    height: 2px;
+    background-color: $green;
+    margin: 0 0 0 0;
+  }
 }
+
+// .product-extra__title-main::after {
+//   position: absolute;
+//   top: 37px;
+//   left: 0;
+//   right: 755px;
+//   content: "";
+//   height: 2px;
+//   background-color: $green;
+//   margin: 0 0 0 0;
+// }
 
 .product-extra__menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
 }
 
@@ -34,7 +55,7 @@
   flex-wrap: wrap;
   border-top: 1px $light-grey solid;
   box-sizing: border-box;
-  padding: 13px 0 15px 0;
+  padding: 14px 0 15px 0;
   margin: 0;
 }
 

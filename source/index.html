@@ -13,23 +13,23 @@
   <header class="page-header">
     <div class="page-header__list">
       <a class="page-header__link">
-        <img src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
+        <img class="page-header__icon" src="https://via.placeholder.com/33x38" alt="логотип-иконка кота">
       </a>
       <a class="page-header__link">
-        <img src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
+        <img class="page-header__logo logo" src="https://via.placeholder.com/101x18" alt="логотип-текст Кэт энерджи">
       </a>
     </div>
     <!--todo nav-->
     <nav class="page-header__navigation navigation navigation--closed">
-      <button tabindex="-" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
+      <button tabindex="1" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
           меню</span></button>
       <ul class="navigation__list">
         <li class="navigation__item navigation__item--current"><a class="navigation__link">Главная</a>
         </li>
-        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="catalog.html">Каталог
+        <li class="navigation__item"><a class="navigation__link" tabindex="2" href="catalog.html">Каталог
             продукции</a>
         </li>
-        <li class="navigation__item"><a class="navigation__link" tabindex="-" href="form.html">Подбор
+        <li class="navigation__item"><a class="navigation__link" tabindex="3" href="form.html">Подбор
             программы</a>
         </li>
       </ul>
@@ -49,94 +49,103 @@
           alt="Изображение упаковки Кэт энерджи с курицей">
       </div>
       <div class="intro__wrapper-toggle">
-        <a class="button button--main" tabindex="-" href="#">Подобрать программу</a>
+        <a class="button button--main" tabindex="4" href="#">Подобрать программу</a>
       </div>
     </section>
     <!--todo: program-->
     <section class="page-main__program program">
-      <div class="program-wrapper">
-        <div class="program__item program__item--slim">
-          <h2 class="program__title">Похудение</h2>
-          <p class="program__subtitle">
-            Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
-            поможет вашему питомцу сбросить лишний вес.
-          </p>
-          <a class="program__link" tabindex="-" href="#">Каталог slim</a>
-        </div>
-        <div class="program__item program__item--fat">
-          <h2 class="program__title">Набор массы</h2>
-          <p class="program__subtitle">
-            Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
-            необходимые мышцы!
-          </p>
-          <a class="program__link" tabindex="-" href="#">Каталог pro</a>
-        </div>
+      <div class="program__item">
+        <span class="program__icon program__icon--slim"></span>
+        <h2 class="program__title">Похудение</h2>
+        <p class="program__subtitle">
+          Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
+          поможет вашему питомцу сбросить лишний вес.
+        </p>
+        <a class="program__link" tabindex="5" href="#">Каталог slim</a>
+      </div>
+      <div class="program__item">
+        <span class="program__icon program__icon--fat"></span>
+        <h2 class="program__title">Набор массы</h2>
+        <p class="program__subtitle">
+          Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить
+          необходимые мышцы!
+        </p>
+        <a class="program__link" tabindex="6" href="#">Каталог pro</a>
       </div>
     </section>
     <!--todo: description-->
     <section class="page-main__description description">
-      <div class="description__wrapper">
-        <h2 class="description__title">Как это работает</h2>
-        <ul class="description__list">
-          <li class="description__item">
-            <!--leaf-->
-            <div class="description__icon description__icon--leaf">
-            </div>
-            <p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
-          </li>
-          <li class="description__item">
-            <!--tub-->
-            <div class="description__icon description__icon--tub">
-            </div>
-            <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
-            </p>
-          </li>
-          <li class="description__item">
-            <!--eat-->
-            <div class="description__icon description__icon--eat">
-            </div>
-            <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.
-            </p>
-          </li>
-          <li class="description__item">
-            <!--alarm-->
-            <div class="description__icon description__icon--alarm">
-            </div>
-            <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
-            </p>
-          </li>
-        </ul>
-      </div>
+      <h2 class="description__title">Как это работает</h2>
+      <ul class="description__list">
+        <li class="description__item">
+          <!--leaf-->
+          <div class="description__icon-box">
+            <span class="description__icon description__icon--leaf"></span>
+          </div>
+          <p class="description__text">Функциональное питание содержит только полезные питательные вещества.</p>
+        </li>
+        <li class="description__item">
+          <!--tub-->
+          <div class="description__icon-box">
+            <span class="description__icon description__icon--tub"></span>
+          </div>
+          <p class="description__text">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
+          </p>
+        </li>
+        <li class="description__item">
+          <!--eat-->
+          <div class="description__icon-box">
+            <span class="description__icon description__icon--eat"></span>
+          </div>
+          <p class="description__text">Замените один-два приема обычной еды на наше функциональное питание.
+          </p>
+        </li>
+        <li class="description__item">
+          <!--alarm-->
+          <div class="description__icon-box">
+            <span class="description__icon description__icon--alarm"></span>
+          </div>
+          <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </p>
+        </li>
+      </ul>
     </section>
     <section class="page-main__illustration illustration">
       <!--todo: illustration-->
-      <div class="illustration__wrapper">
-        <h2 class="illustration__title">Живой пример</h2>
-        <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
-          Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
-          по 16 часов в день.</p>
-        <div class="illustration__list">
-          <div class="illustration__fieldset">
-            <span class="illustration__item">5 кг</span>
-          </div>
-          <div class="illustration__fieldset">
-            <span class="illustration__item">60 дней</span>
-          </div>
-          <div class="illustration__total">Затраты на питание: 15 000 руб.
-          </div>
+      <h2 class="illustration__title">Живой пример</h2>
+      <p class="illustration__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
+        Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит
+        по 16 часов в день.</p>
+      <div class="illustration__list">
+        <div class="illustration__box">
+          <span class="illustration__name">5 кг</span>
+          <span class="illustration__value">снижение<br>веса</span>
         </div>
-        <div class="illustration__slider">
-          <img class="illustration__foto" src="https://via.placeholder.com/311x232" width="311" height="232"
-            alt="изображение толстого кота">
-          <!-- <img class="illustration__foto illustration__foto-closed" src="https://via.placeholder.com/311x232" width="311" height="232" alt="изображение худого кота"> -->
-          <ul class="illustration__items">
-            <li class="illustration__phrase">Было</li>
-            <li class="illustration__toggle">
-              <div class="illustration__scale"></div>
-            </li>
-            <li class="illustration__phrase">Стало</li>
-          </ul>
+        <div class="illustration__box">
+          <span class="illustration__name">60 дней</span>
+          <span class="illustration__value">затрачено<br>времени</span>
         </div>
+        <div class="illustration__total">Затраты на питание: 15 000 руб.
+        </div>
+      </div>
+      <div class="illustration__slider slider">
+        <ul class="slider__items">
+          <li class="slider__item">
+            <img class="slider__foto slider__foto--fat slider__foto--current" src="https://via.placeholder.com/311x232"
+              width="311" height="232" alt="изображение толстого кота">
+          </li>
+          <li class="slider__item">
+            <!-- <img class="slider__foto slider__foto-slim" src="https://via.placeholder.com/311x232" width="311" height="232" alt="изображение худого кота"> -->
+          </li>
+        </ul>
+        <ul class="slider__scroll">
+          <li class="slider__phrase">Было</li>
+          <li class="slider__toggle">
+            <div class="slider__scale slider__scale--slim slider__scale--current"></div>
+            <!-- <div class="slider__scale slider__scale-fat"></div> -->
+          </li>
+          <li class="slider__phrase">Стало</li>
+        </ul>
       </div>
     </section>
   </main>
@@ -156,32 +165,32 @@
         tabindex="0"></iframe>
     </section>
     <!--todo logo-->
-    <section class="page-footer__logo">
-      <h3 class="visually-hidden">логотип Кэт энерджи</h3>
-      <img src="https://via.placeholder.com/128x24" alt="логотип-текст Кэт энерджи">
-    </section>
+    <div class="page-footer__logo page-footer__logo--index">
+      <img class="logo logo--footer" src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
+        aria-label="переход на главную страницу">
+    </div>
     <!--todo social-->
     <section class="page-footer__social">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="page-footer__social-list">
         <!--todo vk-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--vk" href="#">
-            <h3 class="visually-hidden">Вконтакте</h3>
+          <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
+            <p class="visually-hidden">Вконтакте</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
         <!--todo inst-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--inst" href="#">
-            <h3 class="visually-hidden">Инстаграм</h3>
+          <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
+            <p class="visually-hidden">Инстаграм</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
         <!--todo fb-->
         <li class="page-footer__social-item">
-          <a tabindex="-" class="page-footer__social-button page-footer__social-button--fb" href="#">
-            <h3 class="visually-hidden">Фейсбук</h3>
+          <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
+            <p class="visually-hidden">Фейсбук</p>
             <img src="https://via.placeholder.com/22x22" alt="">
           </a>
         </li>
@@ -190,7 +199,7 @@
     <!--todo copyright-->
     <section class="page-footer__copyright">
       <h2 class="visually-hidden"> Копирайт</h2>
-      <a class="page-footer__copyright-link" tabindex="-" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="page-footer__copyright-text">HTML Academy</span>
         <img src="https://via.placeholder.com/27x34" alt="">
       </a>
