@@ -25,24 +25,24 @@
 .extra__label {
   @include form;
   position: relative;
-}
 
-.extra__input + .extra__label::before {
-  position: absolute;
-  top: -4px;
-  left: -44px;
-  content: "";
-  width: 26px;
-  height: 26px;
-  border: 1px $grey solid;
-}
+  .extra__input + &::before {
+    position: absolute;
+    top: -4px;
+    left: -44px;
+    content: "";
+    width: 26px;
+    height: 26px;
+    border: 1px $grey solid;
+  }
 
-.extra__input:checked + .extra__label::after {
-  position: absolute;
-  top: 5px;
-  left: -40px;
-  content: "";
-  width: 18px;
-  height: 14px;
-  background-image: url("../../img/vector.svg");
+  .extra__input:checked + &::after {
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    content: "";
+    width: 18px;
+    height: 14px;
+    background-image: url("../../img/vector.svg");
+  }
 }

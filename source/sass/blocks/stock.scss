@@ -19,15 +19,15 @@
   padding: 0;
 }
 
-.stock__icon {
-  position: absolute;
-  top: 20%;
-  left: calc(50% - 40px);
-  display: block;
-  width: 80px;
-  height: 83px;
-  background-image: url("../../img/icon-gift.svg");
-}
+// .stock__icon {
+//   position: absolute;
+//   top: 20%;
+//   left: calc(50% - 40px);
+//   display: block;
+//   width: 80px;
+//   height: 83px;
+//   background-image: url("../../img/icon-gift.svg");
+// }
 
 .stock__text {
   @include text;

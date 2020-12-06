@@ -18,28 +18,28 @@
 
 .way__label {
   @include form;
-}
 
-.way__input + .way__label::before {
-  position: absolute;
-  top: 0;
-  left: -40px;
-  content: "";
-  width: 30px;
-  height: 30px;
-  border: 1px $grey solid;
-  border-radius: 50%;
-}
+  .way__input + &::before {
+    position: absolute;
+    top: 0;
+    left: -40px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px $grey solid;
+    border-radius: 50%;
+  }
 
-.way__input:checked + .way__label::after {
-  position: absolute;
-  top: 9px;
-  left: -31px;
-  content: "";
-  width: 14px;
-  height: 14px;
-  background-color: $green;
-  border-radius: 50%;
-  box-sizing: border-box;
-  background-image: none;
+  .way__input:checked + &::after {
+    position: absolute;
+    top: 9px;
+    left: -31px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $green;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: none;
+  }
 }

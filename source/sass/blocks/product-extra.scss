@@ -17,17 +17,17 @@
   padding: 22px 21px 34px 20px;
   margin: 0 0 0 0;
   z-index: 2;
-}
 
-.product-extra__title-main::before {
-  position: absolute;
-  top: 37px;
-  right: 0;
-  left: 266px;
-  content: "";
-  height: 2px;
-  background-color: $green;
-  margin: 0 0 0 0;
+  &::before {
+    position: absolute;
+    top: 37px;
+    right: 0;
+    left: 266px;
+    content: "";
+    height: 2px;
+    background-color: $green;
+    margin: 0 0 0 0;
+  }
 }
 
 // .product-extra__title-main::after {

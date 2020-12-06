@@ -82,6 +82,27 @@
   padding: 79px 20px 0;
   margin: 0 auto;
 
+  &::before {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    content: " ";
+    width: 10%;
+    height: 2px;
+    background-color: $secondory-grey;
+  }
+
+  &::after {
+    position: absolute;
+    top: 40px;
+    left: 45%;
+    content: " ";
+    width: 10%;
+    height: 2px;
+    background-color: $secondory-grey;
+    transform: rotate(90deg);
+  }
+
   .product__title {
     text-align: center;
     margin: 0 auto 8px;
@@ -100,25 +121,4 @@
   .button--special {
     margin: 0 auto 26px;
   }
-}
-
-.product__item--special::before {
-  position: absolute;
-  top: 40px;
-  left: 45%;
-  content: " ";
-  width: 10%;
-  height: 2px;
-  background-color: $secondory-grey;
-}
-
-.product__item--special::after {
-  position: absolute;
-  top: 40px;
-  left: 45%;
-  content: " ";
-  width: 10%;
-  height: 2px;
-  background-color: $secondory-grey;
-  transform: rotate(90deg);
 }
