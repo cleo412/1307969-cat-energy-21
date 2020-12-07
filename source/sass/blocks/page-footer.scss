@@ -13,7 +13,7 @@
   text-align: left;
   background-color: $special-grey;
   box-sizing: border-box;
-  padding: 36px 20px 20px;
+  padding: 44px 20px 20px;
 }
 
 .page-footer__cooperate--index {
@@ -52,7 +52,7 @@
 }
 
 .page-footer__logo--form {
-  padding: 33px 0 30px;
+  padding: 32px 0 27px;
 }
 
 .page-footer__logo--catalog {
@@ -81,12 +81,13 @@
 }
 
 .page-footer__copyright {
-  padding: 28px 20px;
+  padding: 22px 20px;
 }
 
 .page-footer__copyright-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
 

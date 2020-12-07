@@ -40,27 +40,27 @@
       <h1 class="form__title">Подбор программы</h1>
       <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота </p>
       <div class="form__list">
-        <section class="form__cat-data cat-data">
+        <section class="form__item user-data user-data--no-titile">
           <!--todo: cat-data-->
           <h2 class="visually-hidden">Данные кота</h2>
-          <ul class="cat-data__list">
-            <li class="cat-data__input-wrapper">
-              <label class="cat-data__label" for="cat-name">ИМЯ:*</label>
-              <input class="cat-data__input input" tabindex="5" type="text" name="cat-name" id="cat-name"
+          <ul class="user-data__list">
+            <li class="user-data__input-wrapper">
+              <label class="user-data__label" for="user-name">ИМЯ:*</label>
+              <input class="user-data__input" tabindex="5" type="text" name="user-name" id="user-name"
                 placeholder="Барсик" required>
             </li>
-            <li class="cat-data__input-wrapper">
-              <label class="cat-data__label" for="cat-weight">Вес (кг):*</label>
-              <input class="cat-data__input input" tabindex="6" type="text" name="cat-weight" id="cat-weight"
+            <li class="user-data__input-wrapper">
+              <label class="user-data__label" for="user-weight">Вес (кг):*</label>
+              <input class="user-data__input" tabindex="6" type="text" name="user-weight" id="user-weight"
                 placeholder="7" required>
             </li>
-            <li class="cat-data__input-wrapper">
-              <label class="cat-data__label" for="cat-age">Возраст (лет):</label>
-              <input class="cat-data__input input" tabindex="7" type="text" name="cat-age" id="cat-age" placeholder="7">
+            <li class="user-data__input-wrapper">
+              <label class="user-data__label" for="user-age">Возраст (лет):</label>
+              <input class="user-data__input" tabindex="7" type="text" name="user-age" id="user-age" placeholder="7">
             </li>
           </ul>
         </section>
-        <section class="form__way way">
+        <section class="form__item way">
           <!--todo: way-->
           <h2 class="visually-hidden">Виды программ для кота</h2>
           <ul class="way__list">
@@ -79,29 +79,29 @@
           </ul>
         </section>
         <!--todo: owner-data-->
-        <fieldset class="form__owner-data owner-data">
-          <legend class="owner-data__title"> Контактные данные<br>(владельца кота)</legend>
-          <ul class="owner-data__list">
-            <li class="owner-data__input-wrapper">
-              <label class="owner-data__label">E-mail:*</label>
-              <input class="owner-data__input input" tabindex="11" type="email" name="owner-email" id="owner-email"
+        <fieldset class="form__item user-data">
+          <legend class="user-data__title"> Контактные данные<br>(владельца кота)</legend>
+          <ul class="user-data__list">
+            <li class="user-data__input-wrapper">
+              <label class="user-data__label">E-mail:*</label>
+              <input class="user-data__input" tabindex="11" type="email" name="user-email" id="user-email"
                 placeholder="kuklachev@gmail.com" required>
-            <li class="owner-data__input-wrapper">
-              <label class="owner-data__label" for="owner-tel">Телефон:*</label>
-              <input class="owner-data__input input" tabindex="12" type="tel" name="owner-tel" id="owner-tel"
+            <li class="user-data__input-wrapper">
+              <label class="user-data__label" for="user-tel">Телефон:*</label>
+              <input class="user-data__input" tabindex="12" type="tel" name="user-tel" id="user-tel"
                 placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
         </fieldset>
         <!--todo: habits-->
-        <fieldset class="form__habits habits">
+        <fieldset class="form__item habits">
           <legend class="habits__title">Комментарий</legend>
           <label class="visually-hidden" for="habits-cat">Расскажите обо всех повадках кота</label>
           <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <!--todo: extra-->
-        <fieldset class="form__extra extra">
+        <fieldset class="form__irem extra">
           <legend class="extra__title">Дополнительно</legend>
           <div class="extra__option">
             <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar" checked>

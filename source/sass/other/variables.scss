@@ -72,11 +72,6 @@ $arial: ("Arial", sans-serif);
   line-height: 26px;
 }
 
-@mixin input {
-  flex-grow: 1;
-  border: 1px solid;
-}
-
 @mixin input-wrapper {
   position: relative;
   display: flex;
