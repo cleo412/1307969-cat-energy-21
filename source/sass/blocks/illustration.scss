@@ -58,6 +58,74 @@
   @include title-big;
   font-size: 14px;
   line-height: 20px;
+  box-sizing: border-box;
   padding: 35px 0;
   margin: 0 auto;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .illustration {
+    background-color: $white;
+    padding: 0;
+  }
+
+  .illustration__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 44px 30px 63px;
+    margin: 0;
+  }
+
+  .illustration__text {
+    @include text;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0 30px 50px;
+  }
+
+  .illustration__list {
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0 30px 65px;
+  }
+
+  .illustration__box {
+    width: 190px;
+    height: 75px;
+    padding: 16px 5px 12px;
+    margin: 0 40px 0 0;
+  }
+
+  .illustration__name {
+    @include title-big;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .illustration__value {
+    left: 30px;
+    bottom: -10%;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $white;
+    padding: 0;
+  }
+
+  .illustration__value:first-of-type {
+    left: 25px;
+  }
+
+  .illustration__total {
+    text-align: end;
+    width: 47%;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 10px 0 17px 123px;
+    margin: 0;
+  }
+
+  .illustration__slider {
+    padding: 0 30px;
+  }
 }

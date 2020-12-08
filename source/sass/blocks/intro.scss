@@ -42,12 +42,41 @@
   left: 0;
   bottom: 35px;
   padding: 0 20px;
-}
-
-.intro__main-img {
-  width: 100%;
+  margin: 0 auto;
 }
 
 .intro__wrapper-toggle {
   padding: 0 20px;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    position: relative;
+  }
+
+  .intro__img {
+    background-color: $white;
+    background-image: none;
+    margin: 0 0 556px 0;
+  }
+
+  .intro__slogan {
+    text-align: left;
+    padding: 48px 20px 50px 117px;
+  }
+
+  .intro__title {
+    font-family: $oswald;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    margin: 0 0 41px 0;
+  }
+
+  .intro__subtitle {
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
 }

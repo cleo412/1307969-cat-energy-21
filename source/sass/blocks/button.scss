@@ -29,3 +29,16 @@
   background-color: $special-grey;
   padding: 17px;
 }
+
+@media (min-width: 768px) {
+  .button--main {
+    position: absolute;
+    top: 280px;
+    left: 112px;
+    width: 32%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 10px;
+    z-index: 2;
+  }
+}

@@ -20,6 +20,19 @@ $green-85: rgba(104, 183, 56, 0.85);
 $oswald: ("Oswald", "Arial", sans-serif);
 $arial: ("Arial", sans-serif);
 
+//Viewport
+@mixin mobile {
+  min-width: 320px;
+}
+
+@mixin tablet {
+  min-width: 768px;
+}
+
+@mixin desktop {
+  min-width: 1440px;
+}
+
 // Mixins
 @mixin title-big {
   font-family: $oswald;
