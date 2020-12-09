@@ -1,3 +1,4 @@
+// todo
 .navigation__toggle {
   position: absolute;
   top: -45px;
@@ -66,17 +67,13 @@
   margin: 0;
 }
 
-.navigation__item--current {
-  box-shadow: 0 2px 0 0 $green;
-}
-
 @media (min-width: 768px) {
   .navigation {
     display: flex;
     flex-direction: row;
     width: 75%;
     box-sizing: border-box;
-    padding: 45px 0 22px;
+    padding: 42px 0 22px;
     margin: 0;
   }
 
@@ -90,9 +87,8 @@
     margin: 0 10px 0 0;
   }
 
-  .navigation__item--current::after {
-    content: "";
-    text-decoration: underline;
+  .navigation__item--current {
+    box-shadow: 0 2px 0 0 $green;
   }
 
   &::before,

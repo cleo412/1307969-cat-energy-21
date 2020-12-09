@@ -49,6 +49,7 @@
   padding: 0 20px;
 }
 
+// todo 768
 @media (min-width: 768px) {
   .intro {
     position: relative;
@@ -57,12 +58,12 @@
   .intro__img {
     background-color: $white;
     background-image: none;
-    margin: 0 0 556px 0;
+    margin: 0 auto 550px;
   }
 
   .intro__slogan {
     text-align: left;
-    padding: 48px 20px 50px 117px;
+    padding: 42px 20px 50px 117px;
   }
 
   .intro__title {

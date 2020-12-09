@@ -97,7 +97,7 @@
           <div class="description__icon-box">
             <span class="description__icon description__icon--alarm"></span>
           </div>
-          <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          <p class="description__text">Уже через месяц наслаждайтесь<br> изменениями к лучшему<br> вашего питомца!
           </p>
         </li>
       </ul>
@@ -115,7 +115,7 @@
         </div>
         <div class="illustration__box">
           <span class="illustration__name">60 дней</span>
-          <span class="illustration__value">затрачено времени</span>
+          <span class="illustration__value illustration__value--right">затрачено времени</span>
         </div>
         <div class="illustration__total">Затраты на питание: 15 000 руб.
         </div>
@@ -138,13 +138,17 @@
   <!--todo footer-->
   <footer class="page-footer">
     <!--todo cooperate-->
-    <div class="page-footer__cooperate page-footer__cooperate--index">
-      <h2 class="page-footer__cooperate-title">Приглашаем<br>к&nbsp;сотрудничеству дилеров!</h2>
-      <div class="page-footer__cooperate-address">ул. Большая Конюшенная, д. 19/8
-        <p class="page-footer__cooperate-address page-footer__cooperate-address--city">Санкт-Петербург</p>
+    <section class="page-footer__cooperate cooperate--index cooperate">
+      <h3 class="visually-hidden">Контакты</h3>
+      <div class="cooperate__text">
+        <span class="cooperate__title">Приглашаем</span>
+        <span class="cooperate__subtitle">к сотрудничеству дилеров!</span>
       </div>
-
-    </div>
+      <div class="cooperate__address">
+        <span class="cooperate__title">ул. Большая Конюшенная, д. 19/8</span>
+        <span class="cooperate__subtitle">Санкт-Петербург</span>
+      </div>
+    </section>
     <!--todo map-->
     <section class="page-footer__map">
       <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
@@ -154,44 +158,47 @@
         tabindex="0"></iframe>
     </section>
     <!--todo logo-->
-    <div class="page-footer__logo page-footer__logo--index">
-      <img src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи" aria-label="переход на главную страницу">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__logo page-footer__logo--index">
+        <img src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
+          aria-label="переход на главную страницу">
+      </div>
+      <!--todo social-->
+      <section class="page-footer__social">
+        <h2 class="visually-hidden">Мы в соцсетях</h2>
+        <ul class="page-footer__social-list">
+          <!--todo vk-->
+          <li class="page-footer__social-item">
+            <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
+              <p class="visually-hidden">Вконтакте</p>
+              <img src="https://via.placeholder.com/22x22" alt="">
+            </a>
+          </li>
+          <!--todo inst-->
+          <li class="page-footer__social-item">
+            <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
+              <p class="visually-hidden">Инстаграм</p>
+              <img src="https://via.placeholder.com/22x22" alt="">
+            </a>
+          </li>
+          <!--todo fb-->
+          <li class="page-footer__social-item">
+            <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
+              <p class="visually-hidden">Фейсбук</p>
+              <img src="https://via.placeholder.com/22x22" alt="">
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!--todo copyright-->
+      <section class="page-footer__copyright">
+        <h2 class="visually-hidden"> Копирайт</h2>
+        <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
+          <span class="page-footer__copyright-text">HTML Academy</span>
+          <img src="https://via.placeholder.com/27x34" alt="">
+        </a>
+      </section>
     </div>
-    <!--todo social-->
-    <section class="page-footer__social">
-      <h2 class="visually-hidden">Мы в соцсетях</h2>
-      <ul class="page-footer__social-list">
-        <!--todo vk-->
-        <li class="page-footer__social-item">
-          <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
-            <p class="visually-hidden">Вконтакте</p>
-            <img src="https://via.placeholder.com/22x22" alt="">
-          </a>
-        </li>
-        <!--todo inst-->
-        <li class="page-footer__social-item">
-          <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
-            <p class="visually-hidden">Инстаграм</p>
-            <img src="https://via.placeholder.com/22x22" alt="">
-          </a>
-        </li>
-        <!--todo fb-->
-        <li class="page-footer__social-item">
-          <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
-            <p class="visually-hidden">Фейсбук</p>
-            <img src="https://via.placeholder.com/22x22" alt="">
-          </a>
-        </li>
-      </ul>
-    </section>
-    <!--todo copyright-->
-    <section class="page-footer__copyright">
-      <h2 class="visually-hidden"> Копирайт</h2>
-      <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="page-footer__copyright-text">HTML Academy</span>
-        <img src="https://via.placeholder.com/27x34" alt="">
-      </a>
-    </section>
   </footer>
 </body>
 
