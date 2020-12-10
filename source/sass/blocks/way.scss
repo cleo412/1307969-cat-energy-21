@@ -3,7 +3,6 @@
   border-bottom: 1px $dull-grey solid;
   border-left: none;
   border-right: none;
-  box-sizing: border-box;
   list-style: none;
   padding: 23px 20px 0;
   margin: 0;
@@ -41,5 +40,48 @@
     border-radius: 50%;
     box-sizing: border-box;
     background-image: none;
+  }
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .way__list {
+    border: 1px $dull-grey solid;
+    padding: 23px 27px 10px;
+    margin: 0 0 30px 0;
+  }
+
+  .way__label {
+    @include form;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  // .way__input + &::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: -20px;
+  //   content: "";
+  //   width: 30px;
+  //   height: 30px;
+  //   border: 1px $grey solid;
+  //   border-radius: 50%;
+  // }
+
+  // .way__input:checked + &::after {
+  //   position: absolute;
+  //   top: 9px;
+  //   left: -11px;
+  //   content: "";
+  //   width: 14px;
+  //   height: 14px;
+  //   background-color: $green;
+  //   border-radius: 50%;
+  //   box-sizing: border-box;
+  //   background-image: none;
+  // }
+
+  .way__option {
+    margin: 0 0 14px 55px;
   }
 }

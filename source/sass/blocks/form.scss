@@ -34,3 +34,38 @@
   padding: 0;
   margin: 20px 0 0 0;
 }
+
+// todo 768
+@media (min-width: 768px) {
+  .form {
+    padding: 0 70px;
+  }
+
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 44px 0;
+  }
+
+  .form__text {
+    @include text-big;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 0;
+    margin: 0 0 55px 0;
+  }
+
+  .form__submit {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 0 55px 0;
+  }
+
+  .form__subtitle {
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 0;
+    margin: 0;
+  }
+}

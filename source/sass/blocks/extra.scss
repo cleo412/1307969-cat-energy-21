@@ -1,8 +1,7 @@
 .extra {
   width: 100%;
   border: none;
-  border-top: 2px $green solid;
-  box-sizing: border-box;
+  // border-top: 2px $green solid;
   padding: 0 20px 22px;
   margin: 0 auto;
 }
@@ -44,5 +43,39 @@
     width: 18px;
     height: 14px;
     background-image: url("../../img/vector.svg");
+  }
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .extra {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .extra__title {
+    width: 100%;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 0 62px 0;
+  }
+
+  .extra__option {
+    width: 30%;
+    padding: 0;
+    margin: 0 30px 42px 59px;
+  }
+
+  .extra__option:nth-of-type(odd) {
+    margin: 0 97px 42px 59px;
+  }
+
+  .extra__label {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

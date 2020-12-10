@@ -1,16 +1,15 @@
 .habits {
   width: 100%;
   border: none;
-  border-top: 2px $green solid;
-  box-sizing: border-box;
+  // border-top: 2px $green solid;
   padding: 0 20px;
   margin: -11px auto;
 }
 
 .habits__title {
   @include title-form;
-  padding: 23px 21px 38px 20px;
-  margin: 0 0 0 -20px;
+  padding: 23px 0 38px 20px;
+  margin: 0;
 }
 
 .habits__text {
@@ -25,4 +24,29 @@
 
 .habits__text::placeholder {
   @include form;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .habits {
+    padding: 0;
+    margin: 0 0 60px 0;
+  }
+
+  .habits__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0 0 70px 0;
+  }
+
+  .habits__text::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .habits__text {
+    padding: 10px 17px 26px;
+    margin: 0;
+  }
 }
