@@ -1,15 +1,14 @@
 .extra {
   width: 100%;
   border: none;
-  // border-top: 2px $green solid;
-  padding: 0 20px 22px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 0 21px 0;
 }
 
 .extra__title {
   @include title-form;
-  padding: 30px 21px 36px 20px;
-  margin: 0 0 0 -20px;
+  padding: 9px 0 0 0;
+  margin: 0 0 35px 0;
 }
 
 .extra__option {
@@ -17,8 +16,8 @@
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 5px;
-  margin: 0 0 14px 40px;
+  padding: 4px;
+  margin: 0 0 17px 40px;
 }
 
 .extra__label {
@@ -46,6 +45,8 @@
   }
 }
 
+// border-top: 2px $green solid;
+
 // todo 768
 @media (min-width: 768px) {
   .extra {
@@ -53,7 +54,6 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 0;
-    margin: 0 0 20px 0;
   }
 
   .extra__title {
@@ -67,7 +67,7 @@
   .extra__option {
     width: 30%;
     padding: 0;
-    margin: 0 30px 42px 59px;
+    margin: 0 30px 40px 59px;
   }
 
   .extra__option:nth-of-type(odd) {
@@ -77,5 +77,18 @@
   .extra__label {
     font-size: 20px;
     line-height: 30px;
+
+    .extra__input + &::before {
+      left: -60px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .extra__input:checked + &::after {
+      top: 9px;
+      left: -48px;
+      width: 18px;
+      height: 14px;
+    }
   }
 }

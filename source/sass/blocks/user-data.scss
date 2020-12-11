@@ -2,15 +2,14 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  // border-top: 2px $green solid;
-  padding: 0 20px;
-  margin: 0 auto;
+  padding: 0;
+  margin: 0 0 9px 0;
 }
 
 .user-data__title {
   @include title-form;
-  padding: 28px 22px 0 18px;
-  margin: 0 0 34px -20px;
+  padding: 15px 0 0 0;
+  margin: 0 0 32px 0;
 }
 
 .user-data__list {
@@ -23,46 +22,36 @@
 
 .user-data__input-wrapper {
   @include input-wrapper;
-  margin: 0 0 12px 0;
+  margin: 0 0 11px 0;
 }
 
 .user-data__label {
   @include form;
   padding: 12px 0;
-  margin: 0 10px 0 0;
+  margin: 0 12px 0 0;
 }
 
 .user-data__input {
   flex-grow: 1;
   border: 1px solid $grey;
-  padding: 14px;
+  box-sizing: border-box;
+  padding: 19px 0 12px 15px;
 }
 
-// .user-data__fieldset {
-//   border: none;
-//   border-top: 2px $green solid;
-//   padding: 28px 20px 10px;
-//   margin: 0 auto;
-// }
-
-.user-data__input::placeholder {
-  @include form;
-}
-
-// cat-data
-.user-data--no-titile {
-  border-top: none;
-  padding: 0 20px 10px;
+.user-data--no-title {
+  margin: 0 0 7px 0;
 
   .user-data__input {
     border-color: $aluminum-grey;
-    padding: 13px 0 12px 18px;
-    margin: 0;
   }
 
-  // .user-data__fieldset {
-  //   border: none;
-  // }
+  .user-data__label {
+    margin: 0 15px 0 0;
+  }
+}
+
+.user-data__input::placeholder {
+  @include form;
 }
 
 // todo 768
@@ -70,15 +59,22 @@
   .user-data {
     border: none;
     padding: 0;
-    margin: 0 0 52px 0;
-
-    .user-data__input {
-      padding: 22px 47px 12px 19px;
-    }
+    margin: 0 0 38px 0;
   }
 
-  .user-data__list {
-    margin: 0;
+  .user-data--no-title {
+    margin: 0 0 55px 0;
+  }
+
+  .user-data__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 20px 42px 0 0;
+    margin: 0 0 75px 0;
+
+    br {
+      display: none;
+    }
   }
 
   .user-data__input-wrapper {
@@ -93,19 +89,12 @@
     margin: 0 18px 0 0;
   }
 
+  .user-data__input {
+    padding: 22px 47px 12px 19px;
+  }
+
   .user-data__input::placeholder {
     font-size: 20px;
     line-height: 30px;
-  }
-
-  .user-data__title {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 46px 42px 0 0;
-    margin: 0 0 76px -2px;
-
-    br {
-      display: none;
-    }
   }
 }

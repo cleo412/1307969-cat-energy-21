@@ -1,14 +1,19 @@
+.form {
+  padding: 0 19px;
+  margin: 0 auto;
+}
+
 .form__title {
   @include title-small;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 19px;
+  padding: 27px 0;
   margin: 0;
 }
 
 .form__text {
   @include text-big;
-  padding: 10px 20px;
+  padding: 10px 0;
   margin: 0 0 30px 0;
 }
 
@@ -23,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
+  padding: 0;
   margin: 0 0 32px 0;
 }
 
@@ -32,7 +37,7 @@
   line-height: 16px;
   color: $black;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 24px 0 0 0;
 }
 
 // todo 768
@@ -48,7 +53,6 @@
   }
 
   .form__text {
-    @include text-big;
     font-size: 20px;
     line-height: 30px;
     padding: 10px 0;
@@ -59,13 +63,14 @@
     flex-direction: row;
     justify-content: space-between;
     padding: 0;
-    margin: 0 0 55px 0;
+    margin: 0 0 70px 0;
   }
 
   .form__subtitle {
+    align-self: flex-start;
     font-size: 16px;
     line-height: 16px;
-    padding: 15px 0;
-    margin: 0;
+    padding: 16px 0;
+    margin: 0 106px 0 0;
   }
 }

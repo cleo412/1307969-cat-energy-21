@@ -20,6 +20,10 @@
   padding: 11px 25px;
 }
 
+.button--form {
+  padding: 7px 25px;
+}
+
 .button--catalog {
   padding: 7px 25px;
 }
@@ -42,9 +46,9 @@
     z-index: 2;
   }
 
-  .form__submit .button {
+  .button--form {
     width: 45%;
     font-size: 20px;
-    padding: 12px 25px;
+    padding: 11px 25px;
   }
 }

@@ -4,8 +4,8 @@
   border-left: none;
   border-right: none;
   list-style: none;
-  padding: 23px 20px 0;
-  margin: 0;
+  padding: 23px 0 0;
+  margin: 0 0 14px 0;
 }
 
 .way__option {
@@ -31,7 +31,7 @@
 
   .way__input:checked + &::after {
     position: absolute;
-    top: 9px;
+    top: 8px;
     left: -31px;
     content: "";
     width: 14px;
@@ -45,43 +45,57 @@
 
 // todo 768
 @media (min-width: 768px) {
+  .way {
+    margin: 0 0 55px 0;
+  }
+
   .way__list {
     border: 1px $dull-grey solid;
-    padding: 23px 27px 10px;
-    margin: 0 0 30px 0;
+    padding: 22px 27px 10px;
   }
 
   .way__label {
-    @include form;
     font-size: 20px;
     line-height: 30px;
+    margin: 0 0 15px 15px;
+
+    .way__input + &::before {
+      top: 0;
+      left: -40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    .way__input:checked + &::after {
+      top: 12px;
+      left: -29px;
+      width: 18px;
+      height: 18px;
+    }
   }
 
-  // .way__input + &::before {
-  //   position: absolute;
-  //   top: 0;
-  //   left: -20px;
-  //   content: "";
-  //   width: 30px;
-  //   height: 30px;
-  //   border: 1px $grey solid;
-  //   border-radius: 50%;
-  // }
+  // todo
+  .way__input + &::before {
+    position: absolute;
+    top: 2px;
+    left: -40px;
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px $grey solid;
+    border-radius: 50%;
+  }
 
-  // .way__input:checked + &::after {
-  //   position: absolute;
-  //   top: 9px;
-  //   left: -11px;
-  //   content: "";
-  //   width: 14px;
-  //   height: 14px;
-  //   background-color: $green;
-  //   border-radius: 50%;
-  //   box-sizing: border-box;
-  //   background-image: none;
-  // }
-
-  .way__option {
-    margin: 0 0 14px 55px;
+  .way__input:checked + &::after {
+    position: absolute;
+    top: 9px;
+    left: -11px;
+    content: "";
+    width: 14px;
+    height: 14px;
+    background-color: $green;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-image: none;
   }
 }

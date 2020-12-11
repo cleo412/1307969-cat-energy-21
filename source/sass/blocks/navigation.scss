@@ -91,8 +91,8 @@
     box-shadow: 0 2px 0 0 $green;
   }
 
-  &::before,
-  &::after {
+  .navigation__item--current::before,
+  .navigation__item--current::after {
     display: none;
   }
 }
