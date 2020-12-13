@@ -1,4 +1,3 @@
-// todo
 .navigation__toggle {
   position: absolute;
   top: -45px;
@@ -67,24 +66,25 @@
   margin: 0;
 }
 
+// todo 768
 @media (min-width: 768px) {
   .navigation {
-    display: flex;
     flex-direction: row;
-    width: 75%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 62%;
     box-sizing: border-box;
-    padding: 42px 0 22px;
+    padding: 42px 0 18px;
     margin: 0;
   }
 
   .navigation__item {
-    width: calc(100% / 3);
     font-size: 18px;
     line-height: 24px;
+    font-weight: 400;
     border-bottom: none;
-    text-align: center;
     padding: 0;
-    margin: 0 10px 0 0;
+    margin: 0 0 16px;
   }
 
   .navigation__item--current {

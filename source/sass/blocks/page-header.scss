@@ -5,9 +5,8 @@
 
 .page-header__logo {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   align-items: center;
-  width: 100%;
   border-bottom: 1px $secondary-grey solid;
   padding: 14px 92px 14px 20px;
 }
@@ -27,19 +26,29 @@
   margin: 0 auto;
 }
 
+// todo
 @media (min-width: 768px) {
   .page-header {
     display: flex;
     justify-content: space-between;
+    margin: 0 30px;
   }
 
   .page-header__logo {
-    width: 25%;
+    width: 27%;
     border-bottom: none;
-    padding: 29px 20px 12px 40px;
+    padding: 29px 0;
+    margin: 0 40px 0 0;
   }
-  // todo
-  .page-header__icon--second {
-    margin: 0 17px 0 29px;
+
+  .page-header__icon-first {
+    width: 60px;
+    height: 50px;
+  }
+
+  .page-header__icon-second {
+    width: 101px;
+    height: 18px;
+    margin: 0 0 0 15px;
   }
 }
