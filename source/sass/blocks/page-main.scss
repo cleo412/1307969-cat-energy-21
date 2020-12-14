@@ -22,7 +22,11 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .page-main {
+  .page-main__program {
     margin: 0 30px;
+  }
+
+  .page-main__illustration {
+    margin: 0;
   }
 }

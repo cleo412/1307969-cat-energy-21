@@ -1,5 +1,4 @@
 .product-extra {
-  // position: relative;
   display: flex;
   flex-direction: column;
   border: none;
@@ -14,7 +13,7 @@
   position: relative;
   font-size: 24px;
   line-height: 24px;
-  padding: 22px 21px 34px 20px;
+  padding: 22px 21px 37px 20px;
   margin: 0;
   z-index: 2;
 
@@ -26,7 +25,7 @@
     content: "";
     height: 2px;
     background-color: $green;
-    margin: 0 0 0 0;
+    margin: 0;
   }
 }
 
@@ -55,7 +54,7 @@
   flex-wrap: wrap;
   border-top: 1px $light-grey solid;
   box-sizing: border-box;
-  padding: 14px 0 15px 0;
+  padding: 16px 0;
   margin: 0;
 }
 
@@ -89,7 +88,7 @@
   @include text;
   width: 50%;
   line-height: 14px;
-  padding: 0 0 0 0;
+  padding: 0;
 }
 
 .product-extra__value:nth-of-type(even) {
@@ -97,7 +96,7 @@
 }
 
 .product-extra .button {
-  margin: 0 0 0 0;
+  margin: 0;
 }
 
 // todo 768
@@ -105,8 +104,8 @@
   .product-extra__title-main {
     font-size: 36px;
     line-height: 36px;
-    padding: 70px 35px 93px 35px;
-    margin: 0 0 0 0;
+    padding: 70px 35px 80px 35px;
+    margin: 0;
 
     &::before {
       position: absolute;
@@ -116,7 +115,7 @@
       content: "";
       height: 2px;
       background-color: $green;
-      margin: 0 0 0 0;
+      margin: 0;
     }
 
     .product-extra__title-main::after {
@@ -127,23 +126,50 @@
       content: "";
       height: 2px;
       background-color: $green;
-      margin: 0 0 0 0;
+      margin: 0;
     }
   }
 
+  .product-extra__menu {
+    padding: 0 0 5px 0;
+    margin: 0;
+  }
+
   .product-extra__item {
+    width: 100%;
     flex-wrap: nowrap;
     flex-direction: column;
     border: 1px $light-grey solid;
     box-sizing: border-box;
-    padding: 14px 0 15px 0;
+    padding: 25px 37px 26px;
     margin: 0;
   }
 
   .product-extra__title {
+    width: 45%;
     font-size: 20px;
     line-height: 20px;
-    padding: 0 0 13px 0;
-    margin: 0;
+    padding: 0 20px 13px 0;
+  }
+
+  .product-extra__box {
+    display: flex;
+    padding: 0;
+    margin: 0 0 13px 0;
+  }
+
+  .product-extra__list {
+    width: 55%;
+    text-align: right;
+  }
+
+  .product-extra__value {
+    width: 72%;
+    font-size: 16px;
+    padding: 6px 0 0 0;
+  }
+
+  .product-extra__value:nth-of-type(even) {
+    width: 28%;
   }
 }

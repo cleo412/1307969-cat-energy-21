@@ -10,7 +10,7 @@
   box-sizing: border-box;
   border: none;
   outline: none;
-  padding: 9px 25px;
+  padding: 7px 25px;
 }
 
 .button--main {
@@ -20,18 +20,10 @@
   padding: 11px 25px;
 }
 
-.button--form {
-  padding: 7px 25px;
-}
-
-.button--catalog {
-  padding: 9px 25px;
-}
-
 .button--special {
   color: $basic-grey;
   background-color: $special-grey;
-  padding: 17px;
+  margin: 0 auto 24px;
 }
 
 // todo 768
@@ -43,7 +35,7 @@
     width: 32%;
     font-size: 20px;
     line-height: 20px;
-    padding: 13px 10px;
+    padding: 17px 10px;
     z-index: 2;
   }
 

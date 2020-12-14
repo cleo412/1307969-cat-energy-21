@@ -61,13 +61,15 @@
   .slider {
     position: relative;
     height: 620px;
-    margin: 0 auto 25px;
+    padding: 0;
+    margin: 0 0 25px;
   }
 
   .slider__foto {
     position: absolute;
     width: 100%;
     height: 620px;
+    background: linear-gradient($white 181px, $special-grey 181px 461px);
     padding: 0 0 21px;
     margin: 0 auto;
     z-index: 2;
