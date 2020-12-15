@@ -54,3 +54,26 @@
     margin: 72px 20px 23px 183px;
   }
 }
+
+// todo 1140
+@media (min-width: 1440px) {
+  .stock {
+    width: 27%;
+    margin: 0;
+  }
+
+  .stock__wrapper {
+    width: 73%;
+    flex-direction: column;
+    margin: 0 0 0 87px;
+  }
+
+  .stock__icon {
+    margin: 58px auto 27px;
+  }
+
+  .stock__text {
+    text-align: center;
+    margin: 23px auto 40px;
+  }
+}

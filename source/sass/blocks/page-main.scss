@@ -22,11 +22,22 @@
 
 // todo 768
 @media (min-width: 768px) {
+  .page-main--catalog {
+    margin: 0 30px;
+  }
+
   .page-main__program {
     margin: 0 30px;
   }
 
   .page-main__illustration {
     margin: 0;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .page-main--catalog {
+    margin: 0 110px;
   }
 }

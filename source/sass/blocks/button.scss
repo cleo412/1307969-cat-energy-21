@@ -54,3 +54,14 @@
     padding: 9px 15px;
   }
 }
+
+// todo 1440
+@media (min-width: 1440px) {
+  .button--catalog {
+    width: 100%;
+  }
+
+  .button--extra {
+    width: 27%;
+  }
+}

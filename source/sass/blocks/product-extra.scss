@@ -8,38 +8,6 @@
   margin: 0 auto;
 }
 
-.product-extra__title-main {
-  @include title-small;
-  position: relative;
-  font-size: 24px;
-  line-height: 24px;
-  padding: 22px 21px 37px 20px;
-  margin: 0;
-  z-index: 2;
-
-  &::before {
-    position: absolute;
-    top: 37px;
-    right: 0;
-    left: 266px;
-    content: "";
-    height: 2px;
-    background-color: $green;
-    margin: 0;
-  }
-}
-
-// .product-extra__title-main::after {
-//   position: absolute;
-//   top: 37px;
-//   left: 0;
-//   right: 755px;
-//   content: "";
-//   height: 2px;
-//   background-color: $green;
-//   margin: 0 0 0 0;
-// }
-
 .product-extra__menu {
   display: flex;
   flex-direction: column;
@@ -52,14 +20,14 @@
 .product-extra__item {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px $light-grey solid;
+  border-top: 1px $grey solid;
   box-sizing: border-box;
   padding: 16px 0;
   margin: 0;
 }
 
 .product-extra__item:last-of-type {
-  border-bottom: 1px $light-grey solid;
+  border-bottom: 1px $grey solid;
 }
 
 .product-extra__title {
@@ -101,35 +69,6 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .product-extra__title-main {
-    font-size: 36px;
-    line-height: 36px;
-    padding: 70px 35px 80px 35px;
-    margin: 0;
-
-    &::before {
-      position: absolute;
-      top: 92px;
-      right: 0;
-      left: 266px;
-      content: "";
-      height: 2px;
-      background-color: $green;
-      margin: 0;
-    }
-
-    .product-extra__title-main::after {
-      position: absolute;
-      top: 37px;
-      left: 0;
-      right: 755px;
-      content: "";
-      height: 2px;
-      background-color: $green;
-      margin: 0;
-    }
-  }
-
   .product-extra__menu {
     padding: 0 0 5px 0;
     margin: 0;
@@ -171,5 +110,49 @@
 
   .product-extra__value:nth-of-type(even) {
     width: 28%;
+  }
+}
+
+// todo 1140
+@media (min-width: 1440px) {
+  .product-extra {
+    width: 73%;
+  }
+
+  .product-extra__item {
+    flex-direction: row;
+    align-items: center;
+    border: none;
+    padding: 0;
+  }
+
+  .product-extra__item:nth-of-type(odd) {
+    border-top: 1px $grey solid;
+    border-bottom: 1px $grey solid;
+  }
+
+  .product-extra__title {
+    width: 47%;
+  }
+
+  .product-extra__box {
+    width: 73%;
+    padding: 24px 0 0;
+  }
+
+  .product-extra__list {
+    width: 50%;
+  }
+
+  .product-extra__value {
+    width: 62%;
+    font-size: 16px;
+    text-align: left;
+    padding: 6px 0 0 0;
+  }
+
+  .product-extra__value:nth-of-type(even) {
+    width: 38%;
+    text-align: center;
   }
 }

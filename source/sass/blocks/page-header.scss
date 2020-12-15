@@ -25,7 +25,7 @@
   margin: 0 auto;
 }
 
-// todo
+// todo 768
 @media (min-width: 768px) {
   .page-header {
     display: flex;
@@ -47,5 +47,12 @@
 
   .page-header__icon-second {
     margin: 0 0 0 15px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .page-header {
+    margin: 0 110px;
   }
 }
