@@ -74,3 +74,14 @@
     margin: 0 106px 0 0;
   }
 }
+
+// todo 1440
+@media (min-width: 1440px) {
+  .form {
+    padding: 0 110px;
+  }
+
+  .form__title {
+    padding: 54px 0 45px;
+  }
+}

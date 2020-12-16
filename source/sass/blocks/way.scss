@@ -4,7 +4,7 @@
   border-left: none;
   border-right: none;
   list-style: none;
-  padding: 23px 0 0;
+  padding: 26px 0 0;
   margin: 0 0 14px 0;
 }
 
@@ -67,8 +67,8 @@
     }
 
     .way__input:checked + &::after {
-      top: 14px;
-      left: -29px;
+      top: 12px;
+      left: -28px;
       width: 18px;
       height: 18px;
     }
@@ -97,5 +97,18 @@
     border-radius: 50%;
     box-sizing: border-box;
     background-image: none;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .way {
+    width: 50%;
+    margin: 0 0 0 80px;
+  }
+
+  .way__list {
+    border: 1px $dull-grey solid;
+    padding: 26px 27px 10px;
   }
 }

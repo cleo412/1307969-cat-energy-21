@@ -9,6 +9,7 @@
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/navigation.scss";
 @import "../sass/blocks/button.scss";
+@import "../sass/blocks/wrapper.scss";
 
 // Index
 @import "../sass/blocks/intro.scss";
@@ -19,10 +20,11 @@
 
 // Form
 @import "../sass/blocks/form.scss";
-@import "../sass/blocks/user-data.scss";
+@import "../sass/blocks/cat-data.scss";
 @import "../sass/blocks/way.scss";
 @import "../sass/blocks/habits.scss";
 @import "../sass/blocks/extra.scss";
+@import "../sass/blocks/owner-data.scss";
 
 // Catalog
 @import "../sass/blocks/product.scss";

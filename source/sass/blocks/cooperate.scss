@@ -45,6 +45,7 @@
 // todo 768
 @media (min-width: 768px) {
   .cooperate {
+    width: 100%;
     justify-content: space-between;
     padding: 65px 30px 45px;
   }
@@ -89,5 +90,30 @@
     @include text;
     font-size: 16px;
     line-height: 53px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .cooperate {
+    width: 39%;
+    background-color: $white;
+    padding: 65px 75px 45px;
+  }
+
+  .cooperate__text {
+    width: 52%;
+    padding: 0;
+  }
+
+  .cooperate__text .cooperate__title,
+  .cooperate__text .cooperate__subtitle {
+    line-height: 25px;
+  }
+
+  .cooperate__address {
+    width: 48%;
+    text-align: left;
+    padding: 0 0 0 70px;
   }
 }
