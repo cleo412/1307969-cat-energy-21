@@ -1,6 +1,4 @@
 .owner-data {
-  display: flex;
-  flex-wrap: wrap;
   border: none;
   padding: 0;
   margin: 0 0 12px 0;
@@ -55,7 +53,7 @@
   .owner-data {
     border: none;
     padding: 0;
-    margin: 0 0 38px 0;
+    margin: 0;
   }
 
   .owner-data__title {
@@ -70,7 +68,7 @@
   }
 
   .owner-data__input-wrapper {
-    margin: 0 0 18px 0;
+    margin: 0 0 17px 0;
   }
 
   .owner-data__label {
@@ -93,10 +91,6 @@
 
 // todo 1440
 @media (min-width: 1440px) {
-  .owner-data {
-    width: 50%;
-  }
-
   .owner-data__title {
     font-size: 36px;
     line-height: 36px;
@@ -106,10 +100,16 @@
 
   .owner-data__list {
     display: flex;
+    flex-wrap: nowrap;
     width: 100%;
   }
 
   .owner-data__input-wrapper {
     width: 50%;
+    margin: 0 0 65px 0;
+  }
+
+  .owner-data__input-wrapper:first-child {
+    margin: 0 75px 56px 0;
   }
 }

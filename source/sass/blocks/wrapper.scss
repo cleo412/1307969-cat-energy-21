@@ -1,7 +1,21 @@
+// todo 768
+@media (min-width: 768px) {
+  .wrapper--extra {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 // todo 1440
 @media (min-width: 1440px) {
   .wrapper {
     display: flex;
     width: 100%;
+  }
+
+  .wrapper--extra {
+    justify-content: flex-start;
   }
 }

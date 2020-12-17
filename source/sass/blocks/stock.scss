@@ -1,4 +1,5 @@
 .stock {
+  position: relative;
   margin: 41px 20px 35px;
 }
 
@@ -16,11 +17,15 @@
 }
 
 .stock__icon {
+  position: absolute;
+  top: 57px;
+  left: calc(50% - 40px);
   width: 78px;
   height: 80px;
   background-image: url("../../img/icon-gift.svg");
   background-repeat: no-repeat;
-  margin: 58px auto 27px;
+  padding: 0;
+  margin: 0;
 }
 
 .stock__text {
@@ -29,7 +34,8 @@
   line-height: 20px;
   color: $white;
   text-align: center;
-  margin: 23px auto 40px;
+  padding: 186px 55px 43px;
+  margin: 0;
 }
 
 // todo 768
@@ -44,14 +50,16 @@
   }
 
   .stock__icon {
+    top: 57px;
+    left: calc(50% - 275px);
     width: 80px;
     height: 83px;
-    margin: 58px 80px;
   }
 
   .stock__text {
     text-align: left;
-    margin: 72px 20px 23px 183px;
+    padding: 72px 124px 68px 423px;
+    margin: 0;
   }
 }
 
@@ -69,11 +77,14 @@
   }
 
   .stock__icon {
-    margin: 58px auto 27px;
+    top: 57px;
+    left: calc(58% - 20px);
+    margin: 0;
   }
 
   .stock__text {
     text-align: center;
-    margin: 23px auto 40px;
+    padding: 187px 30px 40px;
+    margin: 0;
   }
 }

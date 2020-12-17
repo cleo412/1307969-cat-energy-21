@@ -1,7 +1,6 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  // min-height: 712px;
   padding: 0;
   margin: 0 auto;
 }
@@ -12,16 +11,15 @@
 
 .page-footer__map {
   width: 100%;
-  // min-height: 362px;
+  min-height: 362px;
+  background-color: url("../../img/map.jpg");
   overflow: hidden;
-  border: none;
   padding: 0;
   margin: 0 auto;
 }
 
 .page-footer__box {
   width: 100%;
-  background-color: $special-grey;
   margin: 0 auto;
 }
 
@@ -56,10 +54,6 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .page-footer {
-    min-height: 768px;
-  }
-
   .page-footer__box {
     display: flex;
     justify-content: space-between;
@@ -97,12 +91,7 @@
 @media (min-width: 1440px) {
   .page-footer {
     position: relative;
-    // min-height: 549px;
   }
-
-  // .page-footer__map {
-  //   min-height: 400px;
-  // }
 
   .page-footer__cooperate {
     position: absolute;
@@ -110,8 +99,4 @@
     right: 767px;
     z-index: 10;
   }
-
-  // .page-footer__box {
-  //   width: 100%;
-  // }
 }

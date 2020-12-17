@@ -8,8 +8,8 @@
 
 .habits__title {
   @include title-form;
-  padding: 0;
-  margin: 0 0 40px 0;
+  padding: 0 0 40px 0;
+  margin: 0;
 }
 
 .habits__text {
@@ -36,8 +36,7 @@
   .habits__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 10px 42px 0 0;
-    margin: 0 0 75px 0;
+    padding: 50px 0 75px 0;
   }
 
   .habits__text::placeholder {
@@ -47,5 +46,12 @@
 
   .habits__text {
     padding: 10px 17px 26px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .habits__title {
+    padding: 0 0 75px 0;
   }
 }

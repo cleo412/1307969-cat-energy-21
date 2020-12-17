@@ -1,5 +1,6 @@
 .cooperate {
   display: flex;
+  width: 100%;
   list-style: none;
   text-align: left;
   background-color: $special-grey;
@@ -16,7 +17,8 @@
 .cooperate__text {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 47%;
+  padding: 0 10px 0 0;
 }
 
 .cooperate__text .cooperate__title {
