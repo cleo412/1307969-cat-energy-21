@@ -30,13 +30,13 @@
 @media (min-width: 768px) {
   .button--main {
     position: absolute;
-    top: 260px;
-    left: 112px;
+    top: 261px;
+    left: calc(41% - 203px);
     width: 32%;
     font-size: 20px;
     line-height: 20px;
     padding: 17px 10px;
-    z-index: 2;
+    z-index: 5;
   }
 
   .button--form {
@@ -67,5 +67,16 @@
 
   .button--form {
     width: 47%;
+  }
+
+  .button--main {
+    position: absolute;
+    top: 322px;
+    left: 190px;
+    width: 17%;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 10px;
+    z-index: 2;
   }
 }

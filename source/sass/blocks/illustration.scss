@@ -1,6 +1,6 @@
 .illustration {
   background-color: $smoky-grey;
-  padding: 0 20px 22px;
+  padding: 0 20px 23px;
 }
 
 .illustration__title {
@@ -134,5 +134,15 @@
 
   .illustration__slider {
     margin: 0 auto 25px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .illustration__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 123px 0 63px;
+    margin: 0;
   }
 }

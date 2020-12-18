@@ -1,5 +1,5 @@
 .program__item {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -9,10 +9,10 @@
   margin: 22px auto 0;
 }
 
-.program__icon {
-  position: absolute;
-  background-repeat: no-repeat;
-}
+// .program__icon {
+//   position: absolute;
+//   background-repeat: no-repeat;
+// }
 
 // .program__icon--slim {
 //   top: 22px;
@@ -86,5 +86,30 @@
     line-height: 30px;
     border-top: none;
     padding: 17px 255px 57px 0;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .program {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__item {
+    width: 47%;
+  }
+
+  .program__title {
+    text-align: left;
+    padding: 75px 0 75px 163px;
+    margin: 0;
+  }
+
+  .program__item:last-child .program__subtitle,
+  .program__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 5px 10px 0;
   }
 }
