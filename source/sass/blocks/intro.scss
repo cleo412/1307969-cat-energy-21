@@ -1,5 +1,6 @@
 .intro {
   position: relative;
+  box-sizing: border-box;
 }
 
 .intro__img {
@@ -9,7 +10,7 @@
   background-size: cover;
   background-position: center, center;
   background-color: $green;
-  margin: 0 auto 139px;
+  margin: 2px auto 139px;
   z-index: 1;
 }
 

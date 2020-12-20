@@ -1,14 +1,15 @@
 .slider {
   display: flex;
   flex-direction: column;
+  background-color: $smoky-grey;
   padding: 0;
+  margin: 0 auto;
 }
 
 .slider__foto {
-  width: 311px;
-  height: 232px;
-  background-color: $smoky-grey;
-  margin: 19px auto;
+  width: 100%;
+  min-height: 232px;
+  margin: 0 auto 17px;
 }
 
 // .slider__foto slider__foto--fat {}
@@ -17,10 +18,10 @@
 
 .slider__scroll {
   display: flex;
-  width: 78%;
+  width: 62%;
   justify-content: space-between;
   padding: 0;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 .slider__phrase {
@@ -29,15 +30,11 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  margin: 0 5px;
-}
-
-.slider__phrase:first-child {
-  margin: 0 0 0 15px;
+  margin: 0;
 }
 
 .slider__toggle {
-  width: 37%;
+  width: 41%;
   border: 1px $grey solid;
   box-sizing: border-box;
   border-radius: 6px;
@@ -60,25 +57,25 @@
 @media (min-width: 768px) {
   .slider {
     position: relative;
-    height: 620px;
+    min-height: 620px;
+    background: linear-gradient($white 181px, $special-grey 181px 461px);
     padding: 0;
-    margin: 0 0 25px;
+    margin: 0 auto;
   }
 
   .slider__foto {
-    position: absolute;
+    // position: absolute;
     width: 100%;
-    height: 620px;
-    background: linear-gradient($white 181px, $special-grey 181px 461px);
-    padding: 0 0 21px;
+    min-height: 620px;
+    padding: 0 0 25px;
     margin: 0 auto;
     z-index: 2;
   }
 
   .slider__toggle {
     position: absolute;
-    left: 21%;
-    bottom: 41px;
+    left: calc(50% - 223px);
+    bottom: 64px;
     width: 56%;
     height: 6px;
     background-color: $grey;
@@ -99,10 +96,14 @@
     z-index: 4;
   }
 
+  .slider__scroll {
+    margin: 0 auto;
+  }
+
   .slider__phrase {
     position: absolute;
-    right: 96px;
-    bottom: 47px;
+    right: calc(50% - 283px);
+    bottom: 71px;
     width: 49px;
     font-size: 20px;
     line-height: 30px;
@@ -111,6 +112,29 @@
   }
 
   .slider__phrase:first-child {
-    left: 83px;
+    left: 98px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .slider {
+    width: 60%;
+    background: linear-gradient($white 260px, $special-grey 260px 400px);
+    padding: 0 110px 0 0;
+    margin: 0;
+  }
+
+  .slider__toggle {
+    width: 51%;
+    left: calc(50% - 197px);
+  }
+
+  .slider__phrase {
+    right: calc(50% - 312px);
+  }
+
+  .slider__phrase:first-child {
+    left: 160px;
   }
 }

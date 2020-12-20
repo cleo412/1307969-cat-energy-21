@@ -7,8 +7,8 @@
   @include title-small;
   font-size: 36px;
   line-height: 40px;
-  padding: 24px 0;
-  margin: 0 0 10px 0;
+  padding: 26px 0 34px;
+  margin: 0;
 }
 
 .illustration__text {
@@ -45,8 +45,8 @@
 .illustration__value {
   @include text;
   position: absolute;
-  left: calc(50% - 39px);
-  bottom: -31%;
+  left: calc(50% - 38px);
+  bottom: -15px;
   display: inline-block;
   font-size: 12px;
   line-height: 12px;
@@ -62,10 +62,6 @@
   line-height: 20px;
   box-sizing: border-box;
   padding: 35px 0;
-  margin: 0 auto;
-}
-
-.illustration__slider {
   margin: 0 auto;
 }
 
@@ -105,7 +101,6 @@
   }
 
   .illustration__name {
-    @include title-big;
     font-size: 30px;
     line-height: 37px;
   }
@@ -117,6 +112,10 @@
     line-height: 14px;
     background-color: $white;
     padding: 0;
+
+    br {
+      display: none;
+    }
   }
 
   .illustration__value--right {
@@ -131,18 +130,51 @@
     padding: 8px 2px 17px 123px;
     margin: 0;
   }
-
-  .illustration__slider {
-    margin: 0 auto 25px;
-  }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
+  .illustration {
+    flex-direction: column;
+    width: 40%;
+    background: linear-gradient($white 260px, $special-grey 260px 400px);
+    padding: 0 0 0 110px;
+  }
+
   .illustration__title {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 123px 0 63px;
+    padding: 125px 0 145px;
     margin: 0;
+  }
+
+  .illustration__text {
+    padding: 0 55px 0 0;
+    margin: 0 0 67px 0;
+  }
+
+  .illustration__list {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0 0 70px 0;
+  }
+
+  .illustration__box {
+    width: 32%;
+    margin: 0 50px 55px 0;
+  }
+
+  .illustration__name {
+    width: 50%;
+  }
+
+  .illustration__total {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+
+  .illustration__total-text {
+    margin: 0 64px 0 0;
   }
 }

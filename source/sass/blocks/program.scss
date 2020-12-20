@@ -1,10 +1,8 @@
 .program__item {
-  // position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: $special-grey;
-  box-sizing: border-box;
   padding: 30px 20px 10px;
   margin: 22px auto 0;
 }
@@ -53,7 +51,7 @@
   text-transform: uppercase;
   background-color: $special-grey;
   border-top: 2px $dull-grey solid;
-  padding: 17px 30px 12px 0;
+  padding: 19px 30px 12px 0;
 }
 
 // todo 768
@@ -100,6 +98,10 @@
     width: 47%;
   }
 
+  .program__item:first-child {
+    margin: 0 80px 30px 0;
+  }
+
   .program__title {
     text-align: left;
     padding: 75px 0 75px 163px;
@@ -110,6 +112,6 @@
   .program__subtitle {
     font-size: 16px;
     line-height: 24px;
-    padding: 0 5px 10px 0;
+    padding: 0 0 10px 0;
   }
 }
