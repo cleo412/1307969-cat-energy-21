@@ -1,33 +1,11 @@
 .bonus__title-main {
   @include title-small;
   position: relative;
+  width: auto;
   font-size: 24px;
   line-height: 24px;
-  padding: 22px 0 37px;
-  margin: 0;
-  z-index: 2;
-
-  &::before {
-    position: absolute;
-    top: 37px;
-    right: 0;
-    left: 266px;
-    content: "";
-    height: 2px;
-    background-color: $green;
-    margin: 0;
-  }
-
-  // .bonus__title-main::after {
-  //   position: absolute;
-  //   top: 37px;
-  //   left: 0;
-  //   right: 755px;
-  //   content: "";
-  //   height: 2px;
-  //   background-color: $green;
-  //   margin: 0 0 0 0;
-  // }
+  padding: 24px 0 0 0;
+  margin: 0 0 35px 0;
 }
 
 // todo 768
@@ -37,28 +15,6 @@
     line-height: 36px;
     padding: 70px 35px 80px 35px;
     margin: 0;
-
-    &::before {
-      position: absolute;
-      top: 92px;
-      right: 0;
-      left: 266px;
-      content: "";
-      height: 2px;
-      background-color: $green;
-      margin: 0;
-    }
-
-    .bonus__title-main::after {
-      position: absolute;
-      top: 37px;
-      left: 0;
-      right: 755px;
-      content: "";
-      height: 2px;
-      background-color: $green;
-      margin: 0;
-    }
   }
 }
 

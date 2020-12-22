@@ -5,20 +5,11 @@
 
 .page-header__logo {
   display: flex;
+  width: 59%;
   align-items: center;
+  justify-content: space-between;
   border-bottom: 1px $secondary-grey solid;
-  padding: 14px 92px 14px 20px;
-}
-
-.page-header__icon-first {
-  width: 33px;
-  height: 38px;
-}
-
-.page-header__icon-second {
-  width: 101px;
-  height: 18px;
-  margin: 0 0 0 54px;
+  padding: 13px 92px 15px 20px;
 }
 
 .page-header__navigation {

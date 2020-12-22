@@ -92,6 +92,9 @@
     flex-direction: column;
     align-items: flex-start;
     width: 50%;
+    // background-image: url("../../img/1.png");
+    background-repeat: no-repeat;
+    background-position: 45% 0%;
     box-sizing: border-box;
     margin: 0;
   }
@@ -148,6 +151,7 @@
 
   .description__item {
     width: 25%;
+    // background-position: 53% 8%;
   }
 
   .description__item--leaf {

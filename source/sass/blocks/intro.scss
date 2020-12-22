@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.intro__wrap {
+  margin: 0 auto;
+}
+
 .intro__img {
   min-height: 302px;
   background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
@@ -17,10 +21,10 @@
 .intro__slogan {
   position: absolute;
   top: 0;
-  left: calc(50% - 162px);
+  left: calc(50% - 160px);
+  right: calc(50% - 160px);
   z-index: 2;
   padding: 0;
-  margin: 0;
 }
 
 .intro__main-img {
@@ -47,7 +51,7 @@
   .intro__img {
     background-color: $white;
     background-image: none;
-    margin: 0 auto 540px;
+    margin: 0 auto 547px;
   }
 
   .intro__slogan {

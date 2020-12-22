@@ -12,14 +12,17 @@
 .page-footer__map {
   width: 100%;
   min-height: 362px;
-  background-color: url("../../img/map.jpg");
+  // background-color: url("../../img/map.jpg");
   overflow: hidden;
   padding: 0;
   margin: 0 auto;
 }
 
-.page-footer__box {
-  width: 100%;
+.page-footer__logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 44px 0 33px;
   margin: 0 auto;
 }
 
@@ -69,15 +72,6 @@
     border: none;
     padding: 0;
   }
-
-  // .page-footer__logo {
-  //   padding: 0;
-  //   margin: 0 auto 0;
-  // }
-
-  // .page-footer__logo--form {
-  //   padding: 0;
-  // }
 
   .page-footer__copyright {
     display: flex;
