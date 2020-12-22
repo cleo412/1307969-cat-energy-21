@@ -51,7 +51,7 @@
 
   .stock__icon {
     top: 57px;
-    left: calc(50% - 275px);
+    left: 79px;
     width: 80px;
     height: 83px;
   }
@@ -63,7 +63,7 @@
   }
 }
 
-// todo 1140
+// todo 1440
 @media (min-width: 1440px) {
   .stock {
     width: 27%;
@@ -73,12 +73,12 @@
   .stock__wrapper {
     width: 73%;
     flex-direction: column;
-    margin: 0 0 0 87px;
+    margin: 0 0 0 86px;
   }
 
   .stock__icon {
     top: 57px;
-    left: calc(58% - 20px);
+    left: calc(50% + 4px);
     margin: 0;
   }
 
