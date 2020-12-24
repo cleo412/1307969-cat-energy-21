@@ -1,53 +1,6 @@
-.page-main__program {
-  margin: 0 20px 15px;
-}
-
-.page-main__description {
-  margin: 0 auto;
-}
-
-.page-main__illustration {
-  margin: 0 auto;
-}
-
-.page-main--catalog {
-  margin: 0 20px;
-}
-
-// todo 768
-@media (min-width: 768px) {
-  .page-main__program {
-    margin: 0 30px;
-  }
-
-  .page-main__description {
-    margin: 0 30px;
-  }
-
-  .page-main__illustration {
-    margin: 0;
-  }
-
-  .page-main--catalog {
-    margin: 0 30px;
-  }
-}
-
 // todo 1440
 @media (min-width: 1440px) {
-  .page-main__intro {
-    margin: 0 0 322px 0;
-  }
-
-  .page-main__program {
-    margin: 0 110px;
-  }
-
-  .page-main__description {
-    margin: 0 110px;
-  }
-
-  .page-main--catalog {
-    margin: 0 110px;
+  .page-main__container {
+    display: flex;
   }
 }

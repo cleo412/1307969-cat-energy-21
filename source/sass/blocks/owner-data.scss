@@ -1,20 +1,31 @@
 .owner-data {
+  position: relative;
   border: none;
-  padding: 0;
-  margin: 0 0 12px 0;
+  padding: 0 0 12px;
+}
+
+.owner-data__container {
+  margin: 0 auto;
 }
 
 .owner-data__title {
   @include title-form;
-  padding: 15px 0 0 0;
+  width: 68%;
+  background-color: $white;
+  padding: 15px 20px 0;
   margin: 0 0 31px 0;
+
+  &::after {
+    @include line;
+    top: 29px;
+  }
 }
 
 .owner-data__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
 }
 
@@ -31,7 +42,6 @@
 
 .owner-data__input {
   // min-width: 0; // for firefox
-  // line-height: 3;
   flex-grow: 1;
   color: $white;
   border: 1px solid $grey;
@@ -44,9 +54,9 @@
 }
 
 // /*for Firefox*/
-// .user-data__input::-moz-placeholder {
-//   opacity: 1;
-// }
+.owner-data__input::-moz-placeholder {
+  @include form;
+}
 
 // todo 768
 @media (min-width: 768px) {
@@ -57,18 +67,23 @@
   }
 
   .owner-data__title {
+    width: 76%;
     font-size: 36px;
     line-height: 36px;
-    padding: 17px 42px 0 0;
-    margin: 0 0 75px 0;
+    padding: 30px 35px 0;
+    margin: 0 0 75px 35px;
 
-    br {
-      display: none;
+    &::after {
+      top: 55px;
     }
   }
 
+  .owner-data__list {
+    padding: 0 70px;
+  }
+
   .owner-data__input-wrapper {
-    margin: 0 0 17px 0;
+    margin: 0 0 20px 0;
   }
 
   .owner-data__label {
@@ -92,16 +107,21 @@
 // todo 1440
 @media (min-width: 1440px) {
   .owner-data__title {
+    width: 46%;
     font-size: 36px;
     line-height: 36px;
-    padding: 0 42px 0 0;
+    padding: 0 0 0 110px;
     margin: 0 0 75px 0;
+
+    &::after {
+      top: 21px;
+    }
   }
 
   .owner-data__list {
     display: flex;
     flex-wrap: nowrap;
-    width: 100%;
+    padding: 0 110px;
   }
 
   .owner-data__input-wrapper {

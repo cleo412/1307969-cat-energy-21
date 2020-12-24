@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.intro__container {
+  margin: 0 auto;
+}
+
 .intro__wrap {
   margin: 0 auto;
 }
@@ -69,6 +73,10 @@
 
 // todo 1440
 @media (min-width: 1440px) {
+  .intro {
+    margin: 0 0 322px 0;
+  }
+
   .intro__wrap {
     flex-direction: row;
     width: 100%;

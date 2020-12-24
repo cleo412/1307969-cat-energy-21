@@ -2,8 +2,11 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  padding: 0;
-  margin: 0 0 7px 0;
+  padding: 0 20px 7px;
+}
+
+.cat-data__container {
+  margin: 0 auto;
 }
 
 .cat-data__list {
@@ -26,8 +29,6 @@
 }
 
 .cat-data__input {
-  // min-width: 0; // for firefox
-  // line-height: 3;
   flex-grow: 1;
   color: $white;
   border: 1px solid $aluminum-grey;
@@ -40,16 +41,16 @@
 }
 
 // /*for Firefox*/
-// .user-data__input::-moz-placeholder {
-//   opacity: 1;
-// }
+.user-data__input::-moz-placeholder {
+  @include form;
+}
 
 // todo 768
 @media (min-width: 768px) {
   .cat-data {
     border: none;
-    padding: 0;
-    margin: 0 0 55px 0;
+    padding: 0 70px 55px;
+    margin: 0;
   }
 
   .cat-data__input-wrapper {
@@ -78,7 +79,8 @@
 @media (min-width: 1440px) {
   .cat-data {
     display: flex;
-    width: 47%;
-    margin: 0 80px 55px 0;
+    width: 48%;
+    padding: 0;
+    margin: 0 73px 55px 0;
   }
 }

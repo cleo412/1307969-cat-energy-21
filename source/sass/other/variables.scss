@@ -93,3 +93,13 @@ $arial: ("Arial", sans-serif);
   flex-basis: 100%;
   padding: 0;
 }
+
+@mixin line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  content: "";
+  height: 2px;
+  background-color: $green;
+  z-index: -1;
+}

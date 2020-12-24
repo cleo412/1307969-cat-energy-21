@@ -33,17 +33,6 @@
   }
 }
 
-// .navigation--closed .navigation__toggle {
-//   position: absolute;
-//   top: 22px;
-//   right: 20px;
-//   content: " ";
-//   width: 24px;
-//   height: 2px;
-//   background-color: $black;
-//   box-shadow: 0 6px 0 0 $black, 0 12px 0 0 $black;
-// }
-
 .navigation {
   position: relative;
   display: flex;
@@ -64,7 +53,6 @@
   border-bottom: 1px $secondary-grey solid;
   box-sizing: border-box;
   padding: 22px 20px;
-  margin: 0;
 }
 
 .navigation__item:last-child {

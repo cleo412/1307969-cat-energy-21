@@ -1,11 +1,9 @@
 .stock {
-  position: relative;
-  margin: 38px 0 35px;
+  margin: 38px 20px 35px;
 }
 
 .stock__wrapper {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   width: 100%;
   background-image: url("../../img/bg-catalog.jpg");
   background-repeat: no-repeat;
@@ -41,12 +39,8 @@
 // todo 768
 @media (min-width: 768px) {
   .stock {
-    margin: 66px 0 77px;
-  }
-
-  .stock__wrapper {
-    flex-direction: row;
     padding: 0;
+    margin: 66px 0 77px;
   }
 
   .stock__icon {
@@ -66,19 +60,14 @@
 // todo 1440
 @media (min-width: 1440px) {
   .stock {
-    width: 27%;
+    width: 22%;
+    padding: 0 35px 0 0;
     margin: 0;
-  }
-
-  .stock__wrapper {
-    width: 73%;
-    flex-direction: column;
-    margin: 0 0 0 86px;
   }
 
   .stock__icon {
     top: 57px;
-    left: calc(50% + 4px);
+    left: calc(50% - 34px);
     margin: 0;
   }
 

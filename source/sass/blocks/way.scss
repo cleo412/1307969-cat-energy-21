@@ -1,11 +1,19 @@
-.way__list {
+.way {
   border-top: 1px $dull-grey solid;
   border-bottom: 1px $dull-grey solid;
   border-left: none;
   border-right: none;
+  padding: 0 20px;
+}
+
+.way__container {
+  margin: 0 auto;
+}
+
+.way__list {
   list-style: none;
-  padding: 26px 0 0;
-  margin: 0 0 14px 0;
+  padding: 26px 0 14px;
+  margin: 0;
 }
 
 .way__option {
@@ -46,12 +54,19 @@
 // todo 768
 @media (min-width: 768px) {
   .way {
+    border: none;
+    padding: 0;
     margin: 0 0 44px 0;
   }
 
   .way__list {
     border: 1px $dull-grey solid;
-    padding: 22px 27px 10px;
+    padding: 22px 0 10px;
+    margin: 0 70px;
+  }
+
+  .way__option {
+    margin: 0 0 14px 67px;
   }
 
   .way__label {
@@ -109,5 +124,10 @@
   .way__list {
     border: 1px $dull-grey solid;
     padding: 26px 27px 10px;
+    margin: 0;
+  }
+
+  .way__option {
+    margin: 0 0 14px 37px;
   }
 }

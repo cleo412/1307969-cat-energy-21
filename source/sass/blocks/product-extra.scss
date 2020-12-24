@@ -5,7 +5,6 @@
   box-sizing: border-box;
   z-index: 1;
   padding: 0;
-  margin: 0 auto;
 }
 
 .product-extra__menu {
@@ -14,7 +13,7 @@
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 20px;
 }
 
 .product-extra__item {
@@ -116,7 +115,9 @@
 // todo 1140
 @media (min-width: 1440px) {
   .product-extra {
-    width: 73%;
+    width: 83%;
+    padding: 0 0 0 35px;
+    margin: 0 88px -6px 0;
   }
 
   .product-extra__item {
@@ -136,7 +137,7 @@
   }
 
   .product-extra__box {
-    width: 73%;
+    width: 76%;
     padding: 24px 0 0;
   }
 

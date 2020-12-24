@@ -34,11 +34,12 @@
     <!-- todo form -->
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <h1 class="form__title">Подбор программы</h1>
-      <p class="form__text">Заполните анкету, и мы подберем<br>программу питания для вашего кота </p>
-      <div class="form__list">
-        <div class="wrapper">
-          <section class="form__item cat-data">
-            <!--todo: cat-data-->
+      <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота </p>
+      <!-- <div class="form__list"> -->
+      <div class="form__container">
+        <section class="cat-data">
+          <!--todo: cat-data-->
+          <div class="cat-data__container">
             <h2 class="visually-hidden">Данные кота</h2>
             <ul class="cat-data__list">
               <li class="cat-data__input-wrapper">
@@ -56,9 +57,11 @@
                 <input class="cat-data__input" tabindex="7" type="text" name="user-age" id="user-age" placeholder="7">
               </li>
             </ul>
-          </section>
-          <section class="form__item way">
-            <!--todo: way-->
+          </div>
+        </section>
+        <section class="way">
+          <!--todo: way-->
+          <div class="way__container">
             <h2 class="visually-hidden">Виды программ для кота</h2>
             <ul class="way__list">
               <li class="way__option">
@@ -74,11 +77,13 @@
                 <label class="way__label" for="cat-advice">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
-          </section>
-        </div>
+          </div>
+        </section>
+      </div>
+      <section class="owner-data">
         <!--todo: owner-data-->
-        <section class="form__item owner-data">
-          <h2 class="owner-data__title"> Контактные данные&nbsp;<br>(владельца кота)</h2>
+        <div class="owner-data__container">
+          <h2 class="owner-data__title"> Контактные&nbsp;данные (владельца кота)</h2>
           <ul class="owner-data__list">
             <li class="owner-data__input-wrapper">
               <label class="owner-data__label">E-mail:*</label>
@@ -91,18 +96,22 @@
                 placeholder="8 (960) 900-60-90" required>
             </li>
           </ul>
-        </section>
+        </div>
+      </section>
+      <section class="habits">
         <!--todo: habits-->
-        <section class="form__item habits">
+        <div class="habits__container">
           <h2 class="habits__title">Комментарий</h2>
           <label class="visually-hidden" for="habits-cat">Расскажите обо всех повадках кота</label>
           <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
             placeholder="Расскажите обо всех повадках кота"></textarea>
-        </section>
+        </div>
+      </section>
+      <section class="extra">
         <!--todo: extra-->
-        <section class="form__item extra">
+        <div class="extra__container">
           <h3 class="extra__title">Дополнительно</h3>
-          <div class="wrapper wrapper--extra">
+          <div class="extra__list">
             <div class="extra__option">
               <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar" checked>
               <label class="extra__label" for="sugar">Сахарозаменитель</label>
@@ -120,11 +129,11 @@
               <label class="extra__label" for="vitamins">Витамины</label>
             </div>
           </div>
-        </section>
-        <div class="form__irem form__submit">
-          <button class="button button--form" tabindex="17" type="submit">Отправить заявку</button>
-          <p class="form__subtitle">* — Обязательные поля</p>
         </div>
+      </section>
+      <div class="form__submit">
+        <button class="button button--form" tabindex="17" type="submit">Отправить заявку</button>
+        <p class="form__subtitle">* — Обязательные поля</p>
       </div>
     </form>
   </main>

@@ -1,15 +1,23 @@
 .habits {
   width: 100%;
   border: none;
-  // border-top: 2px $green solid;
   padding: 0;
-  margin: 0 0 14px 0;
+  margin: 0 20px 14px;
+}
+
+.habits__container {
+  margin: 0 auto;
 }
 
 .habits__title {
   @include title-form;
   padding: 0 0 40px 0;
   margin: 0;
+
+  // &::after {
+  // @include line;
+  //   top: 29px;
+  // }
 }
 
 .habits__text {
@@ -19,7 +27,7 @@
   box-sizing: border-box;
   outline: none;
   padding: 8px 14px 0 14px;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .habits__text::placeholder {
@@ -30,14 +38,21 @@
 @media (min-width: 768px) {
   .habits {
     padding: 0;
-    margin: 0 0 60px 0;
+    margin: 0 0 56px 0;
   }
 
   .habits__title {
+    width: 40%;
     font-size: 36px;
     line-height: 36px;
-    padding: 50px 0 75px 0;
+    padding: 50px 35px 0;
+    margin: 0 0 75px 35px;
   }
+
+  // &::after {  //
+  //   top: 55px;
+  // }
+  // }
 
   .habits__text::placeholder {
     font-size: 20px;
@@ -46,12 +61,28 @@
 
   .habits__text {
     padding: 10px 17px 26px;
+    margin: 0 70px;
   }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
+  .habits {
+    margin: 0 0 63px 0;
+  }
+
   .habits__title {
-    padding: 0 0 75px 0;
+    padding: 0 0 0 110px;
+    margin: 0 0 83px 0;
+
+    &::after {
+      top: 21px;
+    }
+  }
+
+  .habits__text {
+    width: 85%;
+    padding: 2px 17px 26px;
+    margin: 0 110px;
   }
 }

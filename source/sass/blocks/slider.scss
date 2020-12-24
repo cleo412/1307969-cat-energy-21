@@ -2,7 +2,10 @@
   display: flex;
   flex-direction: column;
   background-color: $smoky-grey;
-  padding: 0;
+}
+
+.slider__container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -10,12 +13,13 @@
   position: relative;
   display: flex;
   width: 100%;
+  margin: 0 auto;
 }
 
 .slider__foto {
   width: 100%;
   min-height: 232px;
-  margin: 0 auto 40px;
+  margin: 0 0 40px;
 
   &:first-child {
     position: absolute;
@@ -34,7 +38,7 @@
   margin: 0 auto 20px;
 }
 
-.slider__phrase {
+.slider__word {
   @include title-big;
   display: block;
   font-size: 16px;
@@ -43,7 +47,7 @@
   margin: 0;
 }
 
-.slider__toggle {
+.slider__scale {
   width: 41%;
   border: 1px $grey solid;
   box-sizing: border-box;
@@ -53,14 +57,11 @@
   margin: 5px 5px 18px;
 }
 
-.slider__scale {
+.slider__toggle {
+  width: 43%;
   border-radius: 6px;
   background-color: $green;
   padding: 4px;
-}
-
-.slider__scale--current {
-  width: 43%;
 }
 
 // todo 768
@@ -95,7 +96,7 @@
     margin: 0 auto 62px;
   }
 
-  .slider__toggle {
+  .slider__scale {
     position: relative;
     width: 76%;
     height: 6px;
@@ -104,7 +105,7 @@
     margin: 13px 5px 18px;
   }
 
-  .slider__scale {
+  .slider__toggle {
     position: absolute;
     left: 46%;
     bottom: -15px;
@@ -117,7 +118,7 @@
     z-index: 14;
   }
 
-  .slider__phrase {
+  .slider__word {
     width: 9%;
     font-size: 20px;
     line-height: 30px;
@@ -129,9 +130,14 @@
 @media (min-width: 1440px) {
   .slider {
     width: 50%;
-    background: linear-gradient($white 260px, $smoky-grey 260px 400px);
+    background: linear-gradient($white 211px, $smoky-grey 211px 400px);
     margin: 0;
     padding: 0 70px 0 0;
+  }
+
+  .slider__container {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .slider__box {
@@ -145,32 +151,32 @@
 
     &:first-child {
       width: 55%;
-      min-height: 654px;
-      background: linear-gradient($white 260px, $special-grey 260px 300px);
+      min-height: 674px;
+      background: linear-gradient($white 211px, $special-grey 211px 368px);
     }
 
     &:last-child {
       min-height: 536px;
-      background: linear-gradient($white 260px, $smoky-grey 260px 300px);
+      background: linear-gradient($white 211px, $smoky-grey 211px 300px);
     }
   }
 
   .slider__scroll {
-    width: 72%;
+    width: 73%;
     margin: 0 auto 61px;
   }
 
-  .slider__toggle {
+  .slider__scale {
     width: 75%;
     left: calc(50% - 284px);
   }
 
-  .slider__scale {
-    left: 46%;
-    bottom: -20px;
+  .slider__toggle {
+    left: 45%;
+    bottom: -15px;
   }
 
-  .slider__phrase {
+  .slider__word {
     margin: 0;
   }
 }

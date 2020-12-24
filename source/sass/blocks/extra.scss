@@ -2,20 +2,28 @@
   width: 100%;
   border: none;
   padding: 0;
-  margin: 0 0 21px 0;
+  margin: 0 20px 20px;
+}
+
+.extra__container {
+  margin: 0 auto;
 }
 
 .extra__title {
   @include title-form;
   padding: 9px 0 0 0;
-  margin: 0 0 33px 0;
+  margin: 0 0 31px 0;
+
+  // &::after {
+  // @include line;
+  //   top: 29px;
+  // }
 }
 
 .extra__option {
   position: relative;
-  display: block;
   box-sizing: border-box;
-  padding: 4px;
+  padding: 6px 4px 0;
   margin: 0 0 17px 40px;
 }
 
@@ -25,7 +33,7 @@
 
   .extra__input + &::before {
     position: absolute;
-    top: -4px;
+    top: 0;
     left: -44px;
     content: "";
     width: 26px;
@@ -49,26 +57,33 @@
   .extra {
     width: 100%;
     padding: 0;
-    margin: 0 0 18px 0;
+    margin: 0 0 18px;
   }
 
   .extra__title {
-    width: 100%;
+    width: 55%;
     font-size: 36px;
     line-height: 36px;
-    padding: 0;
-    margin: 0 0 62px 0;
+    padding: 0 35px;
+    margin: 0 0 62px 35px;
+
+    // &::after {
+    //   top: 55px;
+    // }
+  }
+
+  .extra__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 70px;
   }
 
   .extra__option {
     width: 45%;
     padding: 0 0 42px 59px;
     margin: 0;
-  }
-
-  .extra__option:nth-of-type(odd) {
-    width: 46%;
-    margin: 0 28px 0 0;
   }
 
   .extra__label {
@@ -92,15 +107,25 @@
 
 // todo 1440
 @media (min-width: 1440px) {
+  .extra__title {
+    width: 55%;
+    padding: 0 0 0 110px;
+    margin: 0 0 62px 0;
+  }
+
+  .extra__list {
+    margin: 0 110px;
+  }
+
   .extra__option,
   .extra__option:nth-of-type(odd) {
     width: 22%;
     padding: 0 80px 42px 59px;
-    margin: 0 56px 0 0;
+    margin: 0 10px 0 0;
   }
 
   .extra__option:nth-of-type(4) {
-    padding: 0 0 48px 116px;
+    padding: 0 0 48px 64px;
     margin: 0;
   }
 
