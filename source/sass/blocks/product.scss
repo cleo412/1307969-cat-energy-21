@@ -2,6 +2,10 @@
   margin: 0 20px;
 }
 
+.product__container {
+  margin: 0 auto;
+}
+
 .product__title-main {
   @include title-small;
   font-size: 36px;

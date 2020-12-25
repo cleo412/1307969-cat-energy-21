@@ -88,7 +88,7 @@
 
   .slider__scroll {
     position: absolute;
-    bottom: 0;
+    bottom: 4px;
     left: 0;
     right: 0;
     width: 74%;
@@ -123,6 +123,7 @@
     font-size: 20px;
     line-height: 30px;
     box-shadow: 0 1px 0 0 $dull-grey;
+    margin: 0 0 4px 0;
   }
 }
 
@@ -130,7 +131,7 @@
 @media (min-width: 1440px) {
   .slider {
     width: 50%;
-    background: linear-gradient($white 211px, $smoky-grey 211px 400px);
+    background: linear-gradient($white 162px, $smoky-grey 162px 400px);
     margin: 0;
     padding: 0 70px 0 0;
   }
@@ -151,19 +152,19 @@
 
     &:first-child {
       width: 55%;
-      min-height: 674px;
-      background: linear-gradient($white 211px, $special-grey 211px 368px);
+      min-height: 625px;
+      background: linear-gradient($white 162px, $special-grey 162px 368px);
     }
 
     &:last-child {
       min-height: 536px;
-      background: linear-gradient($white 211px, $smoky-grey 211px 300px);
+      background: linear-gradient($white 162px, $smoky-grey 162px 300px);
     }
   }
 
   .slider__scroll {
     width: 73%;
-    margin: 0 auto 61px;
+    margin: 0 auto 55px;
   }
 
   .slider__scale {
@@ -177,6 +178,6 @@
   }
 
   .slider__word {
-    margin: 0;
+    margin: 0 0 7px 0;
   }
 }

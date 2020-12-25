@@ -50,6 +50,7 @@
 }
 
 .program__link {
+  position: relative;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
@@ -60,6 +61,17 @@
   background-color: $special-grey;
   border-top: 2px $dull-grey solid;
   padding: 19px 30px 12px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 100px;
+    width: 32px;
+    height: 10px;
+    background-image: url(../../img/arrow.svg);
+    background-repeat: no-repeat;
+  }
 }
 
 // todo 768
@@ -76,7 +88,7 @@
   .program__title {
     font-size: 36px;
     line-height: 36px;
-    padding: 77px 245px 25px 0;
+    padding: 82px 245px 23px 0;
     margin: 0;
   }
 
@@ -98,12 +110,8 @@
     padding: 17px 255px 57px 0;
 
     &::after {
-      position: relative;
-      top: 0;
-      right: 10px;
-      content: "";
-      width: 32px;
-      height: 10px;
+      top: 27px;
+      left: 130px;
     }
   }
 }

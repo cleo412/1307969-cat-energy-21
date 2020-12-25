@@ -33,107 +33,109 @@
   <main>
     <!-- todo form -->
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
-      <h1 class="form__title">Подбор программы</h1>
-      <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота </p>
-      <!-- <div class="form__list"> -->
       <div class="form__container">
-        <section class="cat-data">
-          <!--todo: cat-data-->
-          <div class="cat-data__container">
-            <h2 class="visually-hidden">Данные кота</h2>
-            <ul class="cat-data__list">
-              <li class="cat-data__input-wrapper">
-                <label class="cat-data__label" for="user-name">ИМЯ:*</label>
-                <input class="cat-data__input" tabindex="5" type="text" name="user-name" id="user-name"
-                  placeholder="Барсик" required>
+        <h1 class="form__title">Подбор программы</h1>
+        <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота </p>
+        <div class="wrapper">
+          <section class="cat-data">
+            <!--todo: cat-data-->
+            <div class="cat-data__container">
+              <h2 class="visually-hidden">Данные кота</h2>
+              <ul class="cat-data__list">
+                <li class="cat-data__input-wrapper">
+                  <label class="cat-data__label" for="user-name">ИМЯ:*</label>
+                  <input class="cat-data__input" tabindex="5" type="text" name="user-name" id="user-name"
+                    placeholder="Барсик" required>
+                </li>
+                <li class="cat-data__input-wrapper">
+                  <label class="cat-data__label" for="user-weight">Вес (кг):*</label>
+                  <input class="cat-data__input" tabindex="6" type="text" name="user-weight" id="user-weight"
+                    placeholder="7" required>
+                </li>
+                <li class="cat-data__input-wrapper">
+                  <label class="cat-data__label" for="user-age">Возраст&nbsp;(лет):</label>
+                  <input class="cat-data__input" tabindex="7" type="text" name="user-age" id="user-age" placeholder="7">
+                </li>
+              </ul>
+            </div>
+          </section>
+          <section class="way">
+            <!--todo: way-->
+            <div class="way__container">
+              <h2 class="visually-hidden">Виды программ для кота</h2>
+              <ul class="way__list">
+                <li class="way__option">
+                  <input class="way__input visually-hidden" tabindex="8" type="radio" name="way" id="cat-slim" checked>
+                  <label class="way__label" for="cat-slim">Похудение</label>
+                </li>
+                <li class="way__option">
+                  <input class="way__input visually-hidden" tabindex="9" type="radio" name="way" id="cat-fat">
+                  <label class="way__label" for="cat-fat">Набор массы</label>
+                </li>
+                <li class="way__option">
+                  <input class="way__input visually-hidden" tabindex="10" type="radio" name="way" id="cat-advice">
+                  <label class="way__label" for="cat-advice">Не знаю (нужен ваш совет)</label>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="owner-data">
+          <!--todo: owner-data-->
+          <div class="owner-data__container">
+            <h2 class="owner-data__title"> Контактные&nbsp;данные (владельца кота)</h2>
+            <ul class="owner-data__list">
+              <li class="owner-data__input-wrapper">
+                <label class="owner-data__label">E-mail:*</label>
+                <input class="owner-data__input" tabindex="11" type="email" name="user-email" id="user-email"
+                  placeholder="kuklachev@gmail.com" required>
               </li>
-              <li class="cat-data__input-wrapper">
-                <label class="cat-data__label" for="user-weight">Вес (кг):*</label>
-                <input class="cat-data__input" tabindex="6" type="text" name="user-weight" id="user-weight"
-                  placeholder="7" required>
-              </li>
-              <li class="cat-data__input-wrapper">
-                <label class="cat-data__label" for="user-age">Возраст&nbsp;(лет):</label>
-                <input class="cat-data__input" tabindex="7" type="text" name="user-age" id="user-age" placeholder="7">
+              <li class="owner-data__input-wrapper">
+                <label class="owner-data__label" for="user-tel">Телефон:*</label>
+                <input class="owner-data__input" tabindex="12" type="tel" name="user-tel" id="user-tel"
+                  placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </div>
         </section>
-        <section class="way">
-          <!--todo: way-->
-          <div class="way__container">
-            <h2 class="visually-hidden">Виды программ для кота</h2>
-            <ul class="way__list">
-              <li class="way__option">
-                <input class="way__input visually-hidden" tabindex="8" type="radio" name="way" id="cat-slim" checked>
-                <label class="way__label" for="cat-slim">Похудение</label>
-              </li>
-              <li class="way__option">
-                <input class="way__input visually-hidden" tabindex="9" type="radio" name="way" id="cat-fat">
-                <label class="way__label" for="cat-fat">Набор массы</label>
-              </li>
-              <li class="way__option">
-                <input class="way__input visually-hidden" tabindex="10" type="radio" name="way" id="cat-advice">
-                <label class="way__label" for="cat-advice">Не знаю (нужен ваш совет)</label>
-              </li>
-            </ul>
+        <section class="habits">
+          <!--todo: habits-->
+          <div class="habits__container">
+            <h2 class="habits__title">Комментарий</h2>
+            <label class="visually-hidden" for="habits-cat">Расскажите обо всех&nbsp;повадках&nbsp;кота</label>
+            <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
+              placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </section>
-      </div>
-      <section class="owner-data">
-        <!--todo: owner-data-->
-        <div class="owner-data__container">
-          <h2 class="owner-data__title"> Контактные&nbsp;данные (владельца кота)</h2>
-          <ul class="owner-data__list">
-            <li class="owner-data__input-wrapper">
-              <label class="owner-data__label">E-mail:*</label>
-              <input class="owner-data__input" tabindex="11" type="email" name="user-email" id="user-email"
-                placeholder="kuklachev@gmail.com" required>
-            </li>
-            <li class="owner-data__input-wrapper">
-              <label class="owner-data__label" for="user-tel">Телефон:*</label>
-              <input class="owner-data__input" tabindex="12" type="tel" name="user-tel" id="user-tel"
-                placeholder="8 (960) 900-60-90" required>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="habits">
-        <!--todo: habits-->
-        <div class="habits__container">
-          <h2 class="habits__title">Комментарий</h2>
-          <label class="visually-hidden" for="habits-cat">Расскажите обо всех повадках кота</label>
-          <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
-            placeholder="Расскажите обо всех повадках кота"></textarea>
-        </div>
-      </section>
-      <section class="extra">
-        <!--todo: extra-->
-        <div class="extra__container">
-          <h3 class="extra__title">Дополнительно</h3>
-          <div class="extra__list">
-            <div class="extra__option">
-              <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar" checked>
-              <label class="extra__label" for="sugar">Сахарозаменитель</label>
-            </div>
-            <div class="extra__option">
-              <input class="extra__input visually-hidden" tabindex="14" type="checkbox" name="water" id="water">
-              <label class="extra__label" for="water">Питьевая вода</label>
-            </div>
-            <div class="extra__option">
-              <input class="extra__input visually-hidden" tabindex="15" type="checkbox" name="milk" id="milk">
-              <label class="extra__label" for="milk">Молоко</label>
-            </div>
-            <div class="extra__option">
-              <input class="extra__input visually-hidden" tabindex="16" type="checkbox" name="vitamins" id="vitamins">
-              <label class="extra__label" for="vitamins">Витамины</label>
+        <section class="extra">
+          <!--todo: extra-->
+          <div class="extra__container">
+            <h3 class="extra__title">Дополнительно</h3>
+            <div class="extra__list">
+              <div class="extra__option">
+                <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar"
+                  checked>
+                <label class="extra__label" for="sugar">Сахарозаменитель</label>
+              </div>
+              <div class="extra__option">
+                <input class="extra__input visually-hidden" tabindex="14" type="checkbox" name="water" id="water">
+                <label class="extra__label" for="water">Питьевая вода</label>
+              </div>
+              <div class="extra__option">
+                <input class="extra__input visually-hidden" tabindex="15" type="checkbox" name="milk" id="milk">
+                <label class="extra__label" for="milk">Молоко</label>
+              </div>
+              <div class="extra__option">
+                <input class="extra__input visually-hidden" tabindex="16" type="checkbox" name="vitamins" id="vitamins">
+                <label class="extra__label" for="vitamins">Витамины</label>
+              </div>
             </div>
           </div>
+        </section>
+        <div class="form__submit">
+          <button class="button button--form" tabindex="17" type="submit">Отправить заявку</button>
+          <p class="form__subtitle">* — Обязательные поля</p>
         </div>
-      </section>
-      <div class="form__submit">
-        <button class="button button--form" tabindex="17" type="submit">Отправить заявку</button>
-        <p class="form__subtitle">* — Обязательные поля</p>
       </div>
     </form>
   </main>

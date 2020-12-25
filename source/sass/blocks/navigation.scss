@@ -77,16 +77,11 @@
     font-weight: 400;
     border-bottom: none;
     padding: 0;
-    margin: 0 0 16px;
+    margin: 0 0 4px;
   }
 
   .navigation__item--current {
     box-shadow: 0 2px 0 0 $green;
-  }
-
-  .navigation__item--current::before,
-  .navigation__item--current::after {
-    display: none;
   }
 }
 
@@ -103,12 +98,17 @@
   .navigation__item {
     font-size: 20px;
     line-height: 30px;
-    color: $white;
     padding: 0 0 5px 0;
     margin: 0 0 10px;
   }
 
-  .navigation__item--current {
-    box-shadow: 0 2px 0 0 $white;
+  .navigation--index {
+    .navigation__item--current {
+      box-shadow: 0 2px 0 0 $white;
+    }
+
+    .navigation__item {
+      color: $white;
+    }
   }
 }
