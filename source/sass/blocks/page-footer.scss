@@ -1,67 +1,29 @@
 .page-footer {
-  display: block;
-  width: auto;
-  text-align: center;
-  background-color: $special-grey;
+  display: flex;
+  flex-direction: column;
   padding: 0;
   margin: 0 auto;
 }
 
 .page-footer__cooperate {
-  display: flex;
-  list-style: none;
-  text-align: left;
-  background-color: $special-grey;
-  box-sizing: border-box;
-  padding: 36px 20px 20px;
-}
-
-.page-footer__cooperate--index {
-  background-color: $white;
-  padding: 30px 20px 20px;
-}
-
-.page-footer__cooperate-title {
-  @include title-big;
-  font-size: 16px;
-  line-height: 19px;
-  width: 50%;
-  margin: 0 2% 0 0;
-}
-
-.page-footer__cooperate-address {
-  @include text;
-  width: 50%;
-  line-height: 20px;
-  text-align: left;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .page-footer__map {
-  overflow: hidden;
+  width: 100%;
+  min-height: 362px;
+  // background-color: url("../../img/map.jpg");
+  overflow-x: hidden;
   padding: 0;
   margin: 0 auto;
 }
 
 .page-footer__logo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 44px 0 33px;
   margin: 0 auto;
-}
-
-.page-footer__logo--index {
-  padding: 39px 0 27px;
-}
-
-.page-footer__logo--form {
-  padding: 33px 0 30px;
-}
-
-.page-footer__logo--catalog {
-  padding: 26px 0;
-}
-
-.page-footer__social {
-  padding: 0 20px;
-  margin: 0;
 }
 
 .page-footer__social-list {
@@ -72,26 +34,63 @@
   list-style: none;
   border-top: 1px $dull-grey solid;
   border-bottom: 1px $dull-grey solid;
-  padding: 18px 10px;
+  padding: 21px 10px 14px;
   margin: 0;
 }
 
-.page-footer__social-button {
-  width: 7%;
-}
-
 .page-footer__copyright {
-  padding: 28px 20px;
+  padding: 22px 0;
+  margin: 0 20px;
 }
 
 .page-footer__copyright-link {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   text-decoration: none;
 }
 
 .page-footer__copyright-text {
   @include text;
   font-size: 16px;
-  margin: 0;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .page-footer__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 30px 60px;
+  }
+
+  // .page-footer__map {
+  //   min-height: 400px;
+  // }
+
+  .page-footer__social-list {
+    border: none;
+    padding: 0;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .page-footer {
+    position: relative;
+  }
+
+  .page-footer__cooperate {
+    position: absolute;
+    top: 95px;
+    right: 767px;
+    z-index: 10;
+  }
 }

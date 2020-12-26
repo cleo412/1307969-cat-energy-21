@@ -1,53 +1,102 @@
 .intro {
-  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.intro__container {
+  margin: 0 auto;
+}
+
+.intro__wrap {
+  margin: 0 auto;
 }
 
 .intro__img {
-  height: 302px;
+  min-height: 302px;
   background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center, center;
   background-color: $green;
-  margin: 0 0 139px 0;
+  margin: 2px auto 139px;
+  z-index: 1;
 }
 
 .intro__slogan {
-  text-align: center;
-  padding: 28px;
-}
-
-.intro__title {
-  font-family: $oswald;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 400;
-  color: $white;
-  margin: 0 0 25px;
-}
-
-.intro__subtitle {
-  font-family: $oswald;
-  font-size: 14px;
-  line-height: 14px;
-  font-weight: 400;
-  color: $white;
-  text-transform: uppercase;
-  margin: 0 auto;
-}
-
-.intro__wrapper-img {
   position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 35px;
-  padding: 0 20px;
+  top: 0;
+  left: calc(50% - 160px);
+  right: calc(50% - 160px);
+  z-index: 2;
+  padding: 0;
 }
 
 .intro__main-img {
-  width: 100%;
+  position: absolute;
+  bottom: 40px;
+  left: calc(50% - 140px);
+  width: 280px;
+  height: 270px;
+  z-index: 4;
+  margin: 0 auto;
 }
 
 .intro__wrapper-toggle {
   padding: 0 20px;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .intro__wrap {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .intro__img {
+    background-color: $white;
+    background-image: none;
+    margin: 0 auto 547px;
+  }
+
+  .intro__slogan {
+    position: static;
+  }
+
+  .intro__main-img {
+    top: 204px;
+    left: calc(50% - 353px);
+    width: 709px;
+    height: 609px;
+    z-index: 4;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .intro {
+    margin: 0 0 322px 0;
+  }
+
+  .intro__wrap {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .intro__img {
+    position: absolute;
+    top: -133px;
+    right: 0;
+    width: 50%;
+    min-height: 694px;
+    background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
+    margin: 0;
+  }
+
+  .intro__main-img {
+    top: 0;
+    right: 0;
+    width: 552px;
+    height: 499px;
+    z-index: 6;
+  }
 }

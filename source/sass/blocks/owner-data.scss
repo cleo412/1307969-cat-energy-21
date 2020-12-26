@@ -1,23 +1,31 @@
 .owner-data {
-  width: 100%;
+  position: relative;
   border: none;
-  border-top: 2px $green solid;
-  box-sizing: border-box;
-  padding: 0 20px;
+  padding: 0 0 12px;
+}
+
+.owner-data__container {
   margin: 0 auto;
 }
 
 .owner-data__title {
   @include title-form;
-  padding: 28px 22px 0 18px;
-  margin: 0 0 34px -20px;
+  width: 69%;
+  background-color: $white;
+  padding: 30px 20px 0;
+  margin: 0 0 31px 0;
+
+  &::after {
+    @include line;
+    top: 44px;
+  }
 }
 
 .owner-data__list {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
-  padding: 0;
+  padding: 0 20px;
   margin: 0;
 }
 
@@ -29,18 +37,100 @@
 .owner-data__label {
   @include form;
   padding: 12px 0;
-  margin: 0 10px 0 0;
+  margin: 0 12px 0 0;
 }
 
 .owner-data__input {
-  @include input;
-  border-color: $grey;
-  padding: 14px;
+  // min-width: 0; // for firefox
+  flex: 1 1 auto;
+  color: $white;
+  border: 1px solid $grey;
+  box-sizing: border-box;
+  padding: 18px 0 11px 15px;
 }
 
-.owner-data__fieldset {
-  border: none;
-  border-top: 2px $green solid;
-  padding: 28px 20px 10px;
-  margin: 0 auto;
+.owner-data__input::placeholder {
+  @include form;
+}
+
+// /*for Firefox*/
+.owner-data__input::-moz-placeholder {
+  @include form;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .owner-data {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .owner-data__title {
+    width: 76%;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 30px 35px 0;
+    margin: 0 0 75px 35px;
+
+    &::after {
+      top: 55px;
+    }
+  }
+
+  .owner-data__list {
+    padding: 0 70px;
+  }
+
+  .owner-data__input-wrapper {
+    margin: 0 0 20px 0;
+  }
+
+  .owner-data__label {
+    @include form;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 0;
+    margin: 0 18px 0 0;
+  }
+
+  .owner-data__input {
+    padding: 22px 47px 12px 19px;
+  }
+
+  .owner-data__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .owner-data__title {
+    width: 41%;
+    font-size: 36px;
+    line-height: 36px;
+    margin: 0 0 75px 70px;
+    padding: 14px 0 0 40px;
+
+    &::after {
+      top: 35px;
+    }
+  }
+
+  .owner-data__list {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 110px;
+  }
+
+  .owner-data__input-wrapper {
+    width: 45%;
+    margin: 0 0 65px 0;
+  }
+
+  .owner-data__input-wrapper:first-child {
+    width: 45%;
+    margin: 0 75px 56px 0;
+  }
 }

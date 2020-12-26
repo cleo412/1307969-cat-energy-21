@@ -1,34 +1,31 @@
+.form {
+  margin: 0 auto;
+}
+
+.form__container {
+  margin: 0 auto;
+}
+
 .form__title {
   @include title-small;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 19px;
+  padding: 28px 20px;
   margin: 0;
 }
 
 .form__text {
   @include text-big;
-  padding: 10px 20px;
+  padding: 10px 20px 10px;
   margin: 0 0 30px 0;
-}
-
-.form__list {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  padding: 0;
-}
-
-.input::placeholder {
-  @include form;
 }
 
 .form__submit {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0 20px;
-  margin: 0 0 32px 0;
+  padding: 0;
+  margin: 0 20px 33px;
 }
 
 .form__subtitle {
@@ -36,5 +33,60 @@
   line-height: 16px;
   color: $black;
   padding: 0;
-  margin: 20px 0 0 0;
+  margin: 24px 0 0 0;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .form__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 45px 70px 45px;
+  }
+
+  .form__text {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 300px 65px 70px;
+    margin: 0;
+  }
+
+  .form__submit {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0 70px 72px;
+  }
+
+  .form__subtitle {
+    align-self: flex-start;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 16px 0;
+    margin: 0 106px 0 0;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .form__title {
+    width: 50%;
+    padding: 54px 110px 45px;
+  }
+
+  .form__text {
+    width: 30%;
+    padding: 10px 110px 65px;
+  }
+
+  .form__submit {
+    justify-content: flex-start;
+    margin: 0 110px 80px;
+  }
+
+  .form__subtitle {
+    align-self: flex-end;
+    padding: 16px 0;
+    margin: 0 0 0 80px;
+  }
 }

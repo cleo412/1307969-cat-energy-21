@@ -1,9 +1,18 @@
+.description {
+  box-sizing: border-box;
+  padding: 0 20px 20px;
+}
+
+.description__container {
+  margin: 0 auto;
+}
+
 .description__title {
   @include title-small;
   font-size: 36px;
   line-height: 40px;
-  padding: 14px 5px 11px 0;
-  margin: 0 0 28px 0;
+  padding: 25px 5px 37px 0;
+  margin: 0;
 }
 
 .description__list {
@@ -17,44 +26,208 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 19px;
+  margin: 0 0 20px;
 }
 
 .description__icon-box {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   background-color: $green;
 }
 
 .description__icon {
-  position: absolute;
-  top: 16px;
-  left: 17px;
-  width: 32px;
-  height: 33px;
+  width: 30px;
+  height: 32px;
   background-repeat: no-repeat;
 }
 
-// .description__icon--leaf {
-//   background-image: url("../../img/icon-leaf1.svg");
-// }
+.description__icon--leaf {
+  background-image: url("../../img/leaf1.svg");
+}
 
-// .description__icon--tub {
-//   background-image: url("../../img/icon-tub2.svg");
-// }
+.description__icon--tub {
+  background-image: url("../../img/tub2.svg");
+}
 
-// .description__icon--eat {
-//   background-image: url("../../img/icon-eat3.svg");
-// }
+.description__icon--eat {
+  background-image: url("../../img/eat3.svg");
+}
 
-// .description__icon--alarm {
-//   background-image: url("../../img/icon-alarm.svg");
-// }
+.description__icon--alarm {
+  background-image: url("../../img/alarm4.svg");
+}
 
 .description__text {
   @include text;
   width: calc(100% - 80px);
+  box-sizing: border-box;
   padding: 4px 0;
   margin: 0;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .description {
+    border-bottom: 1px $secondory-grey solid;
+    padding: 0 30px;
+  }
+
+  .description__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 14px 5px 74px 0;
+    margin: 0;
+  }
+
+  .description__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 0 45px 0;
+  }
+
+  .description__item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 0;
+
+    &::after {
+      position: absolute;
+      top: -41px;
+      font-family: $oswald;
+      font-size: 280px;
+      line-height: 280px;
+      color: $special-grey;
+      z-index: -1;
+    }
+  }
+
+  .description__item--leaf {
+    padding: 0 0 98px 0;
+
+    &::after {
+      right: 123px;
+      content: "1";
+    }
+  }
+
+  .description__item--tub {
+    padding: 0 0 98px 29px;
+
+    &::after {
+      right: 77px;
+      content: "2";
+    }
+  }
+
+  .description__item--eat {
+    padding: 0 0 25px 0;
+
+    &::after {
+      right: 107px;
+      content: "3";
+    }
+  }
+
+  .description__item--alarm {
+    padding: 0 0 25px 30px;
+
+    &::after {
+      right: 77px;
+      content: "4";
+    }
+  }
+
+  .description__icon-box {
+    width: 80px;
+    height: 80px;
+    margin: 0;
+  }
+
+  .description__text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 33px 90px 33px 0;
+    margin: 0;
+  }
+
+  .description__item--alarm > .description__text {
+    padding: 33px 72px 33px 0;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .description {
+    border-bottom: none;
+    padding: 0;
+    margin: 0 110px;
+  }
+
+  .description__title {
+    padding: 43px 5px 46px 0;
+    margin: 0 0 28px 0;
+  }
+
+  .description__list {
+    justify-content: space-between;
+  }
+
+  .description__item {
+    width: 25%;
+  }
+
+  .description__item--leaf {
+    padding: 0;
+
+    &::after {
+      right: 75px;
+    }
+  }
+
+  .description__item--tub {
+    padding: 0 0 0 20px;
+
+    &::after {
+      right: 40px;
+    }
+  }
+
+  .description__item--eat {
+    padding: 0 0 0 39px;
+
+    &::after {
+      right: 18px;
+    }
+  }
+
+  .description__item--alarm {
+    padding: 0 0 0 60px;
+
+    &::after {
+      right: -4px;
+    }
+  }
+
+  .description__icon-box {
+    margin: 0 0 30px 0;
+  }
+
+  .description__text {
+    padding: 0 41px 0 0;
+    margin: 0 0 50px 0;
+  }
+
+  .description__item--alarm > .description__text {
+    padding: 0;
+  }
 }

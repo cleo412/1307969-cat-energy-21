@@ -15,6 +15,7 @@ $secondary-grey: #e6e6e6;
 $aluminum-grey: #e7e7e7;
 $secondory-grey: #d3d3d3;
 $green-85: rgba(104, 183, 56, 0.85);
+$black-16: rgba(0, 0, 0, 0.16);
 
 // Fonts
 $oswald: ("Oswald", "Arial", sans-serif);
@@ -72,15 +73,20 @@ $arial: ("Arial", sans-serif);
   line-height: 26px;
 }
 
-@mixin input {
-  flex-grow: 1;
-  border: 1px solid;
-}
-
 @mixin input-wrapper {
   position: relative;
   display: flex;
   align-items: baseline;
   flex-basis: 100%;
   padding: 0;
+}
+
+@mixin line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  content: "";
+  height: 2px;
+  background-color: $green;
+  z-index: -1;
 }

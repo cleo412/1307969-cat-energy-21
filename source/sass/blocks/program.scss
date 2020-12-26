@@ -1,18 +1,24 @@
+.program {
+  margin: 0 20px;
+}
+
+.program__container {
+  margin: 0 auto;
+}
+
 .program__item {
-  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: $special-grey;
-  box-sizing: border-box;
   padding: 30px 20px 10px;
   margin: 22px auto 0;
 }
 
-.program__icon {
-  position: absolute;
-  background-repeat: no-repeat;
-}
+// .program__icon {
+//   position: absolute;
+//   background-repeat: no-repeat;
+// }
 
 // .program__icon--slim {
 //   top: 22px;
@@ -44,6 +50,7 @@
 }
 
 .program__link {
+  position: relative;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
@@ -53,5 +60,91 @@
   text-transform: uppercase;
   background-color: $special-grey;
   border-top: 2px $dull-grey solid;
-  padding: 17px 30px 12px 0;
+  padding: 19px 30px 12px 0;
+
+  &::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 100px;
+    width: 32px;
+    height: 10px;
+    background-image: url(../../img/arrow.svg);
+    background-repeat: no-repeat;
+  }
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .program {
+    margin: 0 30px;
+  }
+
+  .program__item {
+    padding: 0 53px;
+    margin: 0 0 30px 0;
+  }
+
+  .program__title {
+    font-size: 36px;
+    line-height: 36px;
+    padding: 82px 245px 23px 0;
+    margin: 0;
+  }
+
+  .program__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 228px 34px 0;
+    margin: 0;
+  }
+
+  .program__item:last-child .program__subtitle {
+    padding: 0 258px 34px 0;
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 30px;
+    border-top: none;
+    padding: 17px 255px 57px 0;
+
+    &::after {
+      top: 27px;
+      left: 130px;
+    }
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .program {
+    margin: 0 110px;
+  }
+
+  .program__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program__item {
+    width: 47%;
+  }
+
+  .program__item:first-child {
+    margin: 0 80px 30px 0;
+  }
+
+  .program__title {
+    text-align: left;
+    padding: 75px 0 75px 163px;
+    margin: 0;
+  }
+
+  .program__item:last-child .program__subtitle,
+  .program__subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 0 10px 0;
+  }
 }

@@ -1,0 +1,68 @@
+.slogan {
+  text-align: center;
+  padding: 28px 0;
+  z-index: 2;
+}
+
+.slogan__title {
+  font-family: $oswald;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: $white;
+  text-align: center;
+  margin: 0 auto 25px;
+}
+
+.slogan__subtitle {
+  font-family: $oswald;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  color: $white;
+  text-transform: uppercase;
+  margin: 0 auto;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .slogan {
+    text-align: left;
+    padding: 0;
+    margin: 30px calc(41% - 199px) 50px;
+    z-index: 5;
+  }
+
+  .slogan__title {
+    font-family: $oswald;
+    font-size: 60px;
+    line-height: 60px;
+    color: $black;
+    text-align: left;
+    padding: 14px 0 0 0;
+    margin: 0 0 41px 0;
+  }
+
+  .slogan__subtitle {
+    font-family: $oswald;
+    font-size: 20px;
+    line-height: 20px;
+    color: $black;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .slogan {
+    width: 31%;
+    text-align: left;
+    padding: 81px 92px 0 189px;
+    margin: 0 0 50px 0;
+    z-index: 5;
+  }
+
+  .slogan__title {
+    padding: 10px 0 0 0;
+    margin: 0 0 40px 0;
+  }
+}

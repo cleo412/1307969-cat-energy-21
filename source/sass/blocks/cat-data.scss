@@ -1,8 +1,12 @@
 .cat-data {
   display: flex;
   flex-wrap: wrap;
-  align-items: baseline;
-  padding: 0 20px 10px;
+  border: none;
+  padding: 0 20px 7px;
+}
+
+.cat-data__container {
+  margin: 0 auto;
 }
 
 .cat-data__list {
@@ -21,12 +25,66 @@
 .cat-data__label {
   @include form;
   padding: 12px 0;
-  margin: 0 10px 0 0;
+  margin: 0 15px 0 0;
 }
 
 .cat-data__input {
-  @include input;
-  border-color: $aluminum-grey;
-  padding: 13px 0 12px 18px;
-  margin: 0 0 2px 0;
+  flex: 1 1 auto;
+  color: $white;
+  border: 1px solid $aluminum-grey;
+  box-sizing: border-box;
+  padding: 18px 0 11px 15px;
+}
+
+.cat-data__input::placeholder {
+  @include form;
+}
+
+// /*for Firefox*/
+.user-data__input::-moz-placeholder {
+  @include form;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .cat-data {
+    border: none;
+    padding: 0 70px 55px;
+    margin: 0;
+  }
+
+  .cat-data__input-wrapper {
+    margin: 0 0 18px 0;
+  }
+
+  .cat-data__label {
+    @include form;
+    font-size: 20px;
+    line-height: 30px;
+    padding: 12px 0;
+    margin: 0 18px 0 0;
+  }
+
+  .cat-data__input {
+    padding: 22px 47px 12px 19px;
+  }
+
+  .cat-data__input::placeholder {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .cat-data {
+    display: flex;
+    width: 47%;
+    padding: 0;
+    margin: 0 80px 40px 0;
+  }
+
+  .cat-data__list {
+    padding: 0 0 0 110px;
+  }
 }
