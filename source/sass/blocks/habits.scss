@@ -1,6 +1,7 @@
 .habits {
-  padding: 0 20px 14px;
-  margin: 0;
+  position: relative;
+  // padding: 0 20px 14px;
+  margin: 0 0 14px 0;
 }
 
 .habits__container {
@@ -9,23 +10,25 @@
 
 .habits__title {
   @include title-form;
-  padding: 0 0 40px 0;
-  margin: 0;
+  width: 51%;
+  background-color: $white;
+  padding: 0 20px 20px;
+  margin: 0 0 20px 0;
 
-  // &::after {
-  // @include line;
-  //   top: 29px;
-  // }
+  &::after {
+    @include line;
+    top: 15px;
+  }
 }
 
 .habits__text {
-  width: 100%;
+  // flex: 1 1 auto;
   border: 1px $aluminum-grey solid;
   resize: none;
-  box-sizing: border-box;
+  // box-sizing: border-box;
   outline: none;
   padding: 8px 14px 0 13px;
-  margin: 0 auto;
+  margin: 0 20px;
 }
 
 .habits__text::placeholder {
@@ -40,26 +43,26 @@
   }
 
   .habits__title {
-    width: 40%;
+    width: 33%;
     font-size: 36px;
     line-height: 36px;
     padding: 45px 35px 0;
     margin: 0 0 75px 35px;
 
     &::after {
-      top: 55px;
+      top: 65px;
     }
-  }
-
-  .habits__text::placeholder {
-    font-size: 20px;
-    line-height: 30px;
   }
 
   .habits__text {
     width: 82%;
     padding: 10px 17px 26px;
     margin: 0 70px;
+  }
+
+  .habits__text::placeholder {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 
@@ -70,8 +73,9 @@
   }
 
   .habits__title {
-    padding: 0 0 0 110px;
-    margin: 0 0 83px 0;
+    width: 18%;
+    padding: 0 0 0 40px;
+    margin: 0 0 83px 70px;
 
     &::after {
       top: 21px;

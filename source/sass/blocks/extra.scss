@@ -1,8 +1,9 @@
 .extra {
-  // width: 100%; убрать !!!!!!
+  position: relative;
   border: none;
-  padding: 0;
-  margin: 0 20px 20px;
+  // padding: 0;
+  // margin: 0 20px 38px;
+  padding: 0 0 20px;
 }
 
 .extra__container {
@@ -11,13 +12,19 @@
 
 .extra__title {
   @include title-form;
-  padding: 9px 0 0 0;
+  width: 57%;
+  background-color: $white;
+  padding: 9px 20px 0;
   margin: 0 0 31px 0;
 
-  // &::after {
-  // @include line;
-  //   top: 29px;
-  // }
+  &::after {
+    @include line;
+    top: 22px;
+  }
+}
+
+.extra__list {
+  padding: 0 20px;
 }
 
 .extra__option {
@@ -61,7 +68,7 @@
   }
 
   .extra__title {
-    width: 55%;
+    width: 37%;
     font-size: 36px;
     line-height: 36px;
     padding: 0 35px;
@@ -77,6 +84,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    padding: 0;
     margin: 0 70px;
   }
 
@@ -108,9 +116,9 @@
 // todo 1440
 @media (min-width: 1440px) {
   .extra__title {
-    width: 55%;
-    padding: 0 0 0 110px;
-    margin: 0 0 62px 0;
+    width: 20%;
+    padding: 0 0 0 40px;
+    margin: 0 0 62px 70px;
   }
 
   .extra__list {
@@ -130,7 +138,7 @@
   }
 
   .extra__option:nth-of-type(3) {
-    padding: 0 0 42px 59px;
+    padding: 0 0 42px 57px;
     margin: 0;
   }
 }

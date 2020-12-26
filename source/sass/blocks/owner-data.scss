@@ -10,14 +10,14 @@
 
 .owner-data__title {
   @include title-form;
-  width: 68%;
+  width: 69%;
   background-color: $white;
-  padding: 15px 20px 0;
+  padding: 30px 20px 0;
   margin: 0 0 31px 0;
 
   &::after {
     @include line;
-    top: 29px;
+    top: 44px;
   }
 }
 
@@ -42,7 +42,7 @@
 
 .owner-data__input {
   // min-width: 0; // for firefox
-  flex-grow: 1;
+  flex: 1 1 auto;
   color: $white;
   border: 1px solid $grey;
   box-sizing: border-box;
@@ -107,14 +107,14 @@
 // todo 1440
 @media (min-width: 1440px) {
   .owner-data__title {
-    width: 46%;
+    width: 41%;
     font-size: 36px;
     line-height: 36px;
-    padding: 0 0 0 110px;
-    margin: 0 0 75px 0;
+    margin: 0 0 75px 70px;
+    padding: 14px 0 0 40px;
 
     &::after {
-      top: 21px;
+      top: 35px;
     }
   }
 
