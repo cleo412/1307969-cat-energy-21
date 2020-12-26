@@ -1,9 +1,7 @@
 .extra {
   position: relative;
   border: none;
-  // padding: 0;
-  // margin: 0 20px 38px;
-  padding: 0 0 20px;
+  margin-bottom: 36px;
 }
 
 .extra__container {
@@ -24,10 +22,11 @@
 }
 
 .extra__list {
-  padding: 0 20px;
+  width: 88%;
+  margin: 0 auto;
 }
 
-.extra__option {
+.extra__input-wrapper {
   position: relative;
   box-sizing: border-box;
   padding: 6px 4px 0;
@@ -64,7 +63,7 @@
   .extra {
     width: 100%;
     padding: 0;
-    margin: 0 0 18px;
+    margin-bottom: 18px;
   }
 
   .extra__title {
@@ -72,23 +71,22 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 35px;
-    margin: 0 0 62px 35px;
+    margin: 0 0 64px 35px;
 
-    // &::after {
-    //   top: 55px;
-    // }
+    &::after {
+      top: 24px;
+    }
   }
 
   .extra__list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
-    margin: 0 70px;
+    width: 82%;
   }
 
-  .extra__option {
+  .extra__input-wrapper {
     width: 45%;
     padding: 0 0 42px 59px;
     margin: 0;
@@ -113,32 +111,46 @@
   }
 }
 
-// todo 1440
-@media (min-width: 1440px) {
-  .extra__title {
-    width: 20%;
-    padding: 0 0 0 40px;
-    margin: 0 0 62px 70px;
-  }
+// // todo 1440
+// @media (min-width: 1440px) {
+//   .extra {
+//     margin: 0 0 27px;
+//   }
 
-  .extra__list {
-    margin: 0 110px;
-  }
+//   .extra__title {
+//     width: 20%;
+//     padding: 0 0 0 40px;
+//     margin: 0 0 62px 70px;
+//   }
 
-  .extra__option,
-  .extra__option:nth-of-type(odd) {
-    width: 22%;
-    padding: 0 80px 42px 59px;
-    margin: 0 10px 0 0;
-  }
+//   .extra__list {
+//     width: 94%;
+//     box-sizing: border-box;
+//     justify-content: space-between;
+//     margin: 0 auto;
+//     // margin: 0 110px;
+//   }
 
-  .extra__option:nth-of-type(4) {
-    padding: 0 0 48px 64px;
-    margin: 0;
-  }
+//   .extra__input-wrapper {
+//     width: 25%;
+//     // flex: 1 1 auto;
+//     padding: 0 10px 42px 59px;
+//   }
 
-  .extra__option:nth-of-type(3) {
-    padding: 0 0 42px 57px;
-    margin: 0;
-  }
-}
+//   // .extra__input-wrapper,
+//   // .extra__input-wrapper:nth-of-type(odd) {
+//   //   width: 25%;
+//   //   padding: 0 80px 42px 59px;
+//   //   // margin: 0 10px 0 0;
+//   // }
+
+//   // .extra__input-wrapper:nth-of-type(4) {
+//   //   padding: 0 0 48px 64px;
+//   //   margin: 0;
+//   // }
+
+//   // .extra__input-wrapper:nth-of-type(3) {
+//   //   padding: 0 0 42px 57px;
+//   //   margin: 0;
+//   // }
+// }

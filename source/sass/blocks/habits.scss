@@ -1,6 +1,6 @@
 .habits {
   position: relative;
-  // padding: 0 20px 14px;
+  // width: 100%;
   margin: 0 0 14px 0;
 }
 
@@ -22,42 +22,43 @@
 }
 
 .habits__text {
-  // flex: 1 1 auto;
+  width: 79%;
+  flex: 0 1 auto;
   border: 1px $aluminum-grey solid;
   resize: none;
-  // box-sizing: border-box;
   outline: none;
   padding: 8px 14px 0 13px;
-  margin: 0 20px;
+  margin: 0 20px; //todo
 }
 
 .habits__text::placeholder {
   @include form;
+  color: $basic-grey;
 }
 
 // todo 768
 @media (min-width: 768px) {
   .habits {
     padding: 0;
-    margin: 0 0 60px 0;
+    margin-bottom: 60px;
   }
 
   .habits__title {
     width: 33%;
     font-size: 36px;
     line-height: 36px;
-    padding: 45px 35px 0;
+    padding: 10px 35px 0;
     margin: 0 0 75px 35px;
 
     &::after {
-      top: 65px;
+      top: 33px;
     }
   }
 
   .habits__text {
-    width: 82%;
+    width: 77%;
     padding: 10px 17px 26px;
-    margin: 0 70px;
+    margin: 0 70px; //todo
   }
 
   .habits__text::placeholder {
@@ -66,25 +67,25 @@
   }
 }
 
-// todo 1440
-@media (min-width: 1440px) {
-  .habits {
-    margin: 0 0 63px 0;
-  }
+// // todo 1440
+// @media (min-width: 1440px) {
+//   .habits {
+//     margin: 0 0 63px 0;
+//   }
 
-  .habits__title {
-    width: 18%;
-    padding: 0 0 0 40px;
-    margin: 0 0 83px 70px;
+//   .habits__title {
+//     width: 18%;
+//     padding: 0 0 0 40px;
+//     margin: 0 0 83px 70px;
 
-    &::after {
-      top: 21px;
-    }
-  }
+//     &::after {
+//       top: 21px;
+//     }
+//   }
 
-  .habits__text {
-    width: 85%;
-    padding: 2px 17px 26px;
-    margin: 0 110px;
-  }
-}
+//   .habits__text {
+//     width: 85%;
+//     padding: 2px 17px 26px;
+//     // margin: 0 110px;
+//   }
+// }

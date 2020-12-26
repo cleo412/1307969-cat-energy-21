@@ -2,6 +2,8 @@
 @media (min-width: 1440px) {
   .wrapper {
     display: flex;
-    margin: 0 auto;
+    justify-content: start;
+    width: 85%;
+    margin: 0 auto 40px;
   }
 }
