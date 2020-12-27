@@ -7,6 +7,7 @@
 }
 
 .owner-data__container {
+  flex-basis: 100%;
   margin: 0 auto;
 }
 
@@ -26,7 +27,7 @@
 .owner-data__list {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  width: 88%;
   list-style: none;
   padding: 0;
   margin: 0 auto;
@@ -34,22 +35,20 @@
 
 .owner-data__input-wrapper {
   @include input-wrapper;
-  flex-basis: 88%;
-  margin: 0 auto 15px;
+  flex-basis: 100%;
+  margin: 0 0 15px;
 }
 
 .owner-data__label {
   @include form;
-  width: 24%;
   margin-right: 10px;
 }
 
 .owner-data__input {
-  flex-grow: 1;
-  width: 76%;
+  flex: 1 1 auto;
   color: $black;
   border: 1px solid $grey;
-  padding: 14px 43px 14px 14px;
+  padding: 14px 33px 14px 14px;
 }
 
 .owner-data__input::placeholder {
@@ -57,19 +56,24 @@
   color: $basic-grey;
 }
 
+// /*for Firefox*/
+.owner-data__input::-moz-placeholder {
+  @include form;
+}
+
 // todo 768
 @media (min-width: 768px) {
   .owner-data {
     border: none;
-    margin: 0 0 40px 0;
+    margin-bottom: 40px;
   }
 
   .owner-data__title {
-    width: 94%;
+    width: 77%;
     font-size: 36px;
     line-height: 36px;
     padding: 35px 35px 0;
-    margin: 0 0 71px -35px;
+    margin: 0 0 71px 35px;
 
     &::after {
       top: 55px;
@@ -77,17 +81,15 @@
   }
 
   .owner-data__list {
-    width: 100%;
+    width: 82%;
   }
 
   .owner-data__input-wrapper {
-    flex-basis: 100%;
     margin: 0 0 13px 0;
   }
 
   .owner-data__label {
     @include form;
-    width: 12%;
     font-size: 20px;
     line-height: 30px;
     padding: 12px 0;
@@ -95,7 +97,6 @@
   }
 
   .owner-data__input {
-    width: 84%;
     padding: 17px 47px 17px 19px;
   }
 
@@ -105,33 +106,36 @@
   }
 }
 
-// // todo 1440
-// @media (min-width: 1440px) {
-//   .owner-data__title {
-//     width: 41%;
-//     font-size: 36px;
-//     line-height: 36px;
-//     margin: 0 0 75px 70px;
-//     padding: 14px 0 0 40px;
+// todo 1440
+@media (min-width: 1440px) {
+  .owner-data {
+    margin-bottom: 55px;
+  }
 
-//     &::after {
-//       top: 35px;
-//     }
-//   }
+  .owner-data__title {
+    width: 42%;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0 40px;
+    margin: 0 0 70px 70px;
 
-//   .owner-data__list {
-//     display: flex;
-//     flex-wrap: nowrap;
-//     padding: 0 110px;
-//   }
+    &::after {
+      top: 22px;
+    }
+  }
 
-//   .owner-data__input-wrapper {
-//     width: 45%;
-//     margin: 0 0 65px 0;
-//   }
+  .owner-data__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 85%;
+  }
 
-//   .owner-data__input-wrapper:first-child {
-//     width: 45%;
-//     margin: 0 75px 56px 0;
-//   }
-// }
+  .owner-data__input-wrapper {
+    width: 45%;
+  }
+
+  .owner-data__input-wrapper:first-child {
+    margin-right: 80px;
+  }
+}

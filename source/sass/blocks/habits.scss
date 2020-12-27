@@ -1,6 +1,5 @@
 .habits {
   position: relative;
-  // width: 100%;
   margin: 0 0 14px 0;
 }
 
@@ -23,12 +22,12 @@
 
 .habits__text {
   width: 79%;
-  flex: 0 1 auto;
+  flex: 1 1 auto;
   border: 1px $aluminum-grey solid;
   resize: none;
   outline: none;
   padding: 8px 14px 0 13px;
-  margin: 0 20px; //todo
+  margin: 0 20px;
 }
 
 .habits__text::placeholder {
@@ -58,7 +57,7 @@
   .habits__text {
     width: 77%;
     padding: 10px 17px 26px;
-    margin: 0 70px; //todo
+    margin: 0 70px;
   }
 
   .habits__text::placeholder {
@@ -67,25 +66,25 @@
   }
 }
 
-// // todo 1440
-// @media (min-width: 1440px) {
-//   .habits {
-//     margin: 0 0 63px 0;
-//   }
+// todo 1440
+@media (min-width: 1440px) {
+  .habits {
+    margin-bottom: 77px;
+  }
 
-//   .habits__title {
-//     width: 18%;
-//     padding: 0 0 0 40px;
-//     margin: 0 0 83px 70px;
+  .habits__title {
+    width: 18%;
+    padding: 0 40px;
+    margin: 0 0 75px 70px;
 
-//     &::after {
-//       top: 21px;
-//     }
-//   }
+    &::after {
+      top: 21px;
+    }
+  }
 
-//   .habits__text {
-//     width: 85%;
-//     padding: 2px 17px 26px;
-//     // margin: 0 110px;
-//   }
-// }
+  .habits__text {
+    width: 82%;
+    padding: 10px 15px;
+    margin: 0 110px;
+  }
+}

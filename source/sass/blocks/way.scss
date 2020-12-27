@@ -40,8 +40,8 @@
 
   .way__input:checked + &::after {
     position: absolute;
-    top: 8px;
-    left: -31px;
+    top: 6px;
+    left: -32px;
     content: "";
     width: 14px;
     height: 14px;
@@ -63,7 +63,7 @@
   .way__list {
     border: 1px $dull-grey solid;
     width: 93%;
-    padding: 27px 0 10px;
+    padding: 23px 0 10px;
   }
 
   .way__input-wrapper {
@@ -94,22 +94,22 @@
 // todo 1440
 @media (min-width: 1440px) {
   .way {
-    width: 48%;
+    width: 47%;
     margin: 0;
   }
 
   .way__container {
+    width: 100%;
     margin: 0;
   }
 
   .way__list {
     width: 100%;
     border: 1px $dull-grey solid;
-    padding: 26px 26px 10px;
-    margin: 0;
+    padding: 27px 0 10px;
   }
 
   .way__input-wrapper {
-    margin: 0 0 14px 55px;
+    margin: 0 0 14px 70px;
   }
 }
