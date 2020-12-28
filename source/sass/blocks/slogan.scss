@@ -1,6 +1,7 @@
 .slogan {
+  width: 88%;
   text-align: center;
-  padding: 28px 0;
+  margin: 0 auto;
   z-index: 2;
 }
 
@@ -11,7 +12,7 @@
   font-weight: 400;
   color: $white;
   text-align: center;
-  margin: 0 auto 25px;
+  margin: 27px auto 25px;
 }
 
 .slogan__subtitle {
@@ -27,42 +28,49 @@
 // todo 768
 @media (min-width: 768px) {
   .slogan {
-    text-align: left;
+    width: 70%;
     padding: 0;
-    margin: 30px calc(41% - 199px) 50px;
+    margin: 30px auto 624px;
     z-index: 5;
   }
 
   .slogan__title {
-    font-family: $oswald;
+    width: 80%;
     font-size: 60px;
     line-height: 60px;
     color: $black;
     text-align: left;
-    padding: 14px 0 0 0;
+    padding-top: 14px;
     margin: 0 0 41px 0;
   }
 
   .slogan__subtitle {
-    font-family: $oswald;
+    width: 54%;
     font-size: 20px;
     line-height: 20px;
     color: $black;
+    text-align: left;
+    margin: 0;
   }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
   .slogan {
-    width: 31%;
-    text-align: left;
-    padding: 81px 92px 0 189px;
-    margin: 0 0 50px 0;
+    width: 50%;
+    padding: 91px 0;
     z-index: 5;
+    margin: 0;
   }
 
   .slogan__title {
-    padding: 10px 0 0 0;
-    margin: 0 0 40px 0;
+    width: 66%;
+    padding: 0;
+    margin: 0 auto 40px;
+  }
+
+  .slogan__subtitle {
+    width: 66%;
+    margin: 0 auto;
   }
 }

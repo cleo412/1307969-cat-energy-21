@@ -1,6 +1,6 @@
 .illustration {
   background-color: $smoky-grey;
-  padding: 0 20px 0;
+  margin: 0 auto;
 }
 
 .illustration__container {
@@ -9,15 +9,17 @@
 
 .illustration__title {
   @include title-small;
+  width: 82%;
   font-size: 36px;
   line-height: 40px;
-  padding: 26px 0 34px;
+  padding: 26px 0 34px 20px;
   margin: 0;
 }
 
 .illustration__text {
   @include text;
-  margin: 0 0 26px 0;
+  width: 88%;
+  margin: 0 auto 26px;
 }
 
 .illustration__list {
@@ -25,9 +27,8 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .illustration__box {
@@ -60,7 +61,6 @@
   line-height: 12px;
   background-color: $smoky-grey;
   padding: 0 10px;
-  margin: 0;
   z-index: 2;
 }
 
@@ -68,7 +68,6 @@
   @include title-big;
   font-size: 14px;
   line-height: 20px;
-  box-sizing: border-box;
   padding: 35px 0;
   margin: 0 auto;
 }
@@ -80,36 +79,37 @@
 // todo 768
 @media (min-width: 768px) {
   .illustration {
+    width: 92%;
     background-color: $white;
-    padding: 0 30px;
+    margin-bottom: 65px;
   }
 
   .illustration__title {
     font-size: 60px;
     line-height: 60px;
     padding: 41px 0 63px;
-    margin: 0;
   }
 
   .illustration__text {
     @include text;
+    width: 96%;
     font-size: 16px;
     line-height: 24px;
     margin: 0 6px 53px 0;
   }
 
   .illustration__list {
+    width: 100%;
     flex-wrap: nowrap;
-    padding: 0;
-    margin: 0 0 65px;
+    justify-content: start;
   }
 
   .illustration__box {
-    width: 190px;
+    width: 41%;
     height: 75px;
     box-sizing: border-box;
     padding: 14px 5px;
-    margin: 0 40px 0 0;
+    margin-right: 40px;
   }
 
   .illustration__name {
@@ -136,8 +136,8 @@
   }
 
   .illustration__total {
-    text-align: end;
-    width: 47%;
+    text-align: right;
+    width: 45%;
     font-size: 20px;
     line-height: 28px;
     padding: 8px 2px 17px 123px;
@@ -148,12 +148,13 @@
 // todo 1440
 @media (min-width: 1440px) {
   .illustration {
-    width: 38%;
+    width: 45%;
     background: linear-gradient($white 162px, $special-grey 162px 400px);
-    padding: 0 0 0 110px;
   }
 
   .illustration__title {
+    width: 78%;
+    text-align: left;
     padding: 31px 0 145px;
     margin: 0;
   }

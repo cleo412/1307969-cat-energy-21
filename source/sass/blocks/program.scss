@@ -1,5 +1,6 @@
 .program {
-  margin: 0 20px;
+  width: 88%;
+  margin: 0 auto;
 }
 
 .program__container {
@@ -7,34 +8,15 @@
 }
 
 .program__item {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   background-color: $special-grey;
+  box-sizing: border-box;
   padding: 30px 20px 10px;
   margin: 22px auto 0;
 }
-
-// .program__icon {
-//   position: absolute;
-//   background-repeat: no-repeat;
-// }
-
-// .program__icon--slim {
-//   top: 22px;
-//   left: 22px;
-//   width: 50px;
-//   height: 53px;
-//   background-image: url("../../img/icon-index-cat1.svg");
-// }
-
-// .program__icon--fat {
-//   top: 25px;
-//   left: 13px;
-//   width: 67px;
-//   height: 50px;
-//   background-image: url("../../img/icon-index-cat2.svg");
-// }
 
 .program__title {
   @include title-big;
@@ -51,6 +33,7 @@
 
 .program__link {
   position: relative;
+  width: 40%;
   font-family: $oswald;
   font-size: 16px;
   line-height: 16px;
@@ -60,16 +43,16 @@
   text-transform: uppercase;
   background-color: $special-grey;
   border-top: 2px $dull-grey solid;
-  padding: 19px 30px 12px 0;
+  padding: 19px 142px 12px 0;
 
   &::after {
     position: absolute;
     content: "";
-    top: 20px;
+    top: 21px;
     left: 100px;
     width: 32px;
     height: 10px;
-    background-image: url(../../img/arrow.svg);
+    background-image: url("../../img/arrow.svg");
     background-repeat: no-repeat;
   }
 }
@@ -77,7 +60,8 @@
 // todo 768
 @media (min-width: 768px) {
   .program {
-    margin: 0 30px;
+    width: 92%;
+    margin: 0 auto 43px;
   }
 
   .program__item {
@@ -119,7 +103,8 @@
 // todo 1440
 @media (min-width: 1440px) {
   .program {
-    margin: 0 110px;
+    width: 85%;
+    margin: 0 auto;
   }
 
   .program__container {
@@ -146,5 +131,9 @@
     font-size: 16px;
     line-height: 24px;
     padding: 0 0 10px 0;
+  }
+
+  .program__link {
+    width: 25%;
   }
 }

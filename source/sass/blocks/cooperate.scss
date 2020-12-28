@@ -9,6 +9,10 @@
   margin: 0 auto;
 }
 
+.cooperate--index {
+  background-color: $white;
+}
+
 .cooperate__text {
   display: flex;
   flex-direction: column;
@@ -48,8 +52,7 @@
   }
 
   .cooperate--index {
-    background-color: $white;
-    padding: 62px 30px 40px;
+    padding: 64px 30px 40px;
   }
 
   .cooperate__text {

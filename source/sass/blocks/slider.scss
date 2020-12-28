@@ -12,14 +12,13 @@
 .slider__box {
   position: relative;
   display: flex;
-  width: 100%;
   margin: 0 auto;
 }
 
 .slider__foto {
   width: 100%;
   min-height: 232px;
-  margin: 0 0 40px;
+  margin: 0 0 39px;
 
   &:first-child {
     position: absolute;
@@ -32,15 +31,17 @@
 
 .slider__scroll {
   display: flex;
-  width: 62%;
+  width: 61%;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
-  margin: 0 auto 20px;
+  margin: 0 auto 35px;
 }
 
 .slider__word {
   @include title-big;
   display: block;
+  width: 20%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -48,20 +49,19 @@
 }
 
 .slider__scale {
-  width: 41%;
+  width: 37%;
   border: 1px $grey solid;
-  box-sizing: border-box;
   border-radius: 6px;
   background-color: $white;
   padding: 1px 4px;
-  margin: 5px 5px 18px;
 }
 
 .slider__toggle {
-  width: 43%;
+  width: 44%;
+  height: 2px;
   border-radius: 6px;
   background-color: $green;
-  padding: 4px;
+  padding: 2px;
 }
 
 // todo 768

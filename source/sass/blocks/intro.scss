@@ -12,6 +12,7 @@
 }
 
 .intro__img {
+  width: 100%;
   min-height: 302px;
   background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
   background-repeat: no-repeat;
@@ -25,16 +26,15 @@
 .intro__slogan {
   position: absolute;
   top: 0;
-  left: calc(50% - 160px);
-  right: calc(50% - 160px);
+  left: calc(50% - 50vw);
+  right: calc(50% - 50vw);
   z-index: 2;
-  padding: 0;
 }
 
 .intro__main-img {
   position: absolute;
   bottom: 40px;
-  left: calc(50% - 140px);
+  left: calc(50% - 140vw);
   width: 280px;
   height: 270px;
   z-index: 4;
@@ -42,24 +42,19 @@
 }
 
 .intro__wrapper-toggle {
-  padding: 0 20px;
+  width: 88%;
+  margin: 0 auto;
 }
 
 // todo 768
 @media (min-width: 768px) {
-  .intro__wrap {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
   .intro__img {
-    background-color: $white;
-    background-image: none;
-    margin: 0 auto 547px;
+    display: none;
   }
 
   .intro__slogan {
     position: static;
+    margin: 0 auto;
   }
 
   .intro__main-img {
@@ -74,16 +69,16 @@
 // todo 1440
 @media (min-width: 1440px) {
   .intro {
-    margin: 0 0 322px 0;
+    margin: 0 0 281px 0;
   }
 
   .intro__wrap {
-    flex-direction: row;
-    width: 100%;
+    width: 89%;
   }
 
   .intro__img {
     position: absolute;
+    display: block;
     top: -133px;
     right: 0;
     width: 50%;
@@ -93,10 +88,11 @@
   }
 
   .intro__main-img {
-    top: 0;
+    top: -40px;
     right: 0;
     width: 552px;
     height: 499px;
     z-index: 6;
+    margin: 0;
   }
 }
