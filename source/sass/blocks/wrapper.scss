@@ -1,9 +1,39 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper--index {
+  display: block;
+}
+
+.wrapper--catalog {
+  width: 100%;
+  flex-direction: column;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .wrapper--form {
+    flex-direction: column;
+  }
+}
+
 // todo 1440
 @media (min-width: 1440px) {
-  .wrapper {
+  .wrapper--index {
     display: flex;
-    justify-content: space-between;
     width: 100%;
+    margin: 0 auto;
+  }
+
+  .wrapper--form {
+    width: 85%;
+    flex-direction: row;
     margin: 0 auto 50px;
+  }
+
+  .wrapper--catalog {
+    flex-direction: row;
   }
 }

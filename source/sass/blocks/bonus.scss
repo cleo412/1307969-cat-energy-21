@@ -1,16 +1,21 @@
 .bonus {
   position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bonus__container {
   margin: 0 auto;
 }
 
 .bonus__title-main {
   @include title-small;
-  width: 77%;
+  width: 71%;
   font-size: 24px;
   line-height: 24px;
   background-color: $white;
-  padding: 24px 0 35px 20px;
-  margin: 0;
+  padding: 25px 20px 0;
+  margin: 0 0 35px 0;
 
   &::after {
     position: absolute;
@@ -24,11 +29,11 @@
   }
 }
 
-.bonus__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
+// .bonus__wrapper {
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+// }
 
 // todo 768
 @media (min-width: 768px) {
@@ -65,7 +70,7 @@
     }
   }
 
-  .bonus__wrapper {
-    flex-direction: row;
-  }
+  // .bonus__wrapper {
+  //   flex-direction: row;
+  // }
 }

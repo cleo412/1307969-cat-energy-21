@@ -11,9 +11,11 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 88%;
   list-style: none;
   padding: 0;
-  margin: 0 20px;
+  // margin: 0 20px;
+  margin: 0 auto;
 }
 
 .product-extra__item {
@@ -21,8 +23,8 @@
   flex-wrap: wrap;
   border-top: 1px $grey solid;
   box-sizing: border-box;
-  padding: 14px 0 19px;
-  margin: 0;
+  padding: 13px 0 0;
+  margin: 0 0 15px 0;
 }
 
 .product-extra__item:last-of-type {
@@ -62,9 +64,9 @@
   text-align: right;
 }
 
-.product-extra .button {
-  margin: 0;
-}
+// .product-extra .button {
+//   margin: 0;
+// }
 
 // todo 768
 @media (min-width: 768px) {

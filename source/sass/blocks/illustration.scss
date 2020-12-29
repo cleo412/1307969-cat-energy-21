@@ -148,8 +148,10 @@
 // todo 1440
 @media (min-width: 1440px) {
   .illustration {
-    width: 45%;
-    background: linear-gradient($white 162px, $special-grey 162px 400px);
+    width: 30%;
+    background: linear-gradient($white 168px, $special-grey 168px 400px);
+    padding: 0 110px;
+    margin: 0;
   }
 
   .illustration__title {
@@ -160,12 +162,13 @@
   }
 
   .illustration__text {
-    width: 80%;
+    width: 100%;
     padding: 0;
     margin: 0 0 67px 0;
   }
 
   .illustration__list {
+    width: 100%;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0;
@@ -173,7 +176,7 @@
   }
 
   .illustration__box {
-    width: 30%;
+    width: 38%;
     margin: 0 40px 55px 0;
   }
 

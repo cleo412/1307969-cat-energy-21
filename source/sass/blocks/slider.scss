@@ -131,6 +131,7 @@
 @media (min-width: 1440px) {
   .slider {
     width: 50%;
+    min-height: 625px;
     background: linear-gradient($white 162px, $smoky-grey 162px 400px);
     margin: 0;
     padding: 0 70px 0 0;
@@ -146,19 +147,17 @@
   }
 
   .slider__foto {
-    min-height: 654px;
+    min-height: 625px;
     padding: 0;
     margin: 0;
 
     &:first-child {
       width: 55%;
-      min-height: 625px;
-      background: linear-gradient($white 162px, $special-grey 162px 368px);
+      background: linear-gradient($white 168px, $special-grey 168px 368px);
     }
 
     &:last-child {
-      min-height: 536px;
-      background: linear-gradient($white 162px, $smoky-grey 162px 300px);
+      background: linear-gradient($white 168px, $smoky-grey 168px 300px);
     }
   }
 
