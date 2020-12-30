@@ -37,8 +37,13 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .bonus {
+  // .bonus {
+  //   // padding: 0 30px; //строка прокрутки появляется
+  // }
+
+  .bonus__container {
     padding: 0 30px;
+    margin: 0 auto;
   }
 
   .bonus__title-main {
@@ -58,7 +63,12 @@
   .bonus {
     display: flex;
     flex-wrap: wrap;
+    // padding: 0 75px 80px; //строка прокрутки появляется
+  }
+
+  .bonus__container {
     padding: 0 75px 80px;
+    margin: 0 auto;
   }
 
   .bonus__title-main {

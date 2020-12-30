@@ -68,7 +68,17 @@
           </div>
           <div class="intro__img"></div>
         </div>
-        <img class="intro__main-img" src="#" width="280" height="270" alt="изображение кошачьего корма">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/index-glass-desk-w.webp 1x, img/index-glass-desk-w-2w.webp 2x"
+            type="image/webp">
+          <source media="(min-width: 768px)" srcset="img/index-glass-tabl-w.webp 1x, img/index-glass-tabl-w-2w.webp 2x"
+            type="image/webp">
+          <source srcset="img/index-glass-mob-w.webp 1x, img/index-glass-mob-w-2x.webp 2x" type="image/webp">
+          <source media="(min-width: 1440px)" srcset="img/index-glass-desk.png 1x, img/index-glass-desk-2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index-glass-tabl.jpg 1x, img/index-glass-tabl-2x.jpg 2x">
+          <img class="intro__main-img" src="img/index-glass-mob.png" srcset="img/index-glass-mob-2x.png 2x" width="280"
+            height="270" alt="Изображение кошачьего корма в виде ярко-оранжевого стаканчика">
+        </picture>
         <div class="intro__wrapper-toggle">
           <a class="button button--main" tabindex="4" href="#">Подобрать программу</a>
         </div>
@@ -166,8 +176,8 @@
         <div class="slider__container">
           <h3 class="visually-hidden">Слайдер с избражением худого и толстого кота</h3>
           <div class="slider__box">
-            <img class="slider__foto" src="#" width="311" height="202" alt="изображение кота">
-            <img class="slider__foto" src="#" width="311" height="202" alt="изображение кота">
+            <!-- <img class="slider__foto slider__foto-slim">
+            <img class="slider__foto slider__foto-fat slider__foto-fat--current"> -->
           </div>
           <div class="slider__scroll">
             <span class="slider__word">Было</span>

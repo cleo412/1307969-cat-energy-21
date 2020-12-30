@@ -13,14 +13,20 @@
 
 .intro__img {
   width: 100%;
-  min-height: 302px;
-  background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
+  // width: 320px;
+  height: 302px;
+  background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-mob.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center, center;
+  background-size: 100% auto;
   background-color: $green;
   margin: 2px auto 139px;
   z-index: 1;
+}
+
+@media (min-resolution: 2dppx) {
+  .intro__img {
+    background-image: url("../../img/bg-index-mob-2x.jpg");
+  }
 }
 
 .intro__slogan {
@@ -33,8 +39,8 @@
 
 .intro__main-img {
   position: absolute;
-  bottom: 40px;
-  left: calc(50% - 140vw);
+  bottom: 45px;
+  left: calc(50% - 140px);
   width: 280px;
   height: 270px;
   z-index: 4;
@@ -58,7 +64,7 @@
   }
 
   .intro__main-img {
-    top: 204px;
+    top: 216px;
     left: calc(50% - 353px);
     width: 709px;
     height: 609px;
@@ -83,16 +89,58 @@
     right: 0;
     width: 50%;
     min-height: 694px;
-    background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index.jpg");
+    background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-desk.jpg");
     margin: 0;
   }
 
+  @media (min-resolution: 2dppx) {
+    .intro__img {
+      background-image: url("../../img/bg-index-desk-2x.jpg");
+    }
+  }
+
   .intro__main-img {
-    top: -40px;
-    right: 0;
+    top: 8px;
+    // left: 556px;
+    left: calc(50% - 162px);
     width: 552px;
     height: 499px;
-    z-index: 6;
+    // z-index: 6;
     margin: 0;
   }
 }
+// @media (min-width: 1440px) {
+//   .intro {
+//     margin: 0 0 281px 0;
+//   }
+
+//   .intro__wrap {
+//     width: 89%;
+//   }
+
+//   .intro__img {
+//     position: absolute;
+//     display: block;
+//     top: -133px;
+//     right: 0;
+//     width: 50%;
+//     min-height: 694px;
+//     background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-desk.jpg");
+//     margin: 0;
+//   }
+
+//   @media (min-resolution: 2dppx) {
+//     .intro__img {
+//       background-image: url("../../img/bg-index-desk-2x.jpg");
+//     }
+//   }
+
+//   .intro__main-img {
+//     top: -40px;
+//     right: 0;
+//     width: 552px;
+//     height: 499px;
+//     z-index: 6;
+//     margin: 0;
+//   }
+// }
