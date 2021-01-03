@@ -1,10 +1,9 @@
 .bonus {
   position: relative;
-  width: 100%;
-  margin: 0 auto;
 }
 
 .bonus__container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -15,7 +14,7 @@
   line-height: 24px;
   background-color: $white;
   padding: 25px 20px 0;
-  margin: 0 0 39px 0;
+  margin: 0 0 36px 0;
 
   &::after {
     position: absolute;
@@ -32,7 +31,7 @@
 // todo 768
 @media (min-width: 768px) {
   .bonus__container {
-    padding: 0 30px;
+    width: 92%;
     margin: 0 auto;
   }
 

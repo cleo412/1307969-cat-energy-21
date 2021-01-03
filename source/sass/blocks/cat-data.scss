@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  margin-bottom: 22px;
+  margin: 0 auto 22px;
 }
 
 .cat-data__container {
@@ -85,6 +85,10 @@
   .cat-data {
     width: 52%;
     margin: 0;
+  }
+
+  .cat-data__container {
+    width: 100%;
   }
 
   .cat-data__list {

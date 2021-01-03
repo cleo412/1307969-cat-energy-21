@@ -1,8 +1,5 @@
-.product {
-  margin: 0 auto;
-}
-
 .product__container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -139,7 +136,7 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .product {
+  .product__container {
     width: 92%;
   }
 
@@ -264,7 +261,7 @@
 
 // todo 1140
 @media (min-width: 1440px) {
-  .product {
+  .product__container {
     width: 85%;
   }
 

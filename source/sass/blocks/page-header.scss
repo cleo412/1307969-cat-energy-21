@@ -9,8 +9,18 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px $secondary-grey solid;
-  padding: 13px 92px 15px 20px;
+  padding: 15px 90px 10px 20px;
 }
+
+// .page-header__logo-first {
+//   width: 33px;
+//   height: 38px;
+// }
+
+// .page-header__logo-second {
+//   width: 101px;
+//   height: 18px;
+// }
 
 .page-header__navigation {
   margin: 0 auto;
@@ -31,14 +41,14 @@
     margin: 0 40px 0 0;
   }
 
-  .page-header__icon-first {
-    width: 60px;
-    height: 50px;
-  }
+  // .page-header__logo-first {
+  //   width: 60px;
+  //   height: 50px;
+  // }
 
-  .page-header__icon-second {
-    margin: 0 0 0 15px;
-  }
+  // .page-header__logo-second {
+  //   margin: 0 0 0 15px;
+  // }
 }
 
 // todo 1440

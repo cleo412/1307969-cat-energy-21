@@ -4,6 +4,7 @@
 }
 
 .illustration__container {
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -12,13 +13,13 @@
   width: 82%;
   font-size: 36px;
   line-height: 40px;
-  padding: 26px 0 34px 20px;
+  padding: 26px 0 34px;
   margin: 0;
 }
 
 .illustration__text {
   @include text;
-  width: 88%;
+
   margin: 0 auto 26px;
 }
 
@@ -27,8 +28,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  width: 88%;
-  margin: 0 auto;
 }
 
 .illustration__box {
@@ -79,12 +78,16 @@
 // todo 768
 @media (min-width: 768px) {
   .illustration {
-    width: 92%;
     background-color: $white;
     margin-bottom: 65px;
   }
 
+  .illustration__container {
+    width: 92%;
+  }
+
   .illustration__title {
+    width: 65%;
     font-size: 60px;
     line-height: 60px;
     padding: 41px 0 63px;
@@ -148,10 +151,14 @@
 // todo 1440
 @media (min-width: 1440px) {
   .illustration {
-    width: 30%;
+    width: 50%;
     background: linear-gradient($white 168px, $special-grey 168px 400px);
-    padding: 0 110px;
     margin: 0;
+  }
+
+  .illustration__container {
+    width: 69%;
+    margin: 0 auto;
   }
 
   .illustration__title {
@@ -162,7 +169,7 @@
   }
 
   .illustration__text {
-    width: 100%;
+    width: 88%;
     padding: 0;
     margin: 0 0 67px 0;
   }
@@ -176,7 +183,7 @@
   }
 
   .illustration__box {
-    width: 38%;
+    width: 33%;
     margin: 0 40px 55px 0;
   }
 
@@ -196,6 +203,6 @@
   }
 
   .illustration__total-text {
-    margin: 0 64px 0 0;
+    margin: 0 60px 0 0;
   }
 }

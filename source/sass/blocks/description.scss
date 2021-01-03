@@ -1,9 +1,5 @@
-.description {
-  width: 88%;
-  margin: 0 auto;
-}
-
 .description__container {
+  width: 88%;
   margin: 0 auto;
 }
 
@@ -48,19 +44,19 @@
 }
 
 .description__icon--leaf {
-  background-image: url("../../img/leaf1.svg");
+  background-image: url("../../img/leaf.svg");
 }
 
 .description__icon--tub {
-  background-image: url("../../img/tub2.svg");
+  background-image: url("../../img/tub.svg");
 }
 
 .description__icon--eat {
-  background-image: url("../../img/eat3.svg");
+  background-image: url("../../img/eat.svg");
 }
 
 .description__icon--alarm {
-  background-image: url("../../img/alarm4.svg");
+  background-image: url("../../img/alarm.svg");
 }
 
 .description__text {
@@ -73,8 +69,12 @@
 // todo 768
 @media (min-width: 768px) {
   .description {
-    width: 92%;
     border-bottom: 1px $secondory-grey solid;
+  }
+
+  .description__container {
+    width: 92%;
+    margin: 0 auto;
   }
 
   .description__title {
@@ -171,8 +171,11 @@
 // todo 1440
 @media (min-width: 1440px) {
   .description {
-    width: 85%;
     border-bottom: none;
+  }
+
+  .description__container {
+    width: 85%;
   }
 
   .description__title {

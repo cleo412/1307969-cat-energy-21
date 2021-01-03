@@ -1,10 +1,11 @@
 .product-extra {
   display: flex;
-  flex-direction: column;
-  width: 88%;
   border: none;
   z-index: 1;
-  padding: 0;
+}
+
+.product-extra__container {
+  width: 86%;
   margin: 0 auto;
 }
 
@@ -22,8 +23,7 @@
   display: flex;
   flex-wrap: wrap;
   border-top: 1px $grey solid;
-  box-sizing: border-box;
-  padding: 10px 0 0;
+  padding: 11px 0 0;
   margin: 0 0 18px 0;
 }
 
@@ -70,7 +70,7 @@
 
 // todo 768
 @media (min-width: 768px) {
-  .product-extra {
+  .product-extra__container {
     width: 100%;
   }
 
@@ -121,9 +121,12 @@
 // todo 1140
 @media (min-width: 1440px) {
   .product-extra {
-    width: 86%;
-    padding: 0;
-    margin: 0 77px -6px 0;
+    justify-content: space-between;
+    width: 73%;
+  }
+
+  .product-extra__container {
+    width: 100%;
   }
 
   .product-extra__item {

@@ -1,18 +1,16 @@
 .stock {
+  position: relative;
   width: 88%;
   background-color: $green;
   margin: 38px auto 35px;
 }
 
 .stock__container {
-  position: relative;
   width: 100%;
   background-image: url("../../img//bg-catalog-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 0;
-  margin: 0 auto;
 }
 
 @media (min-resolution: 2dppx) {
@@ -23,14 +21,12 @@
 
 .stock__icon {
   position: absolute;
-  top: 60px;
+  top: 55px;
   left: calc(50% - 39px);
   width: 78px;
   height: 80px;
-  background-image: url("../../img/icon-gift.svg");
+  background-image: url("../../img/gift.svg");
   background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
 }
 
 .stock__text {
@@ -62,7 +58,7 @@
   }
 
   .stock__icon {
-    top: 57px;
+    top: 60px;
     left: 79px;
     width: 80px;
     height: 83px;
@@ -70,7 +66,7 @@
 
   .stock__text {
     text-align: left;
-    padding: 72px 124px 68px 423px;
+    padding: 75px 120px 70px 423px;
     margin: 0;
   }
 }
@@ -78,7 +74,7 @@
 // todo 1440
 @media (min-width: 1440px) {
   .stock {
-    width: 24%;
+    width: 20%;
     margin: 0;
   }
 

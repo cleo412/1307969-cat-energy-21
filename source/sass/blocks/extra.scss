@@ -5,6 +5,7 @@
 }
 
 .extra__container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -54,14 +55,13 @@
     content: "";
     width: 18px;
     height: 14px;
-    background-image: url("../../img/vector.svg");
+    background-image: url("../../img/check.svg");
   }
 }
 
 // todo 768
 @media (min-width: 768px) {
   .extra {
-    width: 100%;
     padding: 0;
     margin-bottom: 18px;
   }

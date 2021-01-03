@@ -9,7 +9,6 @@
 </head>
 
 <body class="page-body">
-  <!--todo header-->
   <header class="page-header">
     <a class="page-header__logo logo">
       <svg width="33" height="38" aria-label="маскот Кэт энерджи">
@@ -165,47 +164,55 @@
     </section>
     <section class="page-footer__box">
       <!--todo logo-->
-      <div class="page-footer__logo page-footer__logo--form">
-        <a href="index.html">
-          <img src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
-            aria-label="переход на главную страницу">
+      <div class="page-footer__container">
+        <a tabindex="7" class="page-footer__logo" href="index.html">
+          <svg width="128" height="24" aria-label="логотип Кэт энерджи, переход наглавную страницу">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
+        <!--todo social-->
+        <section class="page-footer__social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="page-footer__social-list">
+            <!--todo vk-->
+            <li class="page-footer__social-item">
+              <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
+                <svg width="23" height="16" aria-label="Вконтакте">
+                  <use xlink:href="#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <!--todo inst-->
+            <li class="page-footer__social-item">
+              <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
+                <svg width="16" height="16" aria-label="Инстаграм">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!--todo fb-->
+            <li class="page-footer__social-item">
+              <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
+                <svg width="28" height="22" aria-label="Фейсбук">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!--todo copyright-->
+        <section class="page-footer__copyright">
+          <p class="visually-hidden">Копирайт - логотип HTML Академии</p>
+          <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="114" height="18">
+              <use xlink:href="#academy-word"></use>
+            </svg>
+            <svg width="27" height="34">
+              <use xlink:href="#academy-name"></use>
+            </svg>
+          </a>
+        </section>
       </div>
-      <!--todo social-->
-      <section class="page-footer__social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="page-footer__social-list">
-          <!--todo vk-->
-          <li class="page-footer__social-item">
-            <a tabindex="18" class="page-footer__social-button page-footer__social-button--vk" href="#">
-              <p class="visually-hidden">Вконтакте</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-          <!--todo inst-->
-          <li class="page-footer__social-item">
-            <a tabindex="19" class="page-footer__social-button page-footer__social-button--inst" href="#">
-              <p class="visually-hidden">Инстаграм</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-          <!--todo fb-->
-          <li class="page-footer__social-item">
-            <a tabindex="20" class="page-footer__social-button page-footer__social-button--fb" href="#">
-              <p class="visually-hidden">Фейсбук</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!--todo copyright-->
-      <section class="page-footer__copyright">
-        <h2 class="visually-hidden"> Копирайт</h2>
-        <a class="page-footer__copyright-link" tabindex="21" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="page-footer__copyright-text">HTML Academy</span>
-          <img class="page-footer__copyright-logo" src="https://via.placeholder.com/27x34" alt="">
-        </a>
-      </section>
     </section>
   </footer>
 </body>

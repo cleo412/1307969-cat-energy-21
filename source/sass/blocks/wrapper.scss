@@ -1,19 +1,26 @@
 .wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.wrapper--index {
   display: block;
 }
 
 .wrapper--catalog {
-  width: 100%;
+  display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 // todo 768
 @media (min-width: 768px) {
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wrapper--index {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
   .wrapper--form {
     flex-direction: column;
   }
@@ -21,21 +28,22 @@
 
 // todo 1440
 @media (min-width: 1440px) {
+  .wrapper {
+    flex-direction: row;
+  }
+
   .wrapper--index {
-    display: flex;
     width: 100%;
     margin: 0 auto;
   }
 
   .wrapper--form {
     width: 85%;
-    flex-direction: row;
     margin: 0 auto 50px;
   }
 
   .wrapper--catalog {
     width: 85%;
-    flex-direction: row;
-    margin: 0 auto 87px;
+    margin: 0 auto 82px;
   }
 }

@@ -119,8 +119,8 @@
               <div class="product__wrapper-img">
                 <a class="product__link" tabindex="7" href="#">
                   <!--foto 3-->
-                  <picture>
-                    <!-- <source media="(min-width: 1440px)" srcset="# 1x, # 2x" type="image/webp">
+                  <!-- <picture> -->
+                  <!-- <source media="(min-width: 1440px)" srcset="# 1x, # 2x" type="image/webp">
                     <source media="(min-width: 768px)" srcset="# 1x, # 2x" type="image/webp">
                     <source srcset="img/catalog-fish500-mob.webp 1x, img/catalog-fish500-mob-2x.webp 2x"
                       type="image/webp">
@@ -132,8 +132,8 @@
                       srcset="img/catalog-fish500-mob-2x.jpg 2x" width="68" height="86"
                       alt="Cat Energy PRO 500 грамм с рыбой">
                   </picture> -->
-                    <img class="product__foto" src="https://via.placeholder.com/68x86 " width="68" height="86"
-                      alt="Cat Energy PRO 500 грамм с курицей">
+                  <img class="product__foto" src="https://via.placeholder.com/68x86 " width="68" height="86"
+                    alt="Cat Energy PRO 500 грамм с курицей">
                 </a>
               </div>
               <div class="product__wrapper-price">
@@ -323,48 +323,50 @@
         <!--todo product-extra-->
         <div class=" wrapper wrapper--catalog">
           <section class="product-extra">
-            <ul class="product-extra__menu">
-              <li class="product-extra__item">
-                <div class="product-extra__box">
-                  <h3 class="product-extra__title">Сахарозаменитель</h3>
-                  <ul class="product-extra__list">
-                    <li class="product-extra__value">1 упаковка (100 г)</li>
-                    <li class="product-extra__value">200 Р.</li>
-                  </ul>
-                </div>
-                <a class="button button--extra" tabindex="24" href="#">Заказать</a>
-              </li>
-              <li class="product-extra__item">
-                <div class="product-extra__box">
-                  <h3 class="product-extra__title">Питьевая вода</h3>
-                  <ul class="product-extra__list">
-                    <li class="product-extra__value">5 литров</li>
-                    <li class="product-extra__value">50 Р.</li>
-                  </ul>
-                </div>
-                <a class="button button--extra" tabindex="25" href="#">Заказать</a>
-              </li>
-              <li class="product-extra__item">
-                <div class="product-extra__box">
-                  <h3 class="product-extra__title">Молоко</h3>
-                  <ul class="product-extra__list">
-                    <li class="product-extra__value">1 литр</li>
-                    <li class="product-extra__value">100 Р.</li>
-                  </ul>
-                </div>
-                <a class="button button--extra" tabindex="26" href="#">Заказать</a>
-              </li>
-              <li class="product-extra__item">
-                <div class="product-extra__box">
-                  <h3 class="product-extra__title">Витамины</h3>
-                  <ul class="product-extra__list">
-                    <li class="product-extra__value">1 упаковка (30 г)</li>
-                    <li class="product-extra__value">300 Р.</li>
-                  </ul>
-                </div>
-                <a class="button button--extra" tabindex="27" href="#">Заказать</a>
-              </li>
-            </ul>
+            <div class="product-extra__container">
+              <ul class="product-extra__menu">
+                <li class="product-extra__item">
+                  <div class="product-extra__box">
+                    <h3 class="product-extra__title">Сахарозаменитель</h3>
+                    <ul class="product-extra__list">
+                      <li class="product-extra__value">1 упаковка (100 г)</li>
+                      <li class="product-extra__value">200 Р.</li>
+                    </ul>
+                  </div>
+                  <a class="button button--extra" tabindex="24" href="#">Заказать</a>
+                </li>
+                <li class="product-extra__item">
+                  <div class="product-extra__box">
+                    <h3 class="product-extra__title">Питьевая вода</h3>
+                    <ul class="product-extra__list">
+                      <li class="product-extra__value">5 литров</li>
+                      <li class="product-extra__value">50 Р.</li>
+                    </ul>
+                  </div>
+                  <a class="button button--extra" tabindex="25" href="#">Заказать</a>
+                </li>
+                <li class="product-extra__item">
+                  <div class="product-extra__box">
+                    <h3 class="product-extra__title">Молоко</h3>
+                    <ul class="product-extra__list">
+                      <li class="product-extra__value">1 литр</li>
+                      <li class="product-extra__value">100 Р.</li>
+                    </ul>
+                  </div>
+                  <a class="button button--extra" tabindex="26" href="#">Заказать</a>
+                </li>
+                <li class="product-extra__item">
+                  <div class="product-extra__box">
+                    <h3 class="product-extra__title">Витамины</h3>
+                    <ul class="product-extra__list">
+                      <li class="product-extra__value">1 упаковка (30 г)</li>
+                      <li class="product-extra__value">300 Р.</li>
+                    </ul>
+                  </div>
+                  <a class="button button--extra" tabindex="27" href="#">Заказать</a>
+                </li>
+              </ul>
+            </div>
           </section>
           <!--todo stock-->
           <section class="stock">
@@ -401,47 +403,55 @@
     </section>
     <section class="page-footer__box">
       <!--todo logo-->
-      <div class="page-footer__logo page-footer__logo--form">
-        <a href="index.html">
-          <img src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
-            aria-label="переход на главную страницу">
+      <div class="page-footer__container">
+        <a tabindex="7" class="page-footer__logo" href="index.html">
+          <svg width="128" height="24" aria-label="логотип Кэт энерджи, переход на главную страницу">
+            <use xlink:href="#logo-footer"></use>
+          </svg>
         </a>
+        <!--todo social-->
+        <section class="page-footer__social">
+          <h2 class="visually-hidden">Мы в соцсетях</h2>
+          <ul class="page-footer__social-list">
+            <!--todo vk-->
+            <li class="page-footer__social-item">
+              <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
+                <svg width="23" height="16" aria-label="Вконтакте">
+                  <use xlink:href="#vkontakte"></use>
+                </svg>
+              </a>
+            </li>
+            <!--todo inst-->
+            <li class="page-footer__social-item">
+              <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
+                <svg width="16" height="16" aria-label="Инстаграм">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <!--todo fb-->
+            <li class="page-footer__social-item">
+              <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
+                <svg width="28" height="22" aria-label="Фейсбук">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <!--todo copyright-->
+        <section class="page-footer__copyright">
+          <p class="visually-hidden">Копирайт - логотип HTML Академии</p>
+          <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg width="114" height="18">
+              <use xlink:href="#academy-word"></use>
+            </svg>
+            <svg width="27" height="34">
+              <use xlink:href="#academy-name"></use>
+            </svg>
+          </a>
+        </section>
       </div>
-      <!--todo social-->
-      <section class="page-footer__social">
-        <h2 class="visually-hidden">Мы в соцсетях</h2>
-        <ul class="page-footer__social-list">
-          <!--todo vk-->
-          <li class="page-footer__social-item">
-            <a tabindex="18" class="page-footer__social-button page-footer__social-button--vk" href="#">
-              <p class="visually-hidden">Вконтакте</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-          <!--todo inst-->
-          <li class="page-footer__social-item">
-            <a tabindex="19" class="page-footer__social-button page-footer__social-button--inst" href="#">
-              <p class="visually-hidden">Инстаграм</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-          <!--todo fb-->
-          <li class="page-footer__social-item">
-            <a tabindex="20" class="page-footer__social-button page-footer__social-button--fb" href="#">
-              <p class="visually-hidden">Фейсбук</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
-            </a>
-          </li>
-        </ul>
-      </section>
-      <!--todo copyright-->
-      <section class="page-footer__copyright">
-        <h2 class="visually-hidden"> Копирайт</h2>
-        <a class="page-footer__copyright-link" tabindex="21" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="page-footer__copyright-text">HTML Academy</span>
-          <img class="page-footer__copyright-logo" src="https://via.placeholder.com/27x34" alt="">
-        </a>
-      </section>
     </section>
   </footer>
 </body>
