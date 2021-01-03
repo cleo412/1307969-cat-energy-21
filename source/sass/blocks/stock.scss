@@ -39,15 +39,16 @@
   line-height: 20px;
   color: $white;
   text-align: center;
-  padding: 190px 55px 43px;
+  padding: 185px 55px 44px;
   margin: 0 auto;
 }
 
 // todo 768
 @media (min-width: 768px) {
   .stock {
+    width: 100%;
     padding: 0;
-    margin: 66px 0 77px;
+    margin: 62px 0 77px;
   }
 
   .stock__container {
@@ -77,8 +78,7 @@
 // todo 1440
 @media (min-width: 1440px) {
   .stock {
-    width: 22%;
-    padding: 0 35px 0 0;
+    width: 24%;
     margin: 0;
   }
 
@@ -100,7 +100,7 @@
 
   .stock__text {
     text-align: center;
-    padding: 187px 30px 40px;
+    padding: 187px 35px 40px;
     margin: 0;
   }
 }
