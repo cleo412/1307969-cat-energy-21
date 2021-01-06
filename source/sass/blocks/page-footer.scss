@@ -23,15 +23,24 @@
 .page-footer__container {
   display: flex;
   flex-direction: column;
-  width: 88%;
+  align-items: center;
+  width: 100%;
   margin: 0 auto;
 }
 
-.page-footer__logo {
+.page-footer__logo-word {
   width: 128px;
   height: 24px;
-  padding: 35px 35px 25px;
+  padding: 33px 35px;
   margin: 0 auto;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__social-list {

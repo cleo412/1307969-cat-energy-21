@@ -11,14 +11,21 @@
 <body class="page-body">
   <!--todo header-->
   <header class="page-header">
-    <a class="page-header__logo">
-      <svg class="page-header__logo-first page-header__logo-first--mob">
+    <a class="page-header__link">
+      <svg class="page-header__logo page-header__logo--mob" role="img" width="34" height="38" viewBox="0 0 34 38"
+        preserveAspectRatio="none" aria-label="маскот сайта Кэт энерджи">
         <use xlink:href="img/sprite.svg#logo-mob"></use>
       </svg>
-      <svg class="page-header__logo-first page-header__logo-first--main">
-        <use xlink:href="img/sprite.svg#logo-main"></use>
+      <svg class="page-header__logo page-header__logo--tabl" role="img" width="174" height="52" viewBox="0 0 174 52"
+        preserveAspectRatio="none" aria-label="Логотип сайта Кэт энерджи">
+        <use xlink:href="img/sprite.svg#logo-tabl"></use>
       </svg>
-      <svg class="page-header__logo-second">
+      <svg class="page-header__logo page-header__logo--desk" role="img" width="202" height="59" viewBox="0 0 202 59"
+        preserveAspectRatio="none" aria-label="Логотип сайта Кэт энерджи">
+        <use xlink:href="img/sprite.svg#logo-desk"></use>
+      </svg>
+      <svg class="page-header__logo page-header__logo--word" role="img" width="101" height="18" viewbox="0 0 101 18"
+        preserveAspectRatio="none" aria-label="логотип-текст сайта Кэт энерджи">
         <use xlink:href="img/sprite.svg#logo-word"></use>
       </svg>
     </a>
@@ -64,13 +71,24 @@
     <section class="program">
       <div class="program__container">
         <div class="program__item">
-          <span class="program__icon program__icon--slim"></span>
+          <span class="program__icon">
+            <svg class="program__icon-slim" role="img" width="50" height="53" viewBox="0 0 50 53"
+              preserveAspectRatio="none" aria-label="иконка кота">
+              <use xlink:href="img/sprite.svg#cat1"></use>
+            </svg>
+          </span>
           <h2 class="program__title">Похудение</h2>
           <p class="program__subtitle">
             Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim
             поможет вашему питомцу сбросить лишний вес.
           </p>
-          <a class="program__link" tabindex="5" href="#">Каталог slim</a>
+          <a class="program__link" tabindex="5" href="#">
+            <span class="program__link-name">Каталог&nbsp;slim</span>
+            <svg class="program__link-arrow" role="img" width="32" height="12" viewBox="0 0 32 12"
+              preserveAspectRatio="none">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
         </div>
         <div class="program__item">
           <span class="program__icon program__icon--fat"></span>
@@ -79,7 +97,13 @@
             Заработать авторитет среди дворовых котов и&nbsp;даже&nbsp;собак? Серия&nbsp;Cat Energy Pro&nbsp;поможет
             вашему&nbsp;коту&nbsp;нарастить необходимые мышцы!
           </p>
-          <a class="program__link" tabindex="6" href="#">Каталог pro</a>
+          <a class="program__link" tabindex="6">
+            <span class="program__link-name">Каталог&nbsp;pro</span>
+            <svg class="program__link-arrow" role="img" width="32" height="12" viewBox="0 0 32 12"
+              preserveAspectRatio="none">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </section>
@@ -191,7 +215,8 @@
     <!--todo logo-->
     <div class="page-footer__container">
       <div class="page-footer__logo">
-        <svg width="128" height="24" aria-label="логотип-текст Кэт энерджи">
+        <svg class="page-footer__logo-word" role="img" width="101" height="18" viewbox="0 0 101 18"
+          preserveAspectRatio="none" aria-label="логотип-текст сайта Кэт энерджи">
           <use xlink:href="img/sprite.svg#logo-word"></use>
         </svg>
       </div>
