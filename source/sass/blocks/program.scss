@@ -31,22 +31,21 @@
 .program__icon {
   position: absolute;
   top: 21px;
-  left: 23px;
   background-repeat: no-repeat;
   background-position: 0 0;
 }
 
-.program__icon-slim {
+.program__icon--slim {
+  left: 23px;
   width: 50px;
   height: 53px;
 }
 
-// .program__icon-fat {
-//   left: 14px;
-//   width: 67px;
-//   height: 50px;
-//   background-image: url("../../img/cat-2.svg");
-// }
+.program__icon--fat {
+  left: 14px;
+  width: 67px;
+  height: 50px;
+}
 
 .program__subtitle {
   @include text;
@@ -109,6 +108,20 @@
     margin: 0;
   }
 
+  .program__icon--slim {
+    top: 85px;
+    left: 58vw;
+    width: 200px;
+    height: 211px;
+  }
+
+  .program__icon--fat {
+    top: 93px;
+    left: 54vw;
+    width: 268px;
+    height: 200px;
+  }
+
   .program__subtitle {
     width: 62%;
     font-size: 16px;
@@ -156,6 +169,20 @@
     text-align: left;
     padding: 75px 0 75px 163px;
     margin: 0;
+  }
+
+  .program__icon--slim {
+    top: 40px;
+    left: 55px;
+    width: 100px;
+    height: 106px;
+  }
+
+  .program__icon--fat {
+    top: 45px;
+    left: 35px;
+    width: 134px;
+    height: 100px;
   }
 
   .program__item:last-child .program__subtitle,

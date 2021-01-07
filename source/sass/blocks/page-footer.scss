@@ -11,10 +11,12 @@
 }
 
 .page-footer__map {
-  display: block;
   width: 100%;
   min-height: 363px;
-  background-color: url("../../img/map.jpg");
+  background-image: url("../../img/map-mob.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
   overflow: hidden;
   padding: 0;
   margin: 0 auto;
@@ -89,8 +91,8 @@
   }
 
   .page-footer__map {
-    width: 100%;
     min-height: 400px;
+    background-image: url("../../img/map-tabl.jpg");
   }
 
   .page-footer__container {
@@ -114,6 +116,10 @@
 @media (min-width: 1440px) {
   .page-footer {
     position: relative;
+  }
+
+  .page-footer__map {
+    background-image: url("../../img/map-desk.jpg");
   }
 
   .page-footer__cooperate {
