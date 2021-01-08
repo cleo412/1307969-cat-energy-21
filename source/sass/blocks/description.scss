@@ -8,17 +8,17 @@
   width: 82%;
   font-size: 36px;
   line-height: 40px;
-  padding: 25px 0 20px;
+  padding: 26px 0 20px;
   margin: 0;
 }
 
 .description__list {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
   gap: 17px;
   list-style: none;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 42px;
 }
 
 .description__item {
