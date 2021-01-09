@@ -1,7 +1,5 @@
 .intro {
   position: relative;
-  box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .intro__container {
@@ -75,10 +73,6 @@
 
 // todo 1440
 @media (min-width: 1440px) {
-  .intro {
-    margin: 0 0 281px 0;
-  }
-
   .intro__wrap {
     width: 89%;
   }
@@ -86,7 +80,7 @@
   .intro__img {
     position: absolute;
     display: block;
-    top: -133px;
+    top: -185px;
     right: 0;
     width: 50%;
     min-height: 694px;
@@ -101,7 +95,7 @@
   }
 
   .intro__main-img {
-    top: 8px;
+    top: -43px;
     left: calc(50% - 162px);
     width: 552px;
     height: 499px;

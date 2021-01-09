@@ -53,11 +53,19 @@
     top: 5px;
     left: -40px;
     content: "";
-    width: 18px;
-    height: 14px;
+    width: 19px;
+    height: 15px;
     background-image: url("../../img/check.svg");
   }
 }
+
+// .extra__check {
+//   position: absolute;
+//   top: 10px;
+//   left: -34px;
+//   width: 19px;
+//   height: 15px;
+// }
 
 // todo 768
 @media (min-width: 768px) {
@@ -71,7 +79,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 35px;
-    margin: 0 0 64px 35px;
+    margin: 0 0 55px 35px;
 
     &::after {
       top: 24px;
@@ -84,11 +92,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 82%;
+    margin-bottom: 27px;
   }
 
   .extra__input-wrapper {
     width: 45%;
-    padding: 0 0 42px 59px;
+    padding: 6px 0 36px 59px;
     margin: 0;
   }
 
@@ -109,6 +118,11 @@
       height: 14px;
     }
   }
+
+  // .extra__check {
+  //   top: 15px;
+  //   left: 11px;
+  // }
 }
 
 // todo 1440

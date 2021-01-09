@@ -1,0 +1,24 @@
+.page-main__intro,
+.page-main__program,
+.page-main__illustration,
+.page-main__slider {
+  margin: 0 auto;
+}
+
+// todo 768
+@media (min-width: 768px) {
+  .page-main__illustration {
+    margin-bottom: 65px;
+  }
+}
+
+// todo 1440
+@media (min-width: 1440px) {
+  .page-main__intro {
+    margin: 0 0 330px 0;
+  }
+
+  .page-main__illustration {
+    margin: 0;
+  }
+}

@@ -1,6 +1,5 @@
 .illustration {
   background-color: $smoky-grey;
-  margin: 0 auto;
 }
 
 .illustration__container {
@@ -66,8 +65,8 @@
 .illustration__total {
   @include title-big;
   font-size: 14px;
-  line-height: 20px;
-  padding: 37px 0;
+  line-height: 35px;
+  padding: 29px 0;
   margin: 0 auto;
 }
 
@@ -79,7 +78,6 @@
 @media (min-width: 768px) {
   .illustration {
     background-color: $white;
-    margin-bottom: 65px;
   }
 
   .illustration__container {
@@ -153,7 +151,6 @@
   .illustration {
     width: 50%;
     background: linear-gradient($white 168px, $special-grey 168px 400px);
-    margin: 0;
   }
 
   .illustration__container {
