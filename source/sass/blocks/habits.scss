@@ -29,6 +29,10 @@
   outline: none;
   padding: 5px 14px 0 13px;
   margin: 0 20px;
+
+  &:focus {
+    outline: 2px $orange solid;
+  }
 }
 
 .habits__text::placeholder {

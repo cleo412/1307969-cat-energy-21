@@ -59,6 +59,10 @@
   }
 }
 
+.extra__input:focus ~ .extra__label {
+  outline: 2px $orange solid;
+}
+
 // .extra__check {
 //   position: absolute;
 //   top: 10px;

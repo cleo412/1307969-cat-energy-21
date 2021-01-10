@@ -52,6 +52,10 @@
   }
 }
 
+.way__input:focus ~ .way__label {
+  outline: 2px $orange solid;
+}
+
 // todo 768
 @media (min-width: 768px) {
   .way {

@@ -7,6 +7,7 @@
 
 .stock__container {
   width: 100%;
+  background-color: $green;
   background-image: url("../../img//bg-catalog-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -64,7 +65,7 @@
 
   .stock__text {
     text-align: left;
-    padding: 75px 120px 70px 423px;
+    padding: 75px 120px 65px 423px;
     margin: 0;
   }
 }

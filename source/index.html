@@ -73,7 +73,7 @@
     <section class="page-main__program program">
       <div class="program__container">
         <div class="program__item">
-          <svg class="program__icon program__icon--slim" role="img" viewBox="0 0 200 211" width="50" height="53"
+          <svg class="program__icon program__icon--slim" role="img" width="50" height="53" viewBox="0 0 200 211"
             aria-label="иконка кота">
             <use xlink:href="img/sprite.svg#cat-1"></use>
           </svg>
@@ -125,7 +125,7 @@
           <li class="description__item description__item--tub">
             <!--tub-->
             <div class="description__icon-box">
-              <svg role="img" viewBox="0 0 29 31" width="29" height="31">
+              <svg role="img" width="29" height="31" viewBox="0 0 29 31">
                 <use xlink:href="img/sprite.svg#tub"></use>
               </svg>
             </div>
@@ -136,7 +136,7 @@
           <li class="description__item description__item--eat">
             <!--eat-->
             <div class="description__icon-box">
-              <svg role="img" viewBox="0 0 25 30" width="25" height="30">
+              <svg role="img" width="25" height="30" viewBox="0 0 25 30">
                 <use xlink:href="img/sprite.svg#eat"></use>
               </svg>
             </div>
@@ -146,7 +146,7 @@
           <li class="description__item description__item--alarm">
             <!--alarm-->
             <div class="description__icon-box">
-              <svg role="img" viewBox="0 0 32 33" width="32" height="33">
+              <svg role="img" width="32" height="33" viewBox="0 0 32 33">
                 <use xlink:href="img/sprite.svg#alarm"></use>
               </svg>
             </div>
@@ -184,15 +184,25 @@
         <div class="slider__container">
           <h3 class="visually-hidden">Слайдер с избражением худого и толстого кота</h3>
           <div class="slider__box">
-            <img class="slider__foto slider__foto-slim" src="#" alt="избражение худого кота">
-            <img class="slider__foto slider__foto-fat slider__foto-fat--current" src="#" alt="избражение толстого кота">
-          </div>
-          <div class="slider__scroll">
-            <span class="slider__word">Было</span>
-            <div class="slider__scale">
-              <div class="slider__toggle"></div>
+            <picture>
+              <source media="(min-width:1140px)" srcset="img/cat-fat-desk-2x.png 1x, img/cat-fat-desk-2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/cat-fat-tabl.png 1x, img/cat-fat-tabl-2x.png 2x">
+              <img class="slider__foto slider__foto-fat" src="img/cat-fat-mob.png" srcset=" img/cat-fat-mob-2x.png 2x"
+                width="311" height="232" alt="избражение толстого кота">
+            </picture>
+            <picture>
+              <source media="(min-width:1140px)" srcset="img/cat-slim-desk-2x.png 1x, img/cat-slim-desk-2x.png 2x">
+              <source media="(min-width:768px)" srcset="img/cat-slim-tabl.png 1x, img/cat-slim-tabl-2x.png 2x">
+              <img class="slider__foto slider__foto-slim" src="img/cat-slim-mob.png"
+                srcset=" img/cat-slim-mob-2x.png 2x" width="251" height="240" alt="избражение худого кота">
+            </picture>
+            <div class="slider__scroll">
+              <span class="slider__word">Было</span>
+              <div class="slider__scale">
+                <div class="slider__toggle"></div>
+              </div>
+              <span class="slider__word">Стало</span>
             </div>
-            <span class="slider__word">Стало</span>
           </div>
         </div>
       </section>
@@ -234,7 +244,7 @@
           <!--todo vk-->
           <li class="page-footer__social-item">
             <a tabindex="7" class="page-footer__social-button page-footer__social-button--vk" href="#">
-              <svg viewbox="0 0 28 22" aria-label="Вконтакте">
+              <svg width="28" height="22" viewbox="0 0 28 22" aria-label="Вконтакте">
                 <use xlink:href="img/sprite.svg#vkontakte"></use>
               </svg>
             </a>
@@ -242,7 +252,7 @@
           <!--todo inst-->
           <li class="page-footer__social-item">
             <a tabindex="8" class="page-footer__social-button page-footer__social-button--inst" href="#">
-              <svg viewbox="0 0 20 20" aria-label="Инстаграм">
+              <svg width="20" height="20" viewbox="0 0 20 20" aria-label="Инстаграм">
                 <use xlink:href="img/sprite.svg#instagram"></use>
               </svg>
             </a>
@@ -250,7 +260,7 @@
           <!--todo fb-->
           <li class="page-footer__social-item">
             <a tabindex="9" class="page-footer__social-button page-footer__social-button--fb" href="#">
-              <svg viewbox="0 0 13 20" aria-label="Фейсбук">
+              <svg width="13" height="20" viewbox="0 0 13 20" aria-label="Фейсбук">
                 <use xlink:href="img/sprite.svg#facebook"></use>
               </svg>
             </a>
