@@ -15,14 +15,33 @@
 .button--main {
   display: block;
   font-size: 14px;
-  line-height: 18px;
-  padding: 11px 25px;
+  line-height: 22px;
+
+  &:hover {
+    background-color: $secondory-green;
+  }
+
+  &:active {
+    background-color: $secondory-green;
+    color: $white-03;
+    // border: none;
+    // outline: none;
+  }
 }
 
 .button--special {
   color: $basic-grey;
   background-color: $special-grey;
   margin: 0 auto;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  &:active {
+    background-color: $light-grey;
+    color: $basic-grey-03;
+  }
 }
 
 // todo 768
@@ -33,8 +52,8 @@
     left: calc(41% - 203px);
     width: 32%;
     font-size: 20px;
-    line-height: 20px;
-    padding: 17px 10px;
+    line-height: 26px;
+    padding: 15px 10px;
     z-index: 5;
   }
 
@@ -75,9 +94,6 @@
     top: 272px;
     left: 190px;
     width: 17%;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 17px 10px;
     z-index: 2;
   }
 

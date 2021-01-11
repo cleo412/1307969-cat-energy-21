@@ -39,6 +39,19 @@
   margin: 20px auto 0;
 }
 
+.input-error {
+  .cat-data__input,
+  .owner-data__input {
+    outline: none;
+    border: 2px solid $error-pink;
+
+    .owner-data__phone,
+    .owner-data__email {
+      stroke: $error-pink;
+    }
+  }
+}
+
 // todo 768
 @media (min-width: 768px) {
   .form__header {
@@ -95,7 +108,7 @@
   .form__submit {
     width: 85%;
     justify-content: flex-start;
-    margin-bottom: 80px;
+    margin-bottom: 85px;
   }
 
   .form__subtitle {

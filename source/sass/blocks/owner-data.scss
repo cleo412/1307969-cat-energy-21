@@ -45,11 +45,38 @@
   margin-right: 10px;
 }
 
+// .owner-data__email,
+// .owner-data__phone {
+//   stroke: $green;
+// }
+
 .owner-data__input {
   flex: 1 1 auto;
   color: $black;
   border: 1px solid $grey;
   padding: 14px 33px 14px 14px;
+
+  &:disabled {
+    border: 2px $basic-grey solid;
+
+    .owner-data__email,
+    .owner-data__phone {
+      stroke: $green;
+    }
+  }
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey;
+  }
 }
 
 .owner-data__input::placeholder {

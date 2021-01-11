@@ -63,8 +63,8 @@
   }
 
   .intro__main-img {
-    top: 216px;
-    left: calc(50% - 353px);
+    top: calc(50% + 120px);
+    left: calc(50% - 350px);
     width: 709px;
     height: 609px;
     z-index: 4;
@@ -96,7 +96,7 @@
 
   .intro__main-img {
     top: -43px;
-    left: calc(50% - 162px);
+    left: calc(50% - 11vw);
     width: 552px;
     height: 499px;
     margin: 0;

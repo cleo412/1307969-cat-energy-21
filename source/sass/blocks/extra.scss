@@ -55,7 +55,20 @@
     content: "";
     width: 19px;
     height: 15px;
-    background-image: url("../../img/check.svg");
+    // todo
+    // background-image: url("../../img/check.svg");
+  }
+
+  .extra__input:disabled ~ & {
+    color: $black-03;
+  }
+
+  .extra__input:disabled + &::before {
+    border-color: $extra-light-grey;
+  }
+  //  todo
+  .extra__input:disabled + &::after {
+    stroke: $green-03;
   }
 }
 

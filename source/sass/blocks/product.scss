@@ -67,7 +67,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
-  padding: 20px 0 12px;
+  padding: 20px 0 10px;
   margin: 0;
 }
 
@@ -86,7 +86,7 @@
   @include text;
   width: 50%;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 18px;
 }
 
 .product__value:nth-child(even) {
@@ -163,7 +163,7 @@
     align-items: center;
     background: linear-gradient($white 105px, $special-grey 105px 427px);
     border-top: none;
-    padding-bottom: 40px;
+    padding-bottom: 35px;
     margin: 0 auto;
   }
 
@@ -283,7 +283,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 40px 80px;
+    gap: 44px 80px;
   }
 
   .product__title-main {

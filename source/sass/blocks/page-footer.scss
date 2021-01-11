@@ -38,7 +38,7 @@
   display: block;
   width: 128px;
   height: 24px;
-  padding: 37px 0 30px;
+  padding: 31px 0 30px;
   margin: 0 auto;
 
   &:hover {
@@ -63,12 +63,24 @@
   justify-content: center;
   width: 46%;
   list-style: none;
-  padding: 20px 0 17px;
+  padding: 20px 0 15px;
   margin: 0 auto;
 }
 
 .page-footer__social-button {
   display: inline-block;
+}
+
+.page-footer__social-icon,
+.page-footer__academy-logo {
+  &:hover {
+    stroke: $green;
+  }
+
+  &:active {
+    stroke: $green;
+    opacity: 0.3;
+  }
 }
 
 .page-footer__social-button--vk {
@@ -91,6 +103,21 @@
   justify-content: space-between;
   align-items: center;
   padding: 25px 0;
+}
+
+.page-footer__academy-word:active {
+  opacity: 0.3;
+}
+
+.page-footer__academy-logo {
+  &:hover {
+    fill: $green;
+  }
+
+  &:active {
+    fill: $green;
+    opacity: 0.3;
+  }
 }
 
 // todo 768

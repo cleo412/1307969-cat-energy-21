@@ -35,6 +35,19 @@
   color: $black;
   border: 1px solid $aluminum-grey;
   padding: 15px 0 11px 15px;
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey;
+  }
 }
 
 .cat-data__input::placeholder {
