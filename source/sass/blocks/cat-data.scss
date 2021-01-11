@@ -2,42 +2,57 @@
   display: flex;
   flex-wrap: wrap;
   border: none;
-  padding: 0 20px 7px;
+  margin: 0 auto 22px;
 }
 
 .cat-data__container {
+  flex-basis: 100%;
   margin: 0 auto;
 }
 
 .cat-data__list {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .cat-data__input-wrapper {
   @include input-wrapper;
-  margin: 0 0 12px 0;
+  flex-basis: 100%;
+  margin: 15px 20px 0;
 }
 
 .cat-data__label {
   @include form;
-  padding: 12px 0;
-  margin: 0 15px 0 0;
+  margin-right: 15px;
 }
 
 .cat-data__input {
   flex: 1 1 auto;
-  color: $white;
+  color: $black;
   border: 1px solid $aluminum-grey;
-  box-sizing: border-box;
-  padding: 18px 0 11px 15px;
+  padding: 15px 0 11px 15px;
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey;
+  }
 }
 
 .cat-data__input::placeholder {
   @include form;
+  color: $basic-grey;
 }
 
 // /*for Firefox*/
@@ -49,12 +64,15 @@
 @media (min-width: 768px) {
   .cat-data {
     border: none;
-    padding: 0 70px 55px;
-    margin: 0;
+    margin: 0 0 20px 0;
+  }
+
+  .cat-data__list {
+    width: 82%;
   }
 
   .cat-data__input-wrapper {
-    margin: 0 0 18px 0;
+    margin: 0 0 17px 0;
   }
 
   .cat-data__label {
@@ -66,7 +84,7 @@
   }
 
   .cat-data__input {
-    padding: 22px 47px 12px 19px;
+    padding: 14px 0 14px 20px;
   }
 
   .cat-data__input::placeholder {
@@ -78,13 +96,21 @@
 // todo 1440
 @media (min-width: 1440px) {
   .cat-data {
-    display: flex;
-    width: 47%;
-    padding: 0;
-    margin: 0 80px 40px 0;
+    width: 52%;
+    margin: 0;
+  }
+
+  .cat-data__container {
+    width: 100%;
   }
 
   .cat-data__list {
-    padding: 0 0 0 110px;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .cat-data__input {
+    padding: 15px 0 15px 17px;
   }
 }

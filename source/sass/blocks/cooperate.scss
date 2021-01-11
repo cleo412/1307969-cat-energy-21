@@ -5,8 +5,12 @@
   text-align: left;
   background-color: $special-grey;
   box-sizing: border-box;
-  padding: 27px 19px;
+  padding: 30px 19px;
   margin: 0 auto;
+}
+
+.cooperate--index {
+  background-color: $white;
 }
 
 .cooperate__text {
@@ -44,12 +48,7 @@
   .cooperate {
     width: 100%;
     justify-content: space-between;
-    padding: 65px 30px 45px;
-  }
-
-  .cooperate--index {
-    background-color: $white;
-    padding: 62px 30px 40px;
+    padding: 62px 30px 45px;
   }
 
   .cooperate__text {
@@ -93,7 +92,7 @@
 // todo 1440
 @media (min-width: 1440px) {
   .cooperate {
-    width: 39%;
+    max-width: 39%;
     background-color: $white;
     padding: 65px 75px 45px;
   }

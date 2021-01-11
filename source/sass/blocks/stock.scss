@@ -1,29 +1,31 @@
 .stock {
-  margin: 38px 20px 35px;
+  position: relative;
+  width: 88%;
+  background-color: $green;
+  margin: 38px auto 33px;
 }
 
 .stock__container {
-  position: relative;
   width: 100%;
-  background-image: url("../../img/bg-catalog.jpg");
+  background-color: $green;
+  background-image: url("../../img//bg-catalog-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: $green;
-  padding: 0;
-  margin: 0 auto;
+}
+
+@media (min-resolution: 2dppx) {
+  .stock__container {
+    background-image: url("../../img//bg-catalog-mob-2x.jpg");
+  }
 }
 
 .stock__icon {
   position: absolute;
-  top: 57px;
-  left: calc(50% - 40px);
+  top: 55px;
+  left: calc(50% - 39px);
   width: 78px;
   height: 80px;
-  background-image: url("../../img/icon-gift.svg");
-  background-repeat: no-repeat;
-  padding: 0;
-  margin: 0;
 }
 
 .stock__text {
@@ -32,27 +34,38 @@
   line-height: 20px;
   color: $white;
   text-align: center;
-  padding: 186px 55px 43px;
-  margin: 0;
+  padding: 185px 55px 44px;
+  margin: 0 auto;
 }
 
 // todo 768
 @media (min-width: 768px) {
   .stock {
+    width: 100%;
     padding: 0;
-    margin: 66px 0 77px;
+    margin: 62px 0 80px;
+  }
+
+  .stock__container {
+    background-image: url("../../img/bg-catalog-tablet.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .stock__container {
+      background-image: url("../../img/bg-catalog-tablet-2x.jpg");
+    }
   }
 
   .stock__icon {
-    top: 57px;
-    left: 79px;
+    top: 60px;
+    left: 80px;
     width: 80px;
     height: 83px;
   }
 
   .stock__text {
     text-align: left;
-    padding: 72px 124px 68px 423px;
+    padding: 75px 120px 65px 423px;
     margin: 0;
   }
 }
@@ -60,20 +73,29 @@
 // todo 1440
 @media (min-width: 1440px) {
   .stock {
-    width: 22%;
-    padding: 0 35px 0 0;
+    width: 20%;
     margin: 0;
+  }
+
+  .stock__container {
+    background-image: url("../../img/bg-catalog-desk.jpg");
+  }
+
+  @media (min-resolution: 2dppx) {
+    .stock__container {
+      background-image: url("../../img/bg-catalog-desk-2x.jpg");
+    }
   }
 
   .stock__icon {
     top: 57px;
-    left: calc(50% - 34px);
+    left: calc(50% - 40px);
     margin: 0;
   }
 
   .stock__text {
     text-align: center;
-    padding: 187px 30px 40px;
+    padding: 187px 35px 40px;
     margin: 0;
   }
 }

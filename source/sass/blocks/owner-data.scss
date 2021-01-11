@@ -1,10 +1,13 @@
 .owner-data {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
   border: none;
-  padding: 0 0 12px;
+  margin: 0 0 6px;
 }
 
 .owner-data__container {
+  flex-basis: 100%;
   margin: 0 auto;
 }
 
@@ -12,45 +15,73 @@
   @include title-form;
   width: 69%;
   background-color: $white;
-  padding: 30px 20px 0;
-  margin: 0 0 31px 0;
+  padding: 0 18px;
+  margin: 0 0 35px 0;
 
   &::after {
     @include line;
-    top: 44px;
+    top: 15px;
   }
 }
 
 .owner-data__list {
   display: flex;
   flex-wrap: wrap;
+  width: 88%;
   list-style: none;
-  padding: 0 20px;
-  margin: 0;
+  padding: 0;
+  margin: 0 auto;
 }
 
 .owner-data__input-wrapper {
   @include input-wrapper;
-  margin: 0 0 12px 0;
+  position: relative;
+  flex-basis: 100%;
+  margin: 0 0 13px;
 }
 
 .owner-data__label {
   @include form;
-  padding: 12px 0;
-  margin: 0 12px 0 0;
+  margin-right: 10px;
 }
 
+// .owner-data__email,
+// .owner-data__phone {
+//   stroke: $green;
+// }
+
 .owner-data__input {
-  // min-width: 0; // for firefox
   flex: 1 1 auto;
-  color: $white;
+  color: $black;
   border: 1px solid $grey;
-  box-sizing: border-box;
-  padding: 18px 0 11px 15px;
+  padding: 14px 33px 14px 14px;
+
+  &:disabled {
+    border: 2px $basic-grey solid;
+
+    .owner-data__email,
+    .owner-data__phone {
+      stroke: $green;
+    }
+  }
+
+  &:hover {
+    border-color: $grey;
+  }
+
+  &:active {
+    outline: none;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $basic-grey;
+  }
 }
 
 .owner-data__input::placeholder {
   @include form;
+  color: $basic-grey;
 }
 
 // /*for Firefox*/
@@ -58,20 +89,26 @@
   @include form;
 }
 
+.owner-data__phone,
+.owner-data__email {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+}
+
 // todo 768
 @media (min-width: 768px) {
   .owner-data {
     border: none;
-    padding: 0;
-    margin: 0;
+    margin-bottom: 40px;
   }
 
   .owner-data__title {
-    width: 76%;
+    width: 77%;
     font-size: 36px;
     line-height: 36px;
-    padding: 30px 35px 0;
-    margin: 0 0 75px 35px;
+    padding: 35px 35px 0;
+    margin: 0 0 71px 35px;
 
     &::after {
       top: 55px;
@@ -79,11 +116,11 @@
   }
 
   .owner-data__list {
-    padding: 0 70px;
+    width: 82%;
   }
 
   .owner-data__input-wrapper {
-    margin: 0 0 20px 0;
+    margin: 0 0 13px 0;
   }
 
   .owner-data__label {
@@ -95,42 +132,56 @@
   }
 
   .owner-data__input {
-    padding: 22px 47px 12px 19px;
+    padding: 17px 47px 17px 19px;
   }
 
   .owner-data__input::placeholder {
     font-size: 20px;
     line-height: 30px;
   }
+
+  .owner-data__phone,
+  .owner-data__email {
+    top: 18px;
+  }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
+  .owner-data {
+    margin-bottom: 50px;
+  }
+
   .owner-data__title {
-    width: 41%;
+    width: 42%;
     font-size: 36px;
     line-height: 36px;
-    margin: 0 0 75px 70px;
-    padding: 14px 0 0 40px;
+    padding: 0 40px;
+    margin: 0 0 70px 70px;
 
     &::after {
-      top: 35px;
+      top: 22px;
     }
   }
 
   .owner-data__list {
     display: flex;
+    justify-content: space-between;
     flex-wrap: nowrap;
-    padding: 0 110px;
+    width: 84%;
   }
 
   .owner-data__input-wrapper {
     width: 45%;
-    margin: 0 0 65px 0;
   }
 
   .owner-data__input-wrapper:first-child {
-    width: 45%;
-    margin: 0 75px 56px 0;
+    margin-right: 75px;
+  }
+
+  .owner-data__phone,
+  .owner-data__email {
+    top: 19px;
+    right: 16px;
   }
 }

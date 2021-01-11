@@ -1,45 +1,53 @@
 .product-extra {
   display: flex;
-  flex-direction: column;
   border: none;
-  box-sizing: border-box;
   z-index: 1;
-  padding: 0;
+}
+
+.product-extra__container {
+  width: 86%;
+  margin: 0 auto;
 }
 
 .product-extra__menu {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   list-style: none;
   padding: 0;
-  margin: 0 20px;
+  margin: 0 auto;
 }
 
 .product-extra__item {
   display: flex;
   flex-wrap: wrap;
   border-top: 1px $grey solid;
-  box-sizing: border-box;
-  padding: 14px 0 19px;
-  margin: 0;
+  padding: 0;
+  margin: 0 0 18px 0;
 }
 
 .product-extra__item:last-of-type {
   border-bottom: 1px $grey solid;
 }
 
+.product-extra__box {
+  width: 100%;
+}
+
 .product-extra__title {
   @include title-big;
-  width: 100%;
+  width: 60%;
   font-size: 16px;
   line-height: 16px;
-  padding: 0 0 13px 0;
+  outline: none;
+  padding: 11px 0 13px 0;
   margin: 0;
 }
 
-.product-extra__box {
-  width: 100%;
+.product-extra__link {
+  color: inherit;
+  text-decoration: none;
 }
 
 .product-extra__list {
@@ -68,6 +76,10 @@
 
 // todo 768
 @media (min-width: 768px) {
+  .product-extra__container {
+    width: 100%;
+  }
+
   .product-extra__menu {
     padding: 0 0 5px 0;
     margin: 0;
@@ -84,16 +96,20 @@
   }
 
   .product-extra__title {
-    width: 45%;
     font-size: 20px;
     line-height: 20px;
+    padding: 0;
+  }
+
+  .product-extra__link {
+    width: 45%;
     padding: 0 20px 13px 0;
   }
 
   .product-extra__box {
     display: flex;
     padding: 0;
-    margin: 0 0 13px 0;
+    margin: 0 0 9px 0;
   }
 
   .product-extra__list {
@@ -104,7 +120,7 @@
   .product-extra__value {
     width: 72%;
     font-size: 16px;
-    padding: 6px 0 0 0;
+    padding: 7px 0 0 0;
   }
 
   .product-extra__value:nth-of-type(even) {
@@ -115,9 +131,12 @@
 // todo 1140
 @media (min-width: 1440px) {
   .product-extra {
-    width: 83%;
-    padding: 0 0 0 35px;
-    margin: 0 88px -6px 0;
+    justify-content: space-between;
+    width: 73%;
+  }
+
+  .product-extra__container {
+    width: 100%;
   }
 
   .product-extra__item {
@@ -132,13 +151,14 @@
     border-bottom: 1px $grey solid;
   }
 
-  .product-extra__title {
+  .product-extra__link {
     width: 47%;
   }
 
   .product-extra__box {
-    width: 76%;
-    padding: 24px 0 0;
+    width: 75%;
+    padding: 25px 0 0;
+    margin: 0 0 11px 0;
   }
 
   .product-extra__list {

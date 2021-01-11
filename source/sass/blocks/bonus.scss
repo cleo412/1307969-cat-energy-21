@@ -1,16 +1,20 @@
 .bonus {
   position: relative;
+}
+
+.bonus__container {
+  width: 100%;
   margin: 0 auto;
 }
 
 .bonus__title-main {
   @include title-small;
-  width: 77%;
+  width: 71%;
   font-size: 24px;
   line-height: 24px;
   background-color: $white;
-  padding: 24px 0 35px 20px;
-  margin: 0;
+  padding: 25px 20px 0;
+  margin: 0 0 33px 0;
 
   &::after {
     position: absolute;
@@ -24,26 +28,21 @@
   }
 }
 
-.bonus__wrapper {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-
 // todo 768
 @media (min-width: 768px) {
-  .bonus {
-    padding: 0 30px;
+  .bonus__container {
+    width: 92%;
+    margin: 0 auto;
   }
 
   .bonus__title-main {
     width: 48%;
     font-size: 36px;
     line-height: 36px;
-    padding: 71px 35px 80px 35px;
+    padding: 67px 35px 45px;
 
     &::after {
-      top: 92px;
+      top: 88px;
     }
   }
 }
@@ -53,19 +52,22 @@
   .bonus {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 75px 80px;
+    padding: 0;
+  }
+
+  .bonus__container {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .bonus__title-main {
-    width: 27%;
-    padding: 73px 25px 80px 35px;
+    width: 24%;
+    padding: 75px 25px 46px 35px;
+    margin: 0 0 35px 75px;
 
     &::after {
-      top: 95px;
+      top: 100px;
     }
-  }
-
-  .bonus__wrapper {
-    flex-direction: row;
   }
 }

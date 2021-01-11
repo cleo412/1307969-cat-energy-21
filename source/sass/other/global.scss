@@ -2,6 +2,12 @@
   height: 100%;
 }
 
+.page-header,
+.page-main,
+.page-footer {
+  margin: 0 auto;
+}
+
 img {
   max-width: 100%;
   height: auto;

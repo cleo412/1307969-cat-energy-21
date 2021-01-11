@@ -9,48 +9,68 @@
   background-color: $green;
   box-sizing: border-box;
   border: none;
-  outline: none;
-  padding: 7px 25px;
+  padding: 9px 25px;
 }
 
 .button--main {
   display: block;
   font-size: 14px;
-  line-height: 18px;
-  padding: 11px 25px;
+  line-height: 22px;
+
+  &:hover {
+    background-color: $secondory-green;
+  }
+
+  &:active {
+    background-color: $secondory-green;
+    color: $white-03;
+    // border: none;
+    // outline: none;
+  }
 }
 
 .button--special {
   color: $basic-grey;
   background-color: $special-grey;
-  margin: 0 auto 24px;
+  margin: 0 auto;
+
+  &:hover {
+    background-color: $light-grey;
+  }
+
+  &:active {
+    background-color: $light-grey;
+    color: $basic-grey-03;
+  }
 }
 
 // todo 768
 @media (min-width: 768px) {
   .button--main {
     position: absolute;
-    top: 270px;
+    top: 244px;
     left: calc(41% - 203px);
     width: 32%;
     font-size: 20px;
-    line-height: 20px;
-    padding: 17px 10px;
+    line-height: 26px;
+    padding: 15px 10px;
     z-index: 5;
   }
 
   .button--form {
-    width: 45%;
+    width: 41%;
     font-size: 20px;
     padding: 11px 25px;
   }
 
   .button--catalog {
+    width: 88%;
     padding: 7px 25px;
+    margin: 0 auto;
   }
 
   .button--special {
-    width: 100%;
+    width: 88%;
     padding: 9px 15px;
   }
 }
@@ -58,11 +78,11 @@
 // todo 1440
 @media (min-width: 1440px) {
   .button--catalog {
-    width: 100%;
+    width: 77%;
   }
 
   .button--extra {
-    width: 27%;
+    width: 28%;
   }
 
   .button--form {
@@ -71,15 +91,13 @@
 
   .button--main {
     position: absolute;
-    top: 322px;
+    top: 272px;
     left: 190px;
     width: 17%;
-    font-size: 20px;
-    line-height: 20px;
-    padding: 17px 10px;
     z-index: 2;
   }
+
   .button--special {
-    width: 84%;
+    width: 77%;
   }
 }

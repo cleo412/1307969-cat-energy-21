@@ -9,34 +9,47 @@
 </head>
 
 <body class="page-body">
-  <!--todo header-->
   <header class="page-header">
-    <a class="page-header__logo logo">
-      <svg width="33" height="38" aria-label="маскот Кэт энерджи">
-        <use xlink:href="#logo-mobile"></use>
-      </svg>
-      <svg width="101" height="18" aria-label="логотип-текст Кэт энерджи">
-        <use xlink:href="#logo-footer"></use>
-      </svg>
-    </a>
-    <!--todo nav-->
-    <nav class="page-header__navigation navigation navigation--closed">
-      <button tabindex="1" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
-          меню</span></button>
-      <a class="navigation__item" tabindex="2" href="index.html">Главная</a>
-      <a class="navigation__item" tabindex="3" href="catalog.html">Каталог
-        продукции</a>
-      <a class="navigation__item navigation__item--current">Подбор
-        программы</a>
-    </nav>
+    <div class="page-header__container">
+      <a class="page-header__link" tabindex="1" href="index.html">
+        <svg class="page-header__logo page-header__logo--mob" role="img" width="34" height="38" viewBox="0 0 34 38"
+          aria-label="маскот сайта Кэт энерджи">
+          <use xlink:href="img/sprite.svg#logo-mob"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--tabl" role="img" width="174" height="52" viewBox="0 0 174 52"
+          aria-label="Логотип сайта Кэт энерджи">
+          <use xlink:href="img/sprite.svg#logo-tabl"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--desk" role="img" width="202" height="59" viewBox="0 0 202 59"
+          aria-label="Логотип сайта Кэт энерджи">
+          <use xlink:href="img/sprite.svg#logo-desk"></use>
+        </svg>
+        <svg class="page-header__logo page-header__logo--word" role="img" width="101" height="18" viewbox="0 0 101 18"
+          aria-label="логотип-текст сайта Кэт энерджи">
+          <use xlink:href="img/sprite.svg#logo-word"></use>
+        </svg>
+      </a>
+      <!--todo nav-->
+      <nav class="page-header__navigation navigation navigation--closed">
+        <button tabindex="2" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
+            меню</span></button>
+        <a class="navigation__item" tabindex="3" href="index.html">Главная</a>
+        <a class="navigation__item" tabindex="4" href="catalog.html">Каталог
+          продукции</a>
+        <a class="navigation__item navigation__item--current">Подбор
+          программы</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main class="page-main">
     <!-- todo form -->
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <div class="form__container">
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота </p>
-        <div class="wrapper">
+        <div class="form__header">
+          <h1 class="form__title">Подбор программы</h1>
+          <p class="form__text">Заполните анкету, и мы подберем программу&nbsp;питания для вашего кота </p>
+        </div>
+        <div class="wrapper wrapper--form">
           <section class="cat-data">
             <!--todo: cat-data-->
             <div class="cat-data__container">
@@ -64,15 +77,15 @@
             <div class="way__container">
               <h2 class="visually-hidden">Виды программ для кота</h2>
               <ul class="way__list">
-                <li class="way__option">
+                <li class="way__input-wrapper">
                   <input class="way__input visually-hidden" tabindex="8" type="radio" name="way" id="cat-slim" checked>
                   <label class="way__label" for="cat-slim">Похудение</label>
                 </li>
-                <li class="way__option">
+                <li class="way__input-wrapper">
                   <input class="way__input visually-hidden" tabindex="9" type="radio" name="way" id="cat-fat">
                   <label class="way__label" for="cat-fat">Набор массы</label>
                 </li>
-                <li class="way__option">
+                <li class="way__input-wrapper">
                   <input class="way__input visually-hidden" tabindex="10" type="radio" name="way" id="cat-advice">
                   <label class="way__label" for="cat-advice">Не знаю (нужен ваш совет)</label>
                 </li>
@@ -89,11 +102,17 @@
                 <label class="owner-data__label">E-mail:*</label>
                 <input class="owner-data__input" tabindex="11" type="email" name="user-email" id="user-email"
                   placeholder="kuklachev@gmail.com" required>
+                <svg class="owner-data__email" role="img" width="19" height="14" viewbox="0 0 19 14">
+                  <use xlink:href="img/sprite.svg#email"></use>
+                </svg>
               </li>
               <li class="owner-data__input-wrapper">
                 <label class="owner-data__label" for="user-tel">Телефон:*</label>
                 <input class="owner-data__input" tabindex="12" type="tel" name="user-tel" id="user-tel"
                   placeholder="8 (960) 900-60-90" required>
+                <svg class="owner-data__phone" role="img" width="20" height="20" viewbox="0 0 20 20">
+                  <use xlink:href="img/sprite.svg#phone"></use>
+                </svg>
               </li>
             </ul>
           </div>
@@ -103,7 +122,7 @@
           <div class="habits__container">
             <h2 class="habits__title">Комментарий</h2>
             <label class="visually-hidden" for="habits-cat">Расскажите обо всех&nbsp;повадках&nbsp;кота</label>
-            <textarea class="habits__text" id="habits-cat" name="comment" cols="38" rows="9"
+            <textarea class="habits__text" tabindex="13" id="habits-cat" name="comment" cols="33" rows="9"
               placeholder="Расскажите обо всех повадках кота"></textarea>
           </div>
         </section>
@@ -112,28 +131,41 @@
           <div class="extra__container">
             <h3 class="extra__title">Дополнительно</h3>
             <div class="extra__list">
-              <div class="extra__option">
-                <input class="extra__input visually-hidden" tabindex="13" type="checkbox" name="sugar" id="sugar"
+              <div class="extra__input-wrapper">
+                <!-- <svg class="extra__check" role="img" width="19" height="15" viewbox="0 0 19 15">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg> -->
+                <input class="extra__input visually-hidden" tabindex="14" type="checkbox" name="sugar" id="sugar"
                   checked>
                 <label class="extra__label" for="sugar">Сахарозаменитель</label>
               </div>
-              <div class="extra__option">
-                <input class="extra__input visually-hidden" tabindex="14" type="checkbox" name="water" id="water">
+              <div class="extra__input-wrapper">
+                <input class="extra__input visually-hidden" tabindex="15" type="checkbox" name="water" id="water">
                 <label class="extra__label" for="water">Питьевая вода</label>
+                <!-- <svg class="extra__check" role="img" width="19" height="15" viewbox="0 0 19 15"
+                  >
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg> -->
               </div>
-              <div class="extra__option">
-                <input class="extra__input visually-hidden" tabindex="15" type="checkbox" name="milk" id="milk">
+              <div class="extra__input-wrapper">
+                <input class="extra__input visually-hidden" tabindex="16" type="checkbox" name="milk" id="milk">
                 <label class="extra__label" for="milk">Молоко</label>
+                <!-- <svg class="extra__check" role="img" width="19" height="15" viewbox="0 0 19 15">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg> -->
               </div>
-              <div class="extra__option">
-                <input class="extra__input visually-hidden" tabindex="16" type="checkbox" name="vitamins" id="vitamins">
+              <div class="extra__input-wrapper">
+                <input class="extra__input visually-hidden" tabindex="17" type="checkbox" name="vitamins" id="vitamins">
                 <label class="extra__label" for="vitamins">Витамины</label>
+                <!-- <svg class="extra__check" role="img" width="19" height="15" viewbox="0 0 19 15">
+                  <use xlink:href="img/sprite.svg#check"></use>
+                </svg> -->
               </div>
             </div>
           </div>
         </section>
         <div class="form__submit">
-          <button class="button button--form" tabindex="17" type="submit">Отправить заявку</button>
+          <button class="button button--form" tabindex="18" type="submit">Отправить заявку</button>
           <p class="form__subtitle">* — Обязательные поля</p>
         </div>
       </div>
@@ -142,7 +174,7 @@
   <!--todo footer-->
   <footer class="page-footer">
     <!--todo cooperate-->
-    <section class="page-footer__cooperate cooperate">
+    <section class="page-footer__cooperate cooperate--index cooperate">
       <h3 class="visually-hidden">Контакты</h3>
       <div class="cooperate__text">
         <span class="cooperate__title">Приглашаем</span>
@@ -156,55 +188,64 @@
     <!--todo map-->
     <section class="page-footer__map">
       <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
-      <!-- <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1606071148828!5m2!1sru!2sru"
-        width="320" height="362" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe> -->
+      <iframe class="page-footer__map-link"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609242666053!5m2!1sru!2sru"
+        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
-    <section class="page-footer__box">
-      <!--todo logo-->
-      <div class="page-footer__logo page-footer__logo--form">
-        <a href="index.html">
-          <img src="https://via.placeholder.com/128x24" alt="логотип Кэт энерджи"
-            aria-label="переход на главную страницу">
-        </a>
-      </div>
+    <!--todo logo-->
+    <div class="page-footer__container">
+      <a class="page-footer__logo" tabindex="19" href="index.html">
+        <h3 class="visually-hidden">Логотип Кэт энерджи, переход на главную страницу"</h3>
+        <svg class="page-footer__logo-word" role="img" width="128" height="24" viewbox="0 0 101 18"
+          aria-label="логотип-текст сайта Кэт энерджи">
+          <use xlink:href="img/sprite.svg#logo-word"></use>
+        </svg>
+      </a>
       <!--todo social-->
       <section class="page-footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <ul class="page-footer__social-list">
           <!--todo vk-->
           <li class="page-footer__social-item">
-            <a tabindex="18" class="page-footer__social-button page-footer__social-button--vk" href="#">
-              <p class="visually-hidden">Вконтакте</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
+            <a tabindex="20" class="page-footer__social-button page-footer__social-button--vk" href="#">
+              <svg class="page-footer__social-icon" width="100%" height="auto" viewbox="0 0 28 18"
+                aria-label="Вконтакте">
+                <use xlink:href="img/sprite.svg#vkontakte"></use>
+              </svg>
             </a>
           </li>
           <!--todo inst-->
           <li class="page-footer__social-item">
-            <a tabindex="19" class="page-footer__social-button page-footer__social-button--inst" href="#">
-              <p class="visually-hidden">Инстаграм</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
+            <a tabindex="21" class="page-footer__social-button page-footer__social-button--inst" href="#">
+              <svg class="page-footer__social-icon" width="100%" height="auto" viewbox="0 0 20 20"
+                aria-label="Инстаграм">
+                <use xlink:href="img/sprite.svg#instagram"></use>
+              </svg>
             </a>
           </li>
           <!--todo fb-->
           <li class="page-footer__social-item">
-            <a tabindex="20" class="page-footer__social-button page-footer__social-button--fb" href="#">
-              <p class="visually-hidden">Фейсбук</p>
-              <img src="https://via.placeholder.com/22x22" alt="">
+            <a tabindex="22" class="page-footer__social-button page-footer__social-button--fb" href="#">
+              <svg class="page-footer__social-icon" width="100%" height="auto" viewbox="0 0 13 20" aria-label="Фейсбук">
+                <use xlink:href="img/sprite.svg#facebook"></use>
+              </svg>
             </a>
           </li>
         </ul>
       </section>
       <!--todo copyright-->
       <section class="page-footer__copyright">
-        <h2 class="visually-hidden"> Копирайт</h2>
-        <a class="page-footer__copyright-link" tabindex="21" href="https://htmlacademy.ru/intensive/adaptive">
-          <span class="page-footer__copyright-text">HTML Academy</span>
-          <img class="page-footer__copyright-logo" src="https://via.placeholder.com/27x34" alt="">
+        <h3 class="visually-hidden">Копирайт - логотип HTML Академии</h3>
+        <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="page-footer__academy-word" width="113" height="16" viewbox="0 0 113 16">
+            <use xlink:href="img/sprite.svg#academy-word"></use>
+          </svg>
+          <svg class="page-footer__academy-logo" width="27" height="34" viewbox="0 0 27 34">
+            <use xlink:href="img/sprite.svg#academy-logo"></use>
+          </svg>
         </a>
       </section>
-    </section>
+    </div>
   </footer>
 </body>
 

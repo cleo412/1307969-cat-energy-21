@@ -1,12 +1,11 @@
 .extra {
   position: relative;
   border: none;
-  // padding: 0;
-  // margin: 0 20px 38px;
-  padding: 0 0 20px;
+  margin-bottom: 36px;
 }
 
 .extra__container {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -24,10 +23,11 @@
 }
 
 .extra__list {
-  padding: 0 20px;
+  width: 88%;
+  margin: 0 auto;
 }
 
-.extra__option {
+.extra__input-wrapper {
   position: relative;
   box-sizing: border-box;
   padding: 6px 4px 0;
@@ -53,18 +53,42 @@
     top: 5px;
     left: -40px;
     content: "";
-    width: 18px;
-    height: 14px;
-    background-image: url("../../img/vector.svg");
+    width: 19px;
+    height: 15px;
+    // todo
+    // background-image: url("../../img/check.svg");
+  }
+
+  .extra__input:disabled ~ & {
+    color: $black-03;
+  }
+
+  .extra__input:disabled + &::before {
+    border-color: $extra-light-grey;
+  }
+  //  todo
+  .extra__input:disabled + &::after {
+    stroke: $green-03;
   }
 }
+
+.extra__input:focus ~ .extra__label {
+  outline: 2px $orange solid;
+}
+
+// .extra__check {
+//   position: absolute;
+//   top: 10px;
+//   left: -34px;
+//   width: 19px;
+//   height: 15px;
+// }
 
 // todo 768
 @media (min-width: 768px) {
   .extra {
-    width: 100%;
     padding: 0;
-    margin: 0 0 18px;
+    margin-bottom: 18px;
   }
 
   .extra__title {
@@ -72,25 +96,25 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 35px;
-    margin: 0 0 62px 35px;
+    margin: 0 0 55px 35px;
 
-    // &::after {
-    //   top: 55px;
-    // }
+    &::after {
+      top: 24px;
+    }
   }
 
   .extra__list {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-    padding: 0;
-    margin: 0 70px;
+    width: 82%;
+    margin-bottom: 27px;
   }
 
-  .extra__option {
+  .extra__input-wrapper {
     width: 45%;
-    padding: 0 0 42px 59px;
+    padding: 6px 0 36px 59px;
     margin: 0;
   }
 
@@ -111,34 +135,34 @@
       height: 14px;
     }
   }
+
+  // .extra__check {
+  //   top: 15px;
+  //   left: 11px;
+  // }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
+  .extra {
+    margin-bottom: 27px;
+  }
+
   .extra__title {
     width: 20%;
-    padding: 0 0 0 40px;
-    margin: 0 0 62px 70px;
+    padding: 0 40px;
+    margin: 0 0 60px 70px;
   }
 
   .extra__list {
-    margin: 0 110px;
+    width: 85%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin: 0 auto;
   }
 
-  .extra__option,
-  .extra__option:nth-of-type(odd) {
-    width: 22%;
-    padding: 0 80px 42px 59px;
-    margin: 0 10px 0 0;
-  }
-
-  .extra__option:nth-of-type(4) {
-    padding: 0 0 48px 64px;
-    margin: 0;
-  }
-
-  .extra__option:nth-of-type(3) {
-    padding: 0 0 42px 57px;
-    margin: 0;
+  .extra__input-wrapper {
+    width: 20%;
+    padding: 0 10px 42px 59px;
   }
 }

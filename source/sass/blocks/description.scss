@@ -1,32 +1,30 @@
-.description {
-  box-sizing: border-box;
-  padding: 0 20px 20px;
-}
-
 .description__container {
+  width: 88%;
   margin: 0 auto;
 }
 
 .description__title {
   @include title-small;
+  width: 82%;
   font-size: 36px;
   line-height: 40px;
-  padding: 25px 5px 37px 0;
+  padding: 25px 0 20px;
   margin: 0;
 }
 
 .description__list {
+  display: grid;
+  grid-template-rows: repeat(4, auto);
+  gap: 17px;
   list-style: none;
-  box-sizing: border-box;
   padding: 0;
-  margin: 0;
+  margin-bottom: 42px;
 }
 
 .description__item {
+  position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 0 20px;
+  margin: 0;
 }
 
 .description__icon-box {
@@ -36,35 +34,13 @@
   width: 60px;
   height: 60px;
   background-color: $green;
-}
-
-.description__icon {
-  width: 30px;
-  height: 32px;
-  background-repeat: no-repeat;
-}
-
-.description__icon--leaf {
-  background-image: url("../../img/leaf1.svg");
-}
-
-.description__icon--tub {
-  background-image: url("../../img/tub2.svg");
-}
-
-.description__icon--eat {
-  background-image: url("../../img/eat3.svg");
-}
-
-.description__icon--alarm {
-  background-image: url("../../img/alarm4.svg");
+  margin: 0 20px 0 0;
 }
 
 .description__text {
   @include text;
-  width: calc(100% - 80px);
-  box-sizing: border-box;
-  padding: 4px 0;
+  width: 71%;
+  padding: 5px 0;
   margin: 0;
 }
 
@@ -72,31 +48,36 @@
 @media (min-width: 768px) {
   .description {
     border-bottom: 1px $secondory-grey solid;
-    padding: 0 30px;
+  }
+
+  .description__container {
+    width: 92%;
+    margin: 0 auto;
   }
 
   .description__title {
     font-size: 60px;
     line-height: 60px;
-    padding: 14px 5px 74px 0;
-    margin: 0;
+    padding: 0;
+    margin-bottom: 74px;
   }
 
   .description__list {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
     margin: 0 0 45px 0;
+  }
+
+  .description__item:nth-child(2) {
+    grid-column: 2 / 3;
   }
 
   .description__item {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: flex-start;
-    width: 50%;
-    box-sizing: border-box;
     margin: 0;
 
     &::after {
@@ -153,15 +134,15 @@
   }
 
   .description__text {
-    width: 100%;
+    width: 74%;
     font-size: 16px;
     line-height: 24px;
     padding: 33px 90px 33px 0;
     margin: 0;
   }
 
-  .description__item--alarm > .description__text {
-    padding: 33px 72px 33px 0;
+  .description__item--alarm .description__text {
+    width: 79%;
   }
 }
 
@@ -169,52 +150,33 @@
 @media (min-width: 1440px) {
   .description {
     border-bottom: none;
-    padding: 0;
-    margin: 0 110px;
+  }
+
+  .description__container {
+    width: 85%;
   }
 
   .description__title {
-    padding: 43px 5px 46px 0;
-    margin: 0 0 28px 0;
+    width: 32%;
+    padding: 43px 0 46px;
+    margin-bottom: 28px;
   }
 
   .description__list {
-    justify-content: space-between;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, 25%);
+    gap: 20px;
   }
 
   .description__item {
-    width: 25%;
-  }
-
-  .description__item--leaf {
     padding: 0;
 
     &::after {
+      right: 61px;
+    }
+
+    &--leaf::after {
       right: 75px;
-    }
-  }
-
-  .description__item--tub {
-    padding: 0 0 0 20px;
-
-    &::after {
-      right: 40px;
-    }
-  }
-
-  .description__item--eat {
-    padding: 0 0 0 39px;
-
-    &::after {
-      right: 18px;
-    }
-  }
-
-  .description__item--alarm {
-    padding: 0 0 0 60px;
-
-    &::after {
-      right: -4px;
     }
   }
 
@@ -223,11 +185,13 @@
   }
 
   .description__text {
+    width: 73%;
     padding: 0 41px 0 0;
     margin: 0 0 50px 0;
   }
 
-  .description__item--alarm > .description__text {
+  .description__item--alarm .description__text {
+    width: 80%;
     padding: 0;
   }
 }

@@ -1,6 +1,5 @@
 .slider {
-  display: flex;
-  flex-direction: column;
+  position: relative;
   background-color: $smoky-grey;
 }
 
@@ -10,69 +9,80 @@
 }
 
 .slider__box {
-  position: relative;
-  display: flex;
   width: 100%;
+  height: 325px;
   margin: 0 auto;
 }
 
 .slider__foto {
-  width: 100%;
-  min-height: 232px;
-  margin: 0 0 40px;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
 
-  &:first-child {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-  }
+.slider__foto-fat {
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.slider__foto-slim {
+  width: 0%;
+  z-index: 1;
+}
+
+.slider__foto-fat--current {
+  width: 100%;
 }
 
 .slider__scroll {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 30vw);
   display: flex;
-  width: 62%;
+  width: 61%;
   justify-content: space-between;
+  align-items: center;
   padding: 0;
-  margin: 0 auto 20px;
+  margin: 0 auto 35px;
+  z-index: 3;
 }
 
 .slider__word {
   @include title-big;
   display: block;
+  width: 20%;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  box-shadow: 0 0.5px 0 0 $black-24;
   margin: 0;
 }
 
 .slider__scale {
-  width: 41%;
+  width: 37%;
   border: 1px $grey solid;
-  box-sizing: border-box;
   border-radius: 6px;
   background-color: $white;
   padding: 1px 4px;
-  margin: 5px 5px 18px;
 }
 
 .slider__toggle {
-  width: 43%;
+  width: 44%;
+  height: 2px;
   border-radius: 6px;
   background-color: $green;
-  padding: 4px;
+  padding: 2px;
 }
 
 // todo 768
 @media (min-width: 768px) {
   .slider {
-    position: relative;
     width: 100%;
-    min-height: 620px;
+    min-height: 645px;
     background: linear-gradient($white 181px, $special-grey 181px 461px);
     padding: 0;
-    margin: 0 auto;
   }
 
   .slider__foto {
@@ -88,17 +98,17 @@
 
   .slider__scroll {
     position: absolute;
-    bottom: 4px;
+    bottom: 0;
     left: 0;
     right: 0;
-    width: 74%;
+    width: 75%;
     z-index: 11;
-    margin: 0 auto 62px;
+    margin: 0 auto 64px;
   }
 
   .slider__scale {
     position: relative;
-    width: 76%;
+    width: 73%;
     height: 6px;
     background-color: $grey;
     border-radius: 6px;
@@ -116,13 +126,21 @@
     box-shadow: 0 1px 3px $black-16;
     box-sizing: border-box;
     z-index: 14;
+
+    &:hover {
+      box-shadow: 0 2px 4px $black-19;
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px $black-20;
+    }
   }
 
   .slider__word {
     width: 9%;
     font-size: 20px;
     line-height: 30px;
-    box-shadow: 0 1px 0 0 $dull-grey;
+    box-shadow: 0 1px 0 0 $black-40;
     margin: 0 0 4px 0;
   }
 }
@@ -131,14 +149,13 @@
 @media (min-width: 1440px) {
   .slider {
     width: 50%;
-    background: linear-gradient($white 162px, $smoky-grey 162px 400px);
-    margin: 0;
-    padding: 0 70px 0 0;
+    min-height: 625px;
+    background: linear-gradient($white 168px, $smoky-grey 168px 400px);
   }
 
   .slider__container {
-    width: 100%;
-    margin: 0 auto;
+    width: 88%;
+    margin: 0;
   }
 
   .slider__box {
@@ -146,30 +163,30 @@
   }
 
   .slider__foto {
-    min-height: 654px;
+    min-height: 625px;
     padding: 0;
     margin: 0;
 
     &:first-child {
       width: 55%;
-      min-height: 625px;
-      background: linear-gradient($white 162px, $special-grey 162px 368px);
+      background: linear-gradient($white 168px, $special-grey 168px 368px);
     }
 
     &:last-child {
-      min-height: 536px;
-      background: linear-gradient($white 162px, $smoky-grey 162px 300px);
+      background: linear-gradient($white 168px, $smoky-grey 168px 300px);
     }
   }
 
   .slider__scroll {
-    width: 73%;
-    margin: 0 auto 55px;
+    width: 82%;
+    justify-content: space-around;
+    margin: 0 0 60px calc(50% - 23vw);
   }
 
   .slider__scale {
-    width: 75%;
-    left: calc(50% - 284px);
+    width: 71%;
+    left: calc(50% - 20vw);
+    margin: 13px 0 18px;
   }
 
   .slider__toggle {
@@ -178,6 +195,7 @@
   }
 
   .slider__word {
+    box-shadow: none;
     margin: 0 0 7px 0;
   }
 }

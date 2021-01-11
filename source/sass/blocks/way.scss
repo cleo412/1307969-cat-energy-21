@@ -3,24 +3,25 @@
   border-bottom: 1px $dull-grey solid;
   border-left: none;
   border-right: none;
-  padding: 0 20px;
+  margin: 0 auto 26px;
 }
 
 .way__container {
+  width: 88%;
   margin: 0 auto;
 }
 
 .way__list {
   list-style: none;
-  padding: 25px 0 0;
-  margin: 0;
+  padding: 25px 0 7px;
+  margin: 0 auto;
 }
 
-.way__option {
+.way__input-wrapper {
   position: relative;
   box-sizing: border-box;
   padding: 5px;
-  margin: 0 0 14px 40px;
+  margin: 0 0 12px 41px;
 }
 
 .way__label {
@@ -35,12 +36,16 @@
     height: 30px;
     border: 1px $grey solid;
     border-radius: 50%;
+
+    &:hover {
+      border-color: $extra-light-grey;
+    }
   }
 
   .way__input:checked + &::after {
     position: absolute;
     top: 8px;
-    left: -31px;
+    left: -32px;
     content: "";
     width: 14px;
     height: 14px;
@@ -49,6 +54,22 @@
     box-sizing: border-box;
     background-image: none;
   }
+
+  .way__input:disabled ~ & {
+    color: $extra-dark-grey-03;
+  }
+
+  .way__input:disabled + &::before {
+    border-color: 1px $extra-light-grey solid;
+  }
+
+  .way__input:disabled + &::after {
+    background-color: $green-03;
+  }
+}
+
+.way__input:focus ~ .way__label {
+  outline: 2px $orange solid;
 }
 
 // todo 768
@@ -56,16 +77,16 @@
   .way {
     border: none;
     padding: 0;
-    margin: 0 0 44px 0;
+    margin: 40px 0;
   }
 
   .way__list {
     border: 1px $dull-grey solid;
-    padding: 22px 0 10px;
-    margin: 0 70px;
+    width: 93%;
+    padding: 23px 0 10px;
   }
 
-  .way__option {
+  .way__input-wrapper {
     margin: 0 0 14px 67px;
   }
 
@@ -88,47 +109,27 @@
       height: 18px;
     }
   }
-
-  // todo
-  .way__input + &::before {
-    position: absolute;
-    top: 2px;
-    left: -40px;
-    content: "";
-    width: 30px;
-    height: 30px;
-    border: 1px $grey solid;
-    border-radius: 50%;
-  }
-
-  .way__input:checked + &::after {
-    position: absolute;
-    top: 9px;
-    left: -11px;
-    content: "";
-    width: 14px;
-    height: 14px;
-    background-color: $green;
-    border-radius: 50%;
-    box-sizing: border-box;
-    background-image: none;
-  }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
   .way {
-    width: 44%;
-    margin: 0 0 40px 0;
-  }
-
-  .way__list {
-    border: 1px $dull-grey solid;
-    padding: 26px 27px 10px;
+    width: 47%;
     margin: 0;
   }
 
-  .way__option {
-    margin: 0 0 14px 40px;
+  .way__container {
+    width: 100%;
+    margin: 0;
+  }
+
+  .way__list {
+    width: 100%;
+    border: 1px $dull-grey solid;
+    padding: 27px 0 10px;
+  }
+
+  .way__input-wrapper {
+    margin: 0 0 14px 70px;
   }
 }
