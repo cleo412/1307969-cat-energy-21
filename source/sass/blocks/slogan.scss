@@ -1,8 +1,7 @@
 .slogan {
   width: 88%;
   text-align: center;
-  margin: 0 auto;
-  z-index: 2;
+  margin: 0 auto 32px;
 }
 
 .slogan__title {
@@ -12,13 +11,14 @@
   font-weight: 400;
   color: $white;
   text-align: center;
-  margin: 27px auto 25px;
+  padding: 29px 0 25px;
+  margin: 0 auto;
 }
 
 .slogan__subtitle {
   font-family: $oswald;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 20px;
   font-weight: 400;
   color: $white;
   text-transform: uppercase;
@@ -28,28 +28,28 @@
 // todo 768
 @media (min-width: 768px) {
   .slogan {
-    width: 70%;
+    text-align: start;
     padding: 0;
-    margin: 30px auto 624px;
+    margin: 0 0 50px;
     z-index: 5;
   }
 
   .slogan__title {
-    width: 80%;
     font-size: 60px;
     line-height: 60px;
     color: $black;
     text-align: left;
-    padding-top: 14px;
-    margin: 0 0 41px 0;
+    padding: 45px 0 40px;
+    margin: 0;
   }
 
   .slogan__subtitle {
-    width: 54%;
+    width: 60%;
     font-size: 20px;
     line-height: 20px;
     color: $black;
     text-align: left;
+    padding: 0;
     margin: 0;
   }
 }
@@ -58,19 +58,15 @@
 @media (min-width: 1440px) {
   .slogan {
     width: 50%;
-    padding: 40px 0;
     z-index: 5;
-    margin: 0;
   }
 
   .slogan__title {
-    width: 66%;
-    padding: 0;
-    margin: 0 auto 40px;
+    width: 90%;
+    padding: 40px 0;
   }
 
   .slogan__subtitle {
-    width: 66%;
-    margin: 0 auto;
+    width: 75%;
   }
 }

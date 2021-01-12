@@ -41,7 +41,7 @@
   }
 
   &:active {
-    outline: none;
+    outline: 1px $orange dashed;
   }
 
   &:focus {
@@ -55,10 +55,10 @@
   color: $basic-grey;
 }
 
-// /*for Firefox*/
-.user-data__input::-moz-placeholder {
-  @include form;
-}
+// // /*for Firefox*/
+// .user-data__input::-moz-placeholder {
+//   @include form;
+// }
 
 // todo 768
 @media (min-width: 768px) {

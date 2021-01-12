@@ -10,10 +10,16 @@
   box-sizing: border-box;
   border: none;
   padding: 9px 25px;
+
+  &:active {
+    outline: 1px $orange dashed;
+    border: none;
+  }
 }
 
 .button--main {
   display: block;
+  width: 100%;
   font-size: 14px;
   line-height: 22px;
 
@@ -24,8 +30,6 @@
   &:active {
     background-color: $secondory-green;
     color: $white-03;
-    // border: none;
-    // outline: none;
   }
 }
 
@@ -47,13 +51,11 @@
 // todo 768
 @media (min-width: 768px) {
   .button--main {
-    position: absolute;
-    top: 244px;
-    left: calc(41% - 203px);
-    width: 32%;
+    width: 244px;
+    text-align: start;
     font-size: 20px;
     line-height: 26px;
-    padding: 15px 10px;
+    padding: 15px 25px;
     z-index: 5;
   }
 
@@ -87,14 +89,6 @@
 
   .button--form {
     width: 47%;
-  }
-
-  .button--main {
-    position: absolute;
-    top: 272px;
-    left: 190px;
-    width: 17%;
-    z-index: 2;
   }
 
   .button--special {

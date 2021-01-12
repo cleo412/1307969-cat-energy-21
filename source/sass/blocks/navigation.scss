@@ -71,8 +71,7 @@
     margin: 20px 0 0;
 
     &--current {
-      box-shadow: 0 2px 0 0 $green;
-      padding: 0 1px 0 0;
+      border-bottom: 2px solid $green;
     }
 
     &:hover {
@@ -81,6 +80,8 @@
 
     &:active {
       opacity: 0.3;
+      outline: 1px $orange dashed;
+      border: none;
     }
   }
 
@@ -107,8 +108,7 @@
 
   .navigation--index {
     .navigation__item--current {
-      box-shadow: 0 2px 0 0 $white;
-      padding: 0 1px 0 0;
+      border-bottom: 2px solid $white;
     }
 
     .navigation__item {

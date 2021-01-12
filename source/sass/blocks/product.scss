@@ -43,6 +43,11 @@
   width: 68px;
   height: 86px;
   margin: 16px 36px;
+
+  &:active {
+    outline: 1px $orange dashed;
+    border: none;
+  }
 }
 
 .product__foto--big {
@@ -69,6 +74,11 @@
   color: $black;
   padding: 20px 0 10px;
   margin: 0;
+
+  &:active {
+    outline: 1px $orange dashed;
+    border: none;
+  }
 }
 
 .product__list {
@@ -265,18 +275,6 @@
 @media (min-width: 1440px) {
   .product__container {
     width: 85%;
-  }
-
-  .product__foto {
-    width: 161px;
-    height: 172px;
-    margin: 50px calc(50% - 80px) 40px;
-  }
-
-  .product__foto--big {
-    width: 172px;
-    height: 196px;
-    margin: 25px calc(50% - 80px) 42px;
   }
 
   .product__menu {
