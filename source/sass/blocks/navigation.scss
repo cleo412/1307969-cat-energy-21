@@ -37,7 +37,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 
 .navigation__item {
@@ -58,7 +57,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 62%;
+    align-items: center;
+    width: 62.5%;
+    padding: 5px 0 0;
     margin: 0;
   }
 
@@ -67,8 +68,7 @@
     line-height: 24px;
     font-weight: 400;
     border-bottom: none;
-    padding: 0 0 7px 0;
-    margin: 20px 0 0;
+    padding: 0 0 5px 0;
 
     &--current {
       border-bottom: 2px solid $green;
