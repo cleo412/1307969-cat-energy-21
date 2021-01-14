@@ -5,7 +5,7 @@
 }
 
 .product-extra__container {
-  width: 86%;
+  width: 87%;
   margin: 0 auto;
 }
 
@@ -24,7 +24,7 @@
   flex-wrap: wrap;
   border-top: 1px $grey solid;
   padding: 0;
-  margin: 0 0 18px 0;
+  margin: 0 0 17px 0;
 }
 
 .product-extra__item:last-of-type {
@@ -43,6 +43,11 @@
   outline: none;
   padding: 11px 0 13px 0;
   margin: 0;
+
+  &:active {
+    outline: 1px $orange dashed;
+    border: none;
+  }
 }
 
 .product-extra__link {

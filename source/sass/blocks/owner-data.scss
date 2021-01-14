@@ -16,7 +16,7 @@
   width: 69%;
   background-color: $white;
   padding: 0 18px;
-  margin: 0 0 35px 0;
+  margin: 0 0 32px 0;
 
   &::after {
     @include line;
@@ -45,11 +45,6 @@
   margin-right: 10px;
 }
 
-// .owner-data__email,
-// .owner-data__phone {
-//   stroke: $green;
-// }
-
 .owner-data__input {
   flex: 1 1 auto;
   color: $black;
@@ -58,10 +53,10 @@
 
   &:disabled {
     border: 2px $basic-grey solid;
+    background-color: $white;
 
-    .owner-data__email,
-    .owner-data__phone {
-      stroke: $green;
+    .owner-data__icon .owner-data__icon-path path {
+      fill: $green;
     }
   }
 
@@ -70,30 +65,29 @@
   }
 
   &:active {
-    outline: none;
+    outline: 1px $orange dashed;
   }
 
   &:focus {
     outline: none;
     border: 2px solid $basic-grey;
   }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid $error-pink;
+  }
+}
+
+.owner-data__icon {
+  position: absolute;
+  top: 14px;
+  right: 17px;
 }
 
 .owner-data__input::placeholder {
   @include form;
   color: $basic-grey;
-}
-
-// /*for Firefox*/
-.owner-data__input::-moz-placeholder {
-  @include form;
-}
-
-.owner-data__phone,
-.owner-data__email {
-  position: absolute;
-  top: 12px;
-  right: 16px;
 }
 
 // todo 768
@@ -108,7 +102,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 35px 35px 0;
-    margin: 0 0 71px 35px;
+    margin: 0 0 75px 35px;
 
     &::after {
       top: 55px;
@@ -132,7 +126,7 @@
   }
 
   .owner-data__input {
-    padding: 17px 47px 17px 19px;
+    padding: 16px 47px 16px 19px;
   }
 
   .owner-data__input::placeholder {
@@ -157,7 +151,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    margin: 0 0 70px 70px;
+    margin: 0 0 72px 70px;
 
     &::after {
       top: 22px;
@@ -168,7 +162,7 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap;
-    width: 84%;
+    width: 85%;
   }
 
   .owner-data__input-wrapper {
@@ -179,9 +173,8 @@
     margin-right: 75px;
   }
 
-  .owner-data__phone,
-  .owner-data__email {
-    top: 19px;
-    right: 16px;
+  .owner-data__icon {
+    top: 22px;
+    right: 21px;
   }
 }

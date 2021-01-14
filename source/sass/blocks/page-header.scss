@@ -9,12 +9,17 @@
 }
 
 .page-header__link {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  align-items: center;
+  display: block;
+  width: 100%;
   border-bottom: 1px $secondary-grey solid;
-  padding: 14px 20px;
-  margin: 0 auto;
+}
+
+.page-header__logo {
+  display: flex;
+  justify-content: space-between;
+  width: 190px;
+  align-items: center;
+  padding: 13px 20px;
 
   &:hover {
     opacity: 0.8;
@@ -22,23 +27,19 @@
 
   &:active {
     opacity: 0.6;
+    outline: 1px $orange dashed;
+    border: none;
   }
 }
 
-.page-header__logo--mob {
-  grid-column: 1 / 1;
+.page-header__logo-icon {
   width: 33px;
   height: 38px;
 }
 
-.page-header__logo--word {
+.page-header__logo-word {
   width: 101px;
   height: 18px;
-}
-
-.page-header__logo--tabl,
-.page-header__logo--desk {
-  display: none;
 }
 
 .page-header__navigation {
@@ -48,33 +49,31 @@
 // todo 768
 @media (min-width: 768px) {
   .page-header {
-    padding: 21px 0;
+    padding: 27px 0 10px;
   }
 
   .page-header__container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
     width: 92%;
   }
 
   .page-header__link {
-    width: 25%;
-    border-bottom: none;
+    width: 24.5%;
+    border: none;
+  }
+
+  .page-header__logo {
+    width: 174px;
     padding: 0;
-    margin: 0;
   }
 
-  .page-header__logo--tabl {
-    display: inline-block;
+  .page-header__logo-icon {
+    width: 174px;
     height: 52px;
-    align-items: center;
-    border-bottom: none;
   }
 
-  .page-header__logo--mob,
-  .page-header__logo--desk,
-  .page-header__logo--word {
+  .page-header__logo-word {
     display: none;
   }
 }
@@ -82,7 +81,7 @@
 // todo 1440
 @media (min-width: 1440px) {
   .page-header {
-    padding: 0;
+    padding: 55px 0 65px;
   }
 
   .page-header__container {
@@ -91,20 +90,13 @@
     margin: 0 auto;
   }
 
-  .page-header__link {
-    padding: 53px 0 72px;
-    margin: 0;
+  .page-header__logo {
+    width: 202px;
   }
 
-  .page-header__logo--desk {
+  .page-header__logo-icon {
     display: block;
     width: 202px;
     height: 59px;
-  }
-
-  .page-header__logo--mob,
-  .page-header__logo--tabl,
-  .page-header__logo--word {
-    display: none;
   }
 }

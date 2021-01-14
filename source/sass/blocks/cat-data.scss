@@ -34,19 +34,24 @@
   flex: 1 1 auto;
   color: $black;
   border: 1px solid $aluminum-grey;
-  padding: 15px 0 11px 15px;
+  padding: 15px 0 11px 14px;
 
   &:hover {
     border-color: $grey;
   }
 
   &:active {
-    outline: none;
+    outline: 1px $orange dashed;
   }
 
   &:focus {
     outline: none;
     border: 2px solid $basic-grey;
+  }
+
+  &:invalid {
+    outline: none;
+    border: 2px solid $error-pink;
   }
 }
 
@@ -55,16 +60,11 @@
   color: $basic-grey;
 }
 
-// /*for Firefox*/
-.user-data__input::-moz-placeholder {
-  @include form;
-}
-
 // todo 768
 @media (min-width: 768px) {
   .cat-data {
     border: none;
-    margin: 0 0 20px 0;
+    margin: 0 0 19px 0;
   }
 
   .cat-data__list {
@@ -72,7 +72,7 @@
   }
 
   .cat-data__input-wrapper {
-    margin: 0 0 17px 0;
+    margin: 0 0 15px 0;
   }
 
   .cat-data__label {
@@ -110,7 +110,11 @@
     margin: 0;
   }
 
+  .cat-data__input-wrapper {
+    margin: 0 0 13px 0;
+  }
+
   .cat-data__input {
-    padding: 15px 0 15px 17px;
+    padding: 16px 0 16px 16px;
   }
 }

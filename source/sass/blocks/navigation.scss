@@ -37,7 +37,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0;
 }
 
 .navigation__item {
@@ -58,7 +57,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 62%;
+    align-items: center;
+    width: 62.5%;
+    padding: 5px 0 0;
     margin: 0;
   }
 
@@ -67,12 +68,10 @@
     line-height: 24px;
     font-weight: 400;
     border-bottom: none;
-    padding: 0 0 7px 0;
-    margin: 20px 0 0;
+    padding: 0 0 5px 0;
 
     &--current {
-      box-shadow: 0 2px 0 0 $green;
-      padding: 0 1px 0 0;
+      border-bottom: 2px solid $green;
     }
 
     &:hover {
@@ -81,6 +80,8 @@
 
     &:active {
       opacity: 0.3;
+      outline: 1px $orange dashed;
+      border: none;
     }
   }
 
@@ -93,9 +94,10 @@
 @media (min-width: 1440px) {
   .navigation {
     position: relative;
-    width: 39%;
+    width: 39.5%;
     margin: 0;
     z-index: 3;
+    padding: 17px 0 0;
   }
 
   .navigation__item {
@@ -107,8 +109,7 @@
 
   .navigation--index {
     .navigation__item--current {
-      box-shadow: 0 2px 0 0 $white;
-      padding: 0 1px 0 0;
+      border-bottom: 2px solid $white;
     }
 
     .navigation__item {
