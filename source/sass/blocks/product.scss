@@ -8,7 +8,7 @@
   width: 88%;
   font-size: 36px;
   line-height: 36px;
-  padding: 27px 0 44px;
+  padding: 25px 0 44px;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@
 
 .product__wrapper-img {
   width: 50%;
-  padding: 18px 0 11px;
+  padding: 18px 0 12px;
   margin: 0 auto;
 }
 
@@ -52,7 +52,7 @@
 .product__wrapper-price {
   width: 50%;
   color: $extra-dark-grey;
-  padding: 0 0 10px;
+  padding: 0 0 12px;
   margin: 0 auto;
 }
 
@@ -66,7 +66,7 @@
   font-size: 16px;
   line-height: 20px;
   color: $black;
-  padding: 18px 0 10px;
+  padding: 20px 0 12px;
   margin: 0;
 
   &:active {
@@ -127,6 +127,7 @@
   .product__title {
     width: 93%;
     text-align: center;
+    padding: 20px 0 9px;
     margin: 0 auto;
   }
 
@@ -185,11 +186,12 @@
   .product__foto {
     width: 168px;
     height: 200px;
-    margin: 30px auto 0;
+    margin: 31px auto 0;
   }
 
   .product__wrapper-price {
     width: 88%;
+    padding: 0 0 9px;
     margin: 0 auto;
   }
 

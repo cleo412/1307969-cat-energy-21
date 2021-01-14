@@ -45,7 +45,7 @@
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  border-bottom: 0.5px $black-24 solid;
+  border-bottom: 0.5px $black-24 dashed;
   margin: 0;
 }
 
@@ -69,12 +69,13 @@
 @media (min-width: 768px) {
   .slider {
     width: 100%;
-    background: linear-gradient($white 192px, $special-grey 192px 461px);
+    background: linear-gradient($white 170px, $special-grey 170px 461px);
     padding: 0;
   }
 
   .slider__container {
-    width: 92%;
+    width: 89%;
+    margin: 0 auto;
   }
 
   .slider__box {
@@ -85,13 +86,13 @@
 
   .slider__foto {
     min-height: 325px;
-    padding: 0 0 15px;
+    padding: 0 0 55px;
     margin: 0;
   }
 
   .slider__scroll {
     position: absolute;
-    bottom: -2px;
+    bottom: 0;
     left: 0;
     right: 0;
     width: 74%;
@@ -110,12 +111,15 @@
 
   .slider__toggle {
     position: absolute;
-    left: 46%;
-    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 46.5%;
+    bottom: -13px;
     width: 34px;
     height: 34px;
     border-radius: 50%;
-    border: 13px $white solid;
+    background-color: $white;
     box-shadow: 0 1px 3px $black-16;
     box-sizing: border-box;
     z-index: 14;
@@ -126,14 +130,21 @@
 
     &:active {
       box-shadow: 0 3px 5px $black-20;
-      outline: 1px $orange dashed;
+      border: 1px $green solid;
     }
+  }
+
+  .slider__toggle-center {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $green;
   }
 
   .slider__word {
     font-size: 20px;
     line-height: 30px;
-    border-bottom: 1px $black-40 dashed;
+    border-bottom: 1px $black-40 solid;
     margin: 0 0 4px 0;
   }
 }
@@ -156,7 +167,7 @@
   }
 
   .slider__foto {
-    min-height: 536px;
+    min-height: 521px;
     padding: 0;
     margin: 0;
   }
@@ -179,7 +190,7 @@
   }
 
   .slider__word {
-    border-bottom: 0.5px $black-40 dashed;
+    border-bottom: none;
     margin: 0 0 7px 0;
   }
 }

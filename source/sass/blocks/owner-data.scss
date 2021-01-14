@@ -55,7 +55,7 @@
     border: 2px $basic-grey solid;
     background-color: $white;
 
-    .owner-data__icon path {
+    .owner-data__icon .owner-data__icon-path path {
       fill: $green;
     }
   }
