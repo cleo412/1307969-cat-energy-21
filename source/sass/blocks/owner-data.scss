@@ -51,15 +51,6 @@
   border: 1px solid $grey;
   padding: 14px 33px 14px 14px;
 
-  &:disabled {
-    border: 2px $basic-grey solid;
-    background-color: $white;
-  }
-
-  &:hover {
-    border-color: $grey;
-  }
-
   &:active {
     outline: 1px $orange dashed;
   }
@@ -69,20 +60,30 @@
     border: 2px solid $basic-grey;
   }
 
-  &:invalid {
-    outline: none;
-    border: 2px solid $error-pink;
+  // &:invalid {
+  //   outline: none;
+  //   border: 2px solid $error-pink;
+  // }
+
+  &:disabled {
+    border: 2px $basic-grey solid;
+    background-color: $white;
   }
 }
 
-.owner-data__icon {
+.owner-data__icon-tel,
+.owner-data__icon-email {
   position: absolute;
   top: 14px;
   right: 17px;
 }
 
-.owner-data__input:disabled + .owner-data__icon path {
+.owner-data__input:disabled + .owner-data__icon-tel path {
   fill: $green;
+}
+
+.owner-data__input:disabled + .owner-data__icon-email path {
+  stroke: $green;
 }
 
 .owner-data__input::placeholder {

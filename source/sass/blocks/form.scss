@@ -39,6 +39,19 @@
   margin: 20px auto 0;
 }
 
+.form-error {
+  outline: none;
+  border: 2px solid $error-pink;
+
+  // .owner-data__input:invalid + .owner-data__icon-tel path {
+  //   stroke: $error-pink;
+  // }
+
+  // .owner-data__input:invalid + .owner-data__icon-email path {
+  //   fill: $error-pink;
+  // }
+}
+
 // todo 768
 @media (min-width: 768px) {
   .form__header {

@@ -1,6 +1,4 @@
 .page-footer {
-  display: flex;
-  flex-direction: column;
   background-color: $special-grey;
   padding: 0;
 }
@@ -12,11 +10,11 @@
 
 .page-footer__map {
   width: 100%;
-  min-height: 362px;
+  height: 362px;
   background-image: url("../../img/map-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 0 -4px;
+  background-position: 0 48%;
   overflow: hidden;
   padding: 0;
   margin: 0 auto;
@@ -24,21 +22,23 @@
 
 .page-footer__map-link {
   width: 100%;
-  min-height: 362px;
+  height: 362px;
   border: none;
   outline: none;
 }
 
 .page-footer__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 88%;
   margin: 0 auto;
 }
 
 .page-footer__logo {
-  display: block;
   width: 128px;
   height: 24px;
-  padding: 31px 0 30px;
+  padding: 39px 0 30px;
   margin: 0 auto;
 
   &:hover {
@@ -57,60 +57,40 @@
   border-bottom: 1px $dull-grey solid;
 }
 
-.page-footer__social-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 34px;
-  align-items: center;
-  justify-content: center;
-  width: 46%;
-  list-style: none;
-  padding: 20px 0 15px;
+.page-footer__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 47%;
+  padding: 24px 0 12px;
   margin: 0 auto;
 }
 
-.page-footer__social-button {
-  display: inline-block;
-
-  &:hover path {
-    fill: $green;
-  }
-
-  &:active {
-    opacity: 0.3;
-    outline: 1px $orange dashed;
-    border: none;
-  }
-
-  &:active path {
-    outline: 1px $orange dashed;
-    border: none;
-  }
+.page-footer__social-icon {
+  fill: $dark-grey;
 }
 
-.page-footer__academy-logo {
-  &:hover path {
-    fill: $green;
-  }
-
-  &:active path {
-    fill: $green;
-    opacity: 0.3;
-  }
+.page-footer__link:hover .page-footer__social-icon {
+  fill: $green;
 }
 
-.page-footer__social-button--vk {
-  width: 23px;
+.page-footer__link:active .page-footer__social-icon {
+  fill: $green;
+  fill-opacity: 0.3;
+}
+
+.page-footer__social-icon--vk {
+  width: 22px;
   height: 16px;
 }
 
-.page-footer__social-button--inst {
+.page-footer__social-icon--inst {
   width: 17px;
   height: 17px;
 }
 
-.page-footer__social-button--fb {
-  width: 13px;
+.page-footer__social-icon--fb {
+  width: 25px;
   height: 20px;
 }
 
@@ -118,62 +98,71 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 25px 0;
+  padding: 23px 0;
+
+  &:active {
+    fill-opacity: 0.3;
+  }
+
+  &:hover .page-footer__academy-logo path,
+  &:active .page-footer__academy-logo path {
+    fill: $green;
+    stroke: $green;
+  }
 }
 
-.page-footer__academy-word:active {
-  opacity: 0.3;
-  outline: 1px $orange dashed;
-  border: none;
+.page-footer__academy-logo {
+  fill: $basic-grey;
 }
 
 // todo 768
 @media (min-width: 768px) {
   .page-footer__map {
-    min-height: 400px;
+    height: 400px;
     background-image: url("../../img/map-tabl.jpg");
   }
 
   .page-footer__map-link {
-    min-height: 400px;
+    height: 400px;
   }
 
   .page-footer__container {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 92%;
-    padding: 49px 0 63px;
+    padding: 53px 0;
   }
 
   .page-footer__logo {
-    width: 21%;
+    width: 22%;
     padding: 0;
     margin: 0;
   }
 
   .page-footer__social {
+    width: 19%;
     border: none;
   }
 
-  .page-footer__social-list {
-    gap: 26px;
+  .page-footer__box {
+    width: 100%;
     padding: 0;
   }
 
-  .page-footer__social-button--vk {
+  .page-footer__social-icon--vk {
     width: 30px;
     height: 22px;
   }
 
-  .page-footer__social-button--inst {
+  .page-footer__social-icon--inst {
     width: 23px;
     height: 23px;
   }
 
-  .page-footer__social-button--fb {
-    width: 19px;
-    height: 31px;
+  .page-footer__social-icon--fb {
+    width: 28px;
+    height: 29px;
   }
 
   .page-footer__copyright {
@@ -210,7 +199,24 @@
   }
 
   .page-footer__logo {
-    width: 12%;
+    width: 13.5%;
+  }
+
+  .page-footer__social {
+    width: 11%;
+    background-color: red;
+  }
+
+  .page-footer__link:hover .page-footer__social-icon .footer-color {
+    fill: $green;
+    stroke: $green;
+  }
+
+  .page-footer__link:active .page-footer__social-icon .footer-color {
+    fill: $green;
+    fill-opacity: 0.9;
+    // outline: 1px $orange dashed;
+    // border: none;
   }
 
   .page-footer__copyright {

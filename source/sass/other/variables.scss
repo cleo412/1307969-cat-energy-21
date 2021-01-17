@@ -74,7 +74,7 @@ $arial: ("Arial", sans-serif);
   font-weight: 400;
   color: $basic-grey;
   text-transform: uppercase;
-  box-sizing: border-box;
+  // box-sizing: border-box;
 }
 
 @mixin title-form {
