@@ -5,9 +5,8 @@
 // const catName = cat-data.querySelector(".cat-data__input--name");
 // const catWeigh = cat-data.querySelector(".cat-data__input--weigh");
 // const userEmail = owner-data.querySelector(".owner-data__input--email");
-// const userTel = owner-data.querySelector(".owner-data__input-tel");
-// // const toggleModalButton = document.querySelector(".search__button-modal");
-// // const submitButton = modal.querySelector(".modal__button");
+// const userTel = owner - data.querySelector(".owner-data__input-tel");
+
 // 1
 // input.addEventListener("click", function (evt) {
 //   if (!form.checkValidity()) {
@@ -23,28 +22,16 @@
 // input.addEventListener("click", function (evt) {
 //   evt.preventDefault();
 //   firstInput.focus();
-// if (!catWeigh.value.match(/[a-z]/g)) {
+// if (!catWeigh.value.match(/[a-z]/g) || !userTel.value.match(/[a-z]/g)) {
 //   form.classList.add("form-error");
-// if (!userTel.value.match(/[a-z]/g)) {
-  //   form.classList.add("form-error");
-  // if (!userEmail.value.match(/[1-9]/g)) {
-    //   form.classList.add("form-error");
+//   if (!userEmail.value.match(/[1-9]/g) || (!catName.value.match(/[1-9]/g)) {
+//       form.classList.add("form-error");
 // }
 
 // } else {
 //       localStorage.setItem("arrival", arrival.value);
 
 // }
-
-// // input.addEventListener("click", function (evt) {
-// //   evt.preventDefault();
-// //   firstInput.focus();
-// //   if (modal) {
-// //     modal.classList.toggle("search__modal-close");
-// //   }
-// // });
-
-
 
 // const nav = document.querySelector(".main-nav");
 // const buttonMenu = nav.querySelector(".main-nav__toggle");
