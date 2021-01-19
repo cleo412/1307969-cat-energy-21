@@ -62,7 +62,7 @@
   z-index: 2;
 }
 
-.illustration__value:nth-child(2) {
+.illustration__value-duration {
   width: 35%;
   left: 17%;
 }
@@ -129,17 +129,14 @@
     font-size: 14px;
     line-height: 14px;
     flex-wrap: nowrap;
+    width: 80%;
+    left: 15%;
     background-color: $white;
     padding: 0 5px;
     margin: 0;
     z-index: 2;
 
-    &:first-child {
-      width: 80%;
-      left: 15%;
-    }
-
-    &:nth-child(2) {
+    &--duration {
       width: 79%;
       left: 7%;
     }
@@ -197,13 +194,14 @@
     width: 50%;
   }
 
-  .illustration__value:nth-child(2) {
-    width: 80%;
-  }
-
   .illustration__value {
+    top: 59px;
     width: 62%;
     background-color: $special-grey;
+
+    &--duration {
+      width: 80%;
+    }
   }
 
   .illustration__total {

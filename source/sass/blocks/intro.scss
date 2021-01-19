@@ -10,7 +10,7 @@
     width: 100%;
     height: 302px;
     background-color: $green;
-    background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-mob.jpg");
+    background-image: linear-gradient($green-85, $green-85), url("../../img/bg/bg-index-mob.jpg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     margin: 0 auto;
@@ -27,7 +27,7 @@
 
 @media (min-resolution: 2dppx) {
   .intro__img {
-    background-image: url("../../img/bg-index-mob-2x.jpg");
+    background-image: url("../../img/bg/bg-index-mob-2x.jpg");
   }
 }
 
@@ -87,14 +87,14 @@
       left: 50%;
       width: 50%;
       min-height: 694px;
-      background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-desk.jpg");
+      background-image: linear-gradient($green-85, $green-85), url("../../img/bg/bg-index-desk.jpg");
       margin: 0;
       z-index: -1;
     }
 
     @media (min-resolution: 2dppx) {
       .intro__img {
-        background-image: url("../../img/bg-index-desk-2x.jpg");
+        background-image: url("../../img/bg/bg-index-desk-2x.jpg");
       }
     }
   }
@@ -108,7 +108,7 @@
     top: -185px;
     right: 0;
     width: 50%;
-    background-image: linear-gradient($green-85, $green-85), url("../../img/bg-index-desk.jpg");
+    background-image: linear-gradient($green-85, $green-85), url("../../img/bg/bg-index-desk.jpg");
     margin: 0;
   }
 

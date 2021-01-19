@@ -8,7 +8,7 @@
 .stock__container {
   width: 100%;
   background-color: $green;
-  background-image: url("../../img//bg-catalog-mob.jpg");
+  background-image: url("../../img/bg/bg-catalog-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,7 +16,7 @@
 
 @media (min-resolution: 2dppx) {
   .stock__container {
-    background-image: url("../../img//bg-catalog-mob-2x.jpg");
+    background-image: url("../../img/bg/bg-catalog-mob-2x.jpg");
   }
 }
 
@@ -25,7 +25,7 @@
   top: 59px;
   left: calc(50% - 39px);
   content: "";
-  background-image: url("../../img/gift.svg");
+  background-image: url("../../img/icon/gift.svg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 78px;
@@ -51,12 +51,12 @@
   }
 
   .stock__container {
-    background-image: url("../../img/bg-catalog-tablet.jpg");
+    background-image: url("../../img/bg/bg-catalog-tablet.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .stock__container {
-      background-image: url("../../img/bg-catalog-tablet-2x.jpg");
+      background-image: url("../../img/bg/bg-catalog-tablet-2x.jpg");
     }
   }
 
@@ -82,12 +82,12 @@
   }
 
   .stock__container {
-    background-image: url("../../img/bg-catalog-desk.jpg");
+    background-image: url("../../img/bg/bg-catalog-desk.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .stock__container {
-      background-image: url("../../img/bg-catalog-desk-2x.jpg");
+      background-image: url("../../img/bg/bg-catalog-desk-2x.jpg");
     }
   }
 

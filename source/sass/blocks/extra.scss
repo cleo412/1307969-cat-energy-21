@@ -64,11 +64,11 @@
     content: "";
     width: 19px;
     height: 15px;
-    background-image: url("../../img/check.svg");
+    background-image: url("../../img/icon/check.svg");
   }
 
   .extra__input:checked:disabled + &::after {
-    background-image: url("../../img/check-off.svg");
+    background-image: url("../../img/icon/check-off.svg");
   }
 }
 

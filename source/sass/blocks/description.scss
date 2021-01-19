@@ -46,19 +46,19 @@
 }
 
 .description__icon--leaf::before {
-  background-image: url("../../img/leaf.svg");
+  background-image: url("../../img/icon/leaf.svg");
 }
 
 .description__icon--tub::before {
-  background-image: url("../../img/tub.svg");
+  background-image: url("../../img/icon/tub.svg");
 }
 
 .description__icon--eat::before {
-  background-image: url("../../img/eat.svg");
+  background-image: url("../../img/icon/eat.svg");
 }
 
 .description__icon--alarm::before {
-  background-image: url("../../img/alarm.svg");
+  background-image: url("../../img/icon/alarm.svg");
 }
 
 .description__text {
@@ -179,7 +179,7 @@
 
   .description__title {
     width: 32%;
-    padding: 43px 0 46px;
+    padding: 38px 0 46px;
     margin-bottom: 25px;
   }
 
