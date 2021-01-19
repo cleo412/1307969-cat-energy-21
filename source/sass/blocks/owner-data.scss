@@ -16,7 +16,7 @@
   width: 69%;
   background-color: $white;
   padding: 0 18px;
-  margin: 0 0 32px 0;
+  margin: 0 0 33px 0;
 
   &::after {
     @include line;
@@ -47,6 +47,7 @@
 
 .owner-data__input {
   flex: 1 1 auto;
+  width: 15px;
   color: $black;
   border: 1px solid $grey;
   padding: 14px 33px 14px 14px;
@@ -60,10 +61,10 @@
     border: 2px solid $basic-grey;
   }
 
-  // &:invalid {
-  //   outline: none;
-  //   border: 2px solid $error-pink;
-  // }
+  &:invalid {
+    outline: none;
+    border: 2px solid $error-pink;
+  }
 
   &:disabled {
     border: 2px $basic-grey solid;
@@ -71,19 +72,15 @@
   }
 }
 
-.owner-data__icon-tel,
-.owner-data__icon-email {
+.owner-data__icon {
   position: absolute;
-  top: 14px;
-  right: 17px;
+  top: 16px;
+  right: 15px;
+  fill: $extra-dark-grey;
 }
 
-.owner-data__input:disabled + .owner-data__icon-tel path {
+.owner-data__input:disabled + .owner-data__icon {
   fill: $green;
-}
-
-.owner-data__input:disabled + .owner-data__icon-email path {
-  stroke: $green;
 }
 
 .owner-data__input::placeholder {
@@ -91,11 +88,15 @@
   color: $basic-grey;
 }
 
+.owner-data__input:invalid + .owner-data__icon {
+  fill: $error-pink;
+}
+
 // todo 768
 @media (min-width: 768px) {
   .owner-data {
     border: none;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
   }
 
   .owner-data__title {
@@ -103,7 +104,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 35px 35px 0;
-    margin: 0 0 75px 35px;
+    margin: 0 0 62px 35px;
 
     &::after {
       top: 55px;
@@ -115,19 +116,20 @@
   }
 
   .owner-data__input-wrapper {
-    margin: 0 0 13px 0;
+    margin: 0;
   }
 
   .owner-data__label {
     @include form;
     font-size: 20px;
     line-height: 30px;
-    padding: 12px 0;
+    padding: 25px 0 10px;
     margin: 0 18px 0 0;
   }
 
   .owner-data__input {
-    padding: 16px 47px 16px 19px;
+    height: 30px;
+    padding: 10px 0 10px 19px;
   }
 
   .owner-data__input::placeholder {
@@ -135,16 +137,15 @@
     line-height: 30px;
   }
 
-  .owner-data__phone,
-  .owner-data__email {
-    top: 18px;
+  .owner-data__icon {
+    top: 31px;
   }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
   .owner-data {
-    margin-bottom: 50px;
+    margin-bottom: 65px;
   }
 
   .owner-data__title {
@@ -152,7 +153,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 40px;
-    margin: 0 0 72px 70px;
+    margin: 0 0 60px 70px;
 
     &::after {
       top: 22px;
@@ -175,7 +176,7 @@
   }
 
   .owner-data__icon {
-    top: 22px;
+    top: 33px;
     right: 21px;
   }
 }
