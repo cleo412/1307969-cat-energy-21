@@ -26,6 +26,8 @@
 
 .way__label {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
 
   .way__input + &::before {
     position: absolute;
@@ -126,7 +128,7 @@
   .way__list {
     width: 100%;
     border: 1px $dull-grey solid;
-    padding: 27px 0 10px;
+    padding: 30px 0 10px;
   }
 
   .way__input-wrapper {

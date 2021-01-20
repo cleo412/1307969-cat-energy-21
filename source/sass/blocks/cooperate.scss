@@ -5,7 +5,7 @@
   text-align: left;
   background-color: $special-grey;
   box-sizing: border-box;
-  padding: 30px 19px;
+  padding: 30px 19px 26px;
   margin: 0 auto;
 }
 
@@ -48,7 +48,7 @@
   .cooperate {
     width: 100%;
     justify-content: space-between;
-    padding: 65px 30px 45px;
+    padding: 65px 30px 42px;
   }
 
   .cooperate__text {
@@ -59,13 +59,11 @@
   }
 
   .cooperate__text .cooperate__title {
-    @include title-big;
     font-size: 20px;
     line-height: 23px;
   }
 
   .cooperate__text .cooperate__subtitle {
-    @include title-big;
     font-size: 20px;
     line-height: 27px;
   }

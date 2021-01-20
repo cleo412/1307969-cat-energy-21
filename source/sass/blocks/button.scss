@@ -22,6 +22,7 @@
   width: 100%;
   font-size: 14px;
   line-height: 22px;
+  padding: 11px 25px;
 
   &:hover {
     background-color: $secondory-green;
@@ -60,7 +61,7 @@
   }
 
   .button--form {
-    width: 41%;
+    width: 45%;
     font-size: 20px;
     padding: 11px 25px;
   }

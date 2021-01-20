@@ -12,21 +12,22 @@
   width: 93%;
   font-size: 36px;
   line-height: 36px;
-  padding: 28px 0;
+  padding: 26px 0;
   margin: 0;
 }
 
 .form__text {
   @include text-big;
+  font-size: 14px;
+  line-height: 18px;
   width: 81%;
-  padding: 10px 27px 22px 0;
+  padding: 10px 27px 28px 0;
   margin: 0;
 }
 
 .form__submit {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 88%;
   padding: 0 0 30px;
   margin: 0 auto;
@@ -34,9 +35,15 @@
 
 .form__subtitle {
   @include text;
+  font-size: 14px;
   line-height: 16px;
   color: $black;
   margin: 20px auto 0;
+}
+
+.form-error {
+  outline: none;
+  border: 2px solid $error-pink;
 }
 
 // todo 768
@@ -56,23 +63,23 @@
     width: 60%;
     font-size: 20px;
     line-height: 30px;
-    padding: 10px 0 63px;
+    padding: 10px 0 58px;
   }
 
   .form__submit {
-    width: 90%;
+    width: 82%;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     padding: 0;
-    margin-bottom: 72px;
+    margin-bottom: 74px;
   }
 
   .form__subtitle {
-    align-self: flex-start;
+    width: 45%;
     font-size: 16px;
     line-height: 16px;
-    padding: 16px 0;
-    margin: 0 106px 0 0;
+    margin: 0;
   }
 }
 
@@ -84,23 +91,20 @@
 
   .form__title {
     width: 50%;
-    padding: 10px 0 50px;
+    padding: 5px 0 55px;
   }
 
   .form__text {
     width: 30%;
-    padding: 0 0 65px;
+    padding: 0 0 60px;
   }
 
   .form__submit {
     width: 85%;
-    justify-content: flex-start;
     margin-bottom: 85px;
   }
 
   .form__subtitle {
-    align-self: flex-end;
-    padding: 16px 0;
-    margin: 0 0 0 80px;
+    width: 47%;
   }
 }

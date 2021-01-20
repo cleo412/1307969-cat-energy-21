@@ -1,45 +1,10 @@
-.navigation__toggle {
-  display: none;
-  position: absolute;
-  top: -45px;
-  right: 26px;
-  width: 23px;
-  height: 23px;
-  background-color: $white;
-  border: none;
-  padding: 0;
-  margin: 0;
-
-  &::before {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    content: " ";
-    width: 25px;
-    height: 2px;
-    background-color: $black;
-    transform: rotate(45deg);
-  }
-
-  &::after {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    content: " ";
-    width: 25px;
-    height: 2px;
-    background-color: $black;
-    transform: rotate(-45deg);
-  }
-}
-
-.navigation {
+.nav {
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
-.navigation__item {
+.nav__item {
   @include title-big;
   font-size: 20px;
   line-height: 20px;
@@ -47,13 +12,15 @@
   color: $black;
   text-decoration: none;
   text-align: center;
+  box-sizing: border-box;
   border-bottom: 1px $secondary-grey solid;
   padding: 22px 20px;
 }
 
 // todo 768
 @media (min-width: 768px) {
-  .navigation {
+  .nav {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -63,7 +30,7 @@
     margin: 0;
   }
 
-  .navigation__item {
+  .nav__item {
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
@@ -84,15 +51,11 @@
       border: none;
     }
   }
-
-  .navigation__toggle {
-    display: none;
-  }
 }
 
 // todo 1440
 @media (min-width: 1440px) {
-  .navigation {
+  .nav {
     position: relative;
     width: 39.5%;
     margin: 0;
@@ -100,19 +63,19 @@
     padding: 17px 0 0;
   }
 
-  .navigation__item {
+  .nav__item {
     font-size: 20px;
     line-height: 30px;
     padding: 0 0 5px 0;
     margin: 0 0 10px;
   }
 
-  .navigation--index {
-    .navigation__item--current {
+  .nav--index {
+    .nav__item--current {
       border-bottom: 2px solid $white;
     }
 
-    .navigation__item {
+    .nav__item {
       color: $white;
     }
   }

@@ -18,7 +18,8 @@
 
 .illustration__text {
   @include text;
-
+  font-size: 14px;
+  line-height: 18px;
   margin: 0 auto 26px;
 }
 
@@ -49,17 +50,22 @@
   @include text;
   position: absolute;
   top: 46px;
-  left: calc(50% - 38px);
+  left: 19%;
   bottom: -15px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  width: 22%;
+  width: 27%;
   font-size: 12px;
   line-height: 12px;
   background-color: $smoky-grey;
   padding: 0 10px;
   z-index: 2;
+}
+
+.illustration__value-duration {
+  width: 35%;
+  left: 17%;
 }
 
 .illustration__total {
@@ -88,11 +94,10 @@
     width: 65%;
     font-size: 60px;
     line-height: 60px;
-    padding: 45px 0 65px;
+    padding: 43px 0 65px;
   }
 
   .illustration__text {
-    @include text;
     width: 96%;
     font-size: 16px;
     line-height: 24px;
@@ -120,20 +125,21 @@
 
   .illustration__value {
     top: 55px;
-    left: calc(50% - 54px);
-    bottom: -15px;
-    width: 79%;
+    bottom: -12px;
     font-size: 14px;
     line-height: 14px;
     flex-wrap: nowrap;
+    width: 80%;
+    left: 15%;
     background-color: $white;
     padding: 0 5px;
     margin: 0;
     z-index: 2;
-  }
 
-  .illustration__box:nth-child(2) .illustration__value {
-    left: calc(50% - 68px);
+    &--duration {
+      width: 79%;
+      left: 7%;
+    }
   }
 
   .illustration__total {
@@ -141,7 +147,7 @@
     width: 45%;
     font-size: 20px;
     line-height: 28px;
-    padding: 8px 2px 17px 123px;
+    padding: 8px 2px 20px 123px;
     margin: 0;
   }
 }
@@ -154,7 +160,7 @@
   }
 
   .illustration__container {
-    width: 68%;
+    width: 70%;
     margin: 0 auto;
   }
 
@@ -166,13 +172,13 @@
   }
 
   .illustration__text {
-    width: 94%;
+    width: 86%;
     padding: 0;
-    margin: 0 0 70px 0;
+    margin: 0 0 68px 0;
   }
 
   .illustration__list {
-    width: 100%;
+    width: 92%;
     flex-wrap: wrap;
     justify-content: flex-start;
     padding: 0;
@@ -181,7 +187,7 @@
 
   .illustration__box {
     width: 36%;
-    margin: 0 35px 55px 0;
+    margin: 0 37px 55px 0;
   }
 
   .illustration__name {
@@ -189,7 +195,13 @@
   }
 
   .illustration__value {
+    top: 59px;
+    width: 62%;
     background-color: $special-grey;
+
+    &--duration {
+      width: 80%;
+    }
   }
 
   .illustration__total {

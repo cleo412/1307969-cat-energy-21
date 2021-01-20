@@ -8,7 +8,7 @@
 .stock__container {
   width: 100%;
   background-color: $green;
-  background-image: url("../../img//bg-catalog-mob.jpg");
+  background-image: url("../../img/bg/bg-catalog-mob.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -16,14 +16,18 @@
 
 @media (min-resolution: 2dppx) {
   .stock__container {
-    background-image: url("../../img//bg-catalog-mob-2x.jpg");
+    background-image: url("../../img/bg/bg-catalog-mob-2x.jpg");
   }
 }
 
-.stock__icon {
+.stock__container::after {
   position: absolute;
   top: 59px;
   left: calc(50% - 39px);
+  content: "";
+  background-image: url("../../img/icon/gift.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
   width: 78px;
   height: 80px;
 }
@@ -43,20 +47,20 @@
   .stock {
     width: 100%;
     padding: 0;
-    margin: 62px 0 80px;
+    margin: 61px 0 80px;
   }
 
   .stock__container {
-    background-image: url("../../img/bg-catalog-tablet.jpg");
+    background-image: url("../../img/bg/bg-catalog-tablet.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .stock__container {
-      background-image: url("../../img/bg-catalog-tablet-2x.jpg");
+      background-image: url("../../img/bg/bg-catalog-tablet-2x.jpg");
     }
   }
 
-  .stock__icon {
+  .stock__container::after {
     top: 57px;
     left: 77px;
     width: 80px;
@@ -65,7 +69,7 @@
 
   .stock__text {
     text-align: left;
-    padding: 71px 120px 65px 423px;
+    padding: 73px 120px 65px 423px;
     margin: 0;
   }
 }
@@ -78,16 +82,16 @@
   }
 
   .stock__container {
-    background-image: url("../../img/bg-catalog-desk.jpg");
+    background-image: url("../../img/bg/bg-catalog-desk.jpg");
   }
 
   @media (min-resolution: 2dppx) {
     .stock__container {
-      background-image: url("../../img/bg-catalog-desk-2x.jpg");
+      background-image: url("../../img/bg/bg-catalog-desk-2x.jpg");
     }
   }
 
-  .stock__icon {
+  .stock__container::after {
     top: 57px;
     left: calc(50% - 40px);
     margin: 0;

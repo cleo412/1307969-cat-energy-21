@@ -12,9 +12,11 @@
 .extra__title {
   @include title-form;
   width: 57%;
+  font-size: 24px;
+  line-height: 26px;
   background-color: $white;
   padding: 9px 20px 0;
-  margin: 0 0 31px 0;
+  margin: 0 0 33px 0;
 
   &::after {
     @include line;
@@ -29,14 +31,16 @@
 
 .extra__input-wrapper {
   position: relative;
-  box-sizing: border-box;
   padding: 6px 4px 0;
-  margin: 0 0 17px 40px;
+  margin: 0 0 17px 42px;
 }
 
 .extra__label {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
   position: relative;
+  padding: 4px 0;
 
   .extra__input + &::before {
     position: absolute;
@@ -64,12 +68,16 @@
     content: "";
     width: 19px;
     height: 15px;
-    background-image: url("../../img/check.svg");
+    background-image: url("../../img/icon/check.svg");
   }
 
   .extra__input:checked:disabled + &::after {
-    background-image: url("../../img/check-off.svg");
+    background-image: url("../../img/icon/check-off.svg");
   }
+}
+
+.extra__input:disabled ~ .extra__label {
+  color: $black-03;
 }
 
 .extra__input:focus ~ .extra__label {
@@ -80,7 +88,7 @@
 @media (min-width: 768px) {
   .extra {
     padding: 0;
-    margin-bottom: 18px;
+    margin-bottom: 25px;
   }
 
   .extra__title {
@@ -88,7 +96,7 @@
     font-size: 36px;
     line-height: 36px;
     padding: 0 35px;
-    margin: 0 0 55px 35px;
+    margin: 0 0 58px 35px;
 
     &::after {
       top: 24px;
@@ -101,11 +109,10 @@
     justify-content: space-between;
     flex-wrap: wrap;
     width: 82%;
-    margin-bottom: 27px;
   }
 
   .extra__input-wrapper {
-    width: 45%;
+    width: 36%;
     padding: 6px 0 35px 59px;
     margin: 0;
   }
@@ -132,13 +139,13 @@
 // todo 1440
 @media (min-width: 1440px) {
   .extra {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
   }
 
   .extra__title {
     width: 20%;
     padding: 0 40px;
-    margin: 0 0 65px 70px;
+    margin: 0 0 64px 70px;
   }
 
   .extra__list {
@@ -149,7 +156,7 @@
   }
 
   .extra__input-wrapper {
-    width: 20%;
-    padding: 0 10px 38px 59px;
+    width: 14%;
+    padding: 0 16px 38px 59px;
   }
 }

@@ -11,8 +11,8 @@
   width: 100%;
   background-color: $special-grey;
   box-sizing: border-box;
-  padding: 27px 0 5px;
-  margin: 0 auto 26px;
+  padding: 30px 0 5px;
+  margin: 0 auto 21px;
 }
 
 .program__title {
@@ -46,6 +46,8 @@
 .program__subtitle {
   @include text;
   width: 86%;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0 auto 22px;
 }
 
@@ -94,7 +96,7 @@
 
   .program__item {
     width: 100%;
-    padding: 0 52px 38px;
+    padding: 0 52px 37px;
     margin: 0 0 35px 0;
   }
 
@@ -102,20 +104,20 @@
     width: 55%;
     font-size: 36px;
     line-height: 36px;
-    padding: 75px 45px 24px 0;
+    padding: 75px 45px 25px 0;
     margin: 0;
   }
 
   .program__icon--slim {
     top: 80px;
-    left: 445px;
+    left: 63%;
     width: 200px;
     height: 211px;
   }
 
   .program__icon--fat {
     top: 87px;
-    left: 411px;
+    left: 58%;
     width: 268px;
     height: 200px;
   }
@@ -160,7 +162,7 @@
   }
 
   .program__item:first-child {
-    margin: 0 80px 30px 0;
+    margin: 0 80px 33px 0;
   }
 
   .program__title {
@@ -193,6 +195,6 @@
 
   .program__link {
     width: 38%;
-    padding: 27px 30px 17px 0;
+    padding: 25px 30px 17px 0;
   }
 }
