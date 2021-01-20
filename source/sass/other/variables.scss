@@ -50,8 +50,6 @@ $arial: ("Arial", sans-serif);
 
 @mixin text {
   font-family: $arial;
-  font-size: 14px;
-  line-height: 18px;
   font-style: normal;
   font-weight: 400;
   color: $basic-grey;
@@ -59,8 +57,6 @@ $arial: ("Arial", sans-serif);
 
 @mixin text-big {
   font-family: $oswald;
-  font-size: 14px;
-  line-height: 18px;
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
@@ -68,13 +64,10 @@ $arial: ("Arial", sans-serif);
 
 @mixin form {
   font-family: $oswald;
-  font-size: 16px;
-  line-height: 18px;
   font-style: normal;
   font-weight: 400;
   color: $basic-grey;
   text-transform: uppercase;
-  // box-sizing: border-box;
 }
 
 @mixin title-form {
@@ -82,8 +75,6 @@ $arial: ("Arial", sans-serif);
   font-style: normal;
   font-weight: 400;
   box-sizing: border-box;
-  font-size: 24px;
-  line-height: 26px;
 }
 
 @mixin input-wrapper {

@@ -46,6 +46,8 @@
 .program__subtitle {
   @include text;
   width: 86%;
+  font-size: 14px;
+  line-height: 18px;
   margin: 0 auto 22px;
 }
 

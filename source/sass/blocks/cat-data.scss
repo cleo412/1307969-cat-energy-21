@@ -27,6 +27,8 @@
 
 .cat-data__label {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
   margin-right: 15px;
 }
 
@@ -58,6 +60,8 @@
 
 .cat-data__input::placeholder {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
   color: $basic-grey;
 }
 

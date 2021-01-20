@@ -5,12 +5,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <!-- <link rel="preload" href="fonts.scss" as="fonts"> -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
+  <!--header-->
   <header class="page-header">
+    <!--todo: page-header__nav-closed || page-header__nav-opened-->
     <div class="page-header__container">
+      <h2 class="visually-hidden">Логотип Кэт энерджи, переход на главную страницу сайта</h2>
       <a class="page-header__link" tabindex="1" href="index.html">
         <div class="page-header__logo">
           <picture>
@@ -19,27 +23,26 @@
             <img class="page-header__logo-icon" src="img/logo/logo-mob.svg" width="33" height="38"
               alt="Логотип Кэт Энерджи">
           </picture>
-          <svg class="page-header__logo-word" role="img" width="101" height="18"
+          <svg class="page-header__logo-word" role="img" width="101" height="18" viewbox="0 0 101 18"
             aria-label="логотип-текст сайта Кэт энерджи">
             <use xlink:href="img/sprite.svg#logo-word"></use>
           </svg>
         </div>
       </a>
-      <!--todo nav-->
-      <nav class="page-header__navigation navigation">
-        <!--todo: for menu-mobile closet-open  -  class navigation--closed and class navigation--open-->
-        <button tabindex="2" class="navigation__toggle" type="button"><span class="visually-hidden">Раскрыть
-            меню</span></button>
-        <a class="navigation__item" tabindex="3" href="index.html">Главная</a>
-        <a class="navigation__item" tabindex="4" href="catalog.html">Каталог
+      <button tabindex="2" class="page-header__nav-toggle" type="button"><span class="visually-hidden">Раскрыть
+          меню</span></button>
+      <!--nav-->
+      <nav class="page-header__nav nav">
+        <a class="nav__item" tabindex="3" href="index.html">Главная</a>
+        <a class="nav__item" tabindex="4" href="catalog.html">Каталог
           продукции</a>
-        <a class="navigation__item navigation__item--current">Подбор
+        <a class="nav__item nav__item--current">Подбор
           программы</a>
       </nav>
     </div>
   </header>
   <main class="page-main">
-    <!-- todo form -->
+    <!--form -->
     <form class="form" action="https://echo.htmlacademy.ru" method="get">
       <div class="form__container">
         <div class="form__header">
@@ -48,7 +51,7 @@
         </div>
         <div class="wrapper wrapper--form">
           <section class="cat-data">
-            <!--todo: cat-data-->
+            <!--cat-data-->
             <div class="cat-data__container">
               <h2 class="visually-hidden">Данные кота</h2>
               <ul class="cat-data__list">
@@ -70,7 +73,7 @@
             </div>
           </section>
           <section class="way">
-            <!--todo: way-->
+            <!--way-->
             <div class="way__container">
               <h2 class="visually-hidden">Виды программ для кота</h2>
               <ul class="way__list">
@@ -91,11 +94,10 @@
           </section>
         </div>
         <section class="owner-data">
-          <!--todo: owner-data-->
+          <!--owner-data-->
           <div class="owner-data__container">
             <h2 class="owner-data__title"> Контактные&nbsp;данные (владельца кота)</h2>
             <ul class="owner-data__list">
-              <!-- todo email -->
               <li class="owner-data__input-wrapper">
                 <label class="owner-data__label" for="user-email">E-mail:*</label>
                 <input class="owner-data__input owner-data__input--email" tabindex="11" type="email" name="user-email"
@@ -104,11 +106,10 @@
                   <use xlink:href="img/sprite.svg#email"></use>
                 </svg>
               </li>
-              <!-- todo tel -->
               <li class="owner-data__input-wrapper">
                 <label class="owner-data__label" for="user-tel">Телефон:*</label>
                 <input class="owner-data__input owner-data__input-tel" tabindex="12" type="tel" name="user-tel"
-                  id="user-tel" placeholder="8 (960) 900-60-90" required disabled>
+                  id="user-tel" placeholder="8 (960) 900-60-90" required>
                 <svg class="owner-data__icon" role="img" width="20" height="20" viewbox="0 0 20 20">
                   <use xlink:href="img/sprite.svg#tel"></use>
                 </svg>
@@ -117,7 +118,7 @@
           </div>
         </section>
         <section class="habits">
-          <!--todo: habits-->
+          <!--habits-->
           <div class="habits__container">
             <h2 class="habits__title">Комментарий</h2>
             <label class="visually-hidden" for="habits-cat">Расскажите обо всех&nbsp;повадках&nbsp;кота</label>
@@ -126,7 +127,7 @@
           </div>
         </section>
         <section class="extra">
-          <!--todo: extra-->
+          <!--extra-->
           <div class="extra__container">
             <h3 class="extra__title">Дополнительно</h3>
             <div class="extra__list">
@@ -157,9 +158,9 @@
       </div>
     </form>
   </main>
-  <!--todo footer-->
+  <!--footer-->
   <footer class="page-footer">
-    <!--todo cooperate-->
+    <!--cooperate-->
     <section class="page-footer__cooperate cooperate--index cooperate">
       <h3 class="visually-hidden">Контакты</h3>
       <div class="cooperate__text">
@@ -171,17 +172,17 @@
         <span class="cooperate__subtitle">Санкт-Петербург</span>
       </div>
     </section>
-    <!--todo map-->
+    <!--map-->
     <section class="page-footer__map">
       <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
       <iframe class="page-footer__map-link"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609242666053!5m2!1sru!2sru"
         allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </section>
-    <!--todo logo-->
+    <!--logo-->
     <div class="page-footer__container">
       <h2 class="visually-hidden">Логотип Кэт энерджи, переход на главную страницу сайта</h2>
-      <a class="page-footer__logo" href="index.html">
+      <a tabindex="19" class="page-footer__logo" href="index.html">
         <svg role="img" width="128" height="24" viewbox="0 0 101 18" aria-label="логотип-текст сайта Кэт энерджи">
           <use xlink:href="img/sprite.svg#logo-word"></use>
         </svg>
@@ -189,21 +190,21 @@
       <section class="page-footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <div class="page-footer__box">
-          <!--todo vk-->
+          <!--vk-->
           <a tabindex="20" class="page-footer__link" href=" ">
             <svg class="page-footer__social-icon page-footer__social-icon--vk" viewbox="0 0 29 18" width="23"
               height="13" preserveAspectRatio="xMinYMin" aria-label="Вконтакте">
               <use xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
-          <!--todo inst-->
+          <!--inst-->
           <a tabindex="21" class="page-footer__link" href="">
             <svg class="page-footer__social-icon page-footer__social-icon--inst" viewbox="0 0 23 23" width="16"
               height="16" preserveAspectRatio="xMinYMin" aria-label="Инстаграм">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
-          <!--todo fb-->
+          <!--fb-->
           <a tabindex="22" class="page-footer__link" href="">
             <svg class="page-footer__social-icon page-footer__social-icon--fb" viewbox="0 0 13 20" width="13"
               height="20" preserveAspectRatio="xMidYMax" aria-label="Фейсбук">
@@ -212,10 +213,10 @@
           </a>
         </div>
       </section>
-      <!--todo copyright-->
+      <!--copyright-->
       <section class="page-footer__copyright">
         <h3 class="visually-hidden">Копирайт - логотип HTML Академии</h3>
-        <a class="page-footer__copyright-link" tabindex="10" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__copyright-link" tabindex="23" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="page-footer__academy-word" width="113" height="16">
             <use xlink:href="img/sprite.svg#academy-word"></use>
           </svg>

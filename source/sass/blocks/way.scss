@@ -26,6 +26,8 @@
 
 .way__label {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
 
   .way__input + &::before {
     position: absolute;

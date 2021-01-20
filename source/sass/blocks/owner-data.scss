@@ -15,6 +15,8 @@
   @include title-form;
   width: 69%;
   background-color: $white;
+  font-size: 24px;
+  line-height: 26px;
   padding: 0 18px;
   margin: 0 0 33px 0;
 
@@ -42,6 +44,8 @@
 
 .owner-data__label {
   @include form;
+  font-size: 16px;
+  line-height: 18px;
   margin-right: 10px;
 }
 
@@ -85,7 +89,8 @@
 
 .owner-data__input::placeholder {
   @include form;
-  color: $basic-grey;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .owner-data__input:invalid + .owner-data__icon {
@@ -120,7 +125,6 @@
   }
 
   .owner-data__label {
-    @include form;
     font-size: 20px;
     line-height: 30px;
     padding: 25px 0 10px;

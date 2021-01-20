@@ -59,13 +59,11 @@
   }
 
   .cooperate__text .cooperate__title {
-    @include title-big;
     font-size: 20px;
     line-height: 23px;
   }
 
   .cooperate__text .cooperate__subtitle {
-    @include title-big;
     font-size: 20px;
     line-height: 27px;
   }
