@@ -1,5 +1,6 @@
 .illustration {
   background-color: $smoky-grey;
+  margin: 0 auto;
 }
 
 .illustration__container {
@@ -84,6 +85,7 @@
 @media (min-width: 768px) {
   .illustration {
     background-color: $white;
+    margin-bottom: 75px;
   }
 
   .illustration__container {
@@ -157,6 +159,7 @@
   .illustration {
     width: 50%;
     background: linear-gradient($white 194px, $special-grey 194px 368px);
+    margin: 0;
   }
 
   .illustration__container {
