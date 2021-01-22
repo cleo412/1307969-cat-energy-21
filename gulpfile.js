@@ -118,7 +118,7 @@ const watcher = () => {
   gulp.watch("source/*.html", gulp.series(html, reload));
 }
 
-// BUILD
+// BUILD parallel
 const build = gulp.series(
   clean,
   gulp.parallel(

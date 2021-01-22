@@ -102,7 +102,6 @@
 
   .slider__foto {
     width: 700px;
-    max-width: 700px;
     height: 518px;
   }
 
@@ -184,7 +183,7 @@
 
   .slider__item {
     top: 0;
-    bottom: 0;
+    // bottom: 0;
     left: -43px;
     background: linear-gradient($white 195px, $smoky-grey 195px 461px);
   }
@@ -200,8 +199,8 @@
   }
 
   .slider__scroll {
-    position: relative;
-    bottom: 103px;
+    // position: relative;
+    // bottom: 103px;
     left: 4%;
     width: 82%;
     justify-content: space-around;
