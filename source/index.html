@@ -5,14 +5,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
-  <!-- <link rel="preload" href="fonts.scss" as="fonts"> -->
+  <link rel="preload" href="font.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
-
 </head>
 
 <body class=" page-body">
-  <!--header-->
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <!--todo: page-header__nav-closed || page-header__nav-opened-->
     <div class="page-header__container">
       <a class="page-header__link">
@@ -29,9 +27,8 @@
           </svg>
         </div>
       </a>
-      <button tabindex="1" class="page-header__nav-toggle" type="button"><span class="visually-hidden">Раскрыть
+      <button class="page-header__nav-toggle" tabindex="1" type="button"><span class="visually-hidden">Раскрыть
           меню</span></button>
-      <!--nav-->
       <nav class="page-header__nav nav nav--index">
         <a class="nav__item nav__item--current">Главная</a>
         <a class="nav__item" tabindex="2" href="catalog.html">Каталог
@@ -42,7 +39,6 @@
     </div>
   </header>
   <main class="page-main">
-    <!--intro-->
     <section class="page-main__intro intro">
       <div class="intro__container">
         <div class="intro__slogan slogan">
@@ -55,8 +51,7 @@
               srcset="img/glass/index-glass-desk.webp 1x, img/glass/index-glass-desk-2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
               srcset="img/glass/index-glass-tabl.webp 1x, img/glass/index-glass-tabl-2x.webp 2x">
-            <source type="image/webp"
-              srcset="img/glass/index-glass-mob.webp 1x, img/glass/index-glass-mob-2x.webp 2x">
+            <source type="image/webp" srcset="img/glass/index-glass-mob.webp 1x, img/glass/index-glass-mob-2x.webp 2x">
             <source media="(min-width: 1440px)"
               srcset="img/glass/index-glass-desk.png 1x, img/glass/index-glass-desk-2x.png 2x">
             <source media="(min-width: 768px)"
@@ -67,11 +62,10 @@
           </picture>
         </div>
         <div class="intro__wrapper-toggle">
-          <a class="button button--main" tabindex="4" href="#">Подобрать программу</a>
+          <a class="button button--main" tabindex="4" href="form.html">Подобрать программу</a>
         </div>
       </div>
     </section>
-    <!--program-->
     <section class="page-main__program program">
       <div class="program__container">
         <div class="program__item">
@@ -108,20 +102,17 @@
         </div>
       </div>
     </section>
-    <!--description-->
     <section class="page-main__description description">
       <div class="description__container">
         <h2 class="description__title">Как это работает</h2>
         <ul class="description__list">
           <li class="description__item description__item--leaf">
-            <!--leaf-->
             <div class="description__icon description__icon--leaf">
             </div>
             <p class="description__text">Функциональное&nbsp;питание содержит только полезные питательные&nbsp;вещества.
             </p>
           </li>
           <li class="description__item description__item--tub">
-            <!--tub-->
             <div class="description__icon description__icon--tub">
             </div>
             <p class="description__text">Выпускается в виде порошка, который&nbsp;нужно лишь залить кипятком&nbsp;и
@@ -129,14 +120,12 @@
             </p>
           </li>
           <li class="description__item description__item--eat">
-            <!--eat-->
             <div class="description__icon description__icon--eat">
             </div>
             <p class="description__text">Замените один-два приема обычной&nbsp;еды на&nbsp;наше функциональное питание.
             </p>
           </li>
           <li class="description__item description__item--alarm">
-            <!--alarm-->
             <div class="description__icon description__icon--alarm">
             </div>
             <p class="description__text">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!
@@ -146,7 +135,6 @@
       </div>
     </section>
     <div class="wrapper wrapper--index">
-      <!--illustration-->
       <section class="page-main__illustration illustration">
         <div class="illustration__container">
           <h2 class="illustration__title">Живой пример</h2>
@@ -169,8 +157,7 @@
           </div>
         </div>
       </section>
-      <!--slider-->
-      <section class="page-main__slider slider">
+      <section class="slider">
         <div class="slider__container">
           <h3 class="visually-hidden">Слайдер с избражением худого и толстого кота</h3>
           <ul class="slider__box">
@@ -192,11 +179,9 @@
             <li class="slider__item slider__item--slim slider__item--off">
               <picture>
                 <source media="(min-width: 1440px)"
-                  srcset="img/cat-slim/cat-slim-desk.webp 1x, img/cat-slim/cat-slim-desk-2x.webp 2x"
-                  type="image/webp">
+                  srcset="img/cat-slim/cat-slim-desk.webp 1x, img/cat-slim/cat-slim-desk-2x.webp 2x" type="image/webp">
                 <source media="(min-width: 768px)"
-                  srcset="img/cat-slim/cat-slim-tabl.webp 1x, img/cat-slim/cat-slim-tabl-2x.webp 2x"
-                  type="image/webp">
+                  srcset="img/cat-slim/cat-slim-tabl.webp 1x, img/cat-slim/cat-slim-tabl-2x.webp 2x" type="image/webp">
                 <source srcset="img/cat-slim/cat-slim-mob.webp 1x, img/cat-slim/cat-slim-mob-2x.webp 2x"
                   type="image/webp">
                 <source media="(min-width:1440px)"
@@ -221,9 +206,7 @@
       </section>
     </div>
   </main>
-  <!--footer-->
   <footer class="page-footer">
-    <!--cooperate-->
     <section class="page-footer__cooperate cooperate--index cooperate">
       <h3 class="visually-hidden">Контакты</h3>
       <div class="cooperate__text">
@@ -235,14 +218,12 @@
         <span class="cooperate__subtitle">Санкт-Петербург</span>
       </div>
     </section>
-    <!--map-->
     <section class="page-footer__map">
       <h3 class="visually-hidden">Карта города Санкт-Петербург</h3>
       <iframe class="page-footer__map-link"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625300289!2d30.320858715830845!3d59.93871916905453!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1609242666053!5m2!1sru!2sru"
-        allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        allowfullscreen="" aria-hidden="false" tabindex="0" loading="lazy"></iframe>
     </section>
-    <!--logo-->
     <div class="page-footer__container">
       <a class="page-footer__logo">
         <svg role="img" width="128" height="24" viewbox="0 0 101 18" aria-label="логотип-текст сайта Кэт энерджи">
@@ -252,22 +233,19 @@
       <section class="page-footer__social">
         <h2 class="visually-hidden">Мы в соцсетях</h2>
         <div class="page-footer__box">
-          <!--vk-->
-          <a tabindex="20" class="page-footer__link" href=" ">
+          <a tabindex="20" class="page-footer__link" href="https://vk.com/">
             <svg class="page-footer__social-icon page-footer__social-icon--vk" viewbox="0 0 29 18" width="23"
-              height="13" aria-label="Вконтакте">
+              height="13" preserveAspectRatio="xMinYMin" aria-label="Вконтакте">
               <use xlink:href="img/sprite.svg#vkontakte"></use>
             </svg>
           </a>
-          <!--inst-->
-          <a tabindex="21" class="page-footer__link" href="">
+          <a tabindex="21" class="page-footer__link" href="https://www.instagram.com/">
             <svg class="page-footer__social-icon page-footer__social-icon--inst" viewbox="0 0 23 23" width="16"
-              height="16" aria-label="Инстаграм">
+              height="16" preserveAspectRatio="xMinYMin" aria-label="Инстаграм">
               <use xlink:href="img/sprite.svg#instagram"></use>
             </svg>
           </a>
-          <!--fb-->
-          <a tabindex="22" class="page-footer__link" href="">
+          <a tabindex="22" class="page-footer__link" href="https://www.facebook.com/">
             <svg class="page-footer__social-icon page-footer__social-icon--fb" viewbox="0 0 13 20" width="13"
               height="20" preserveAspectRatio="xMidYMax" aria-label="Фейсбук">
               <use xlink:href="img/sprite.svg#facebook"></use>
@@ -275,7 +253,6 @@
           </a>
         </div>
       </section>
-      <!--copyright-->
       <section class="page-footer__copyright">
         <h3 class="visually-hidden">Копирайт - логотип HTML Академии</h3>
         <a class="page-footer__copyright-link" tabindex="23" href="https://htmlacademy.ru/intensive/adaptive">
