@@ -1,5 +1,6 @@
 .illustration {
   background-color: $smoky-grey;
+  margin: 0 auto;
 }
 
 .illustration__container {
@@ -84,6 +85,7 @@
 @media (min-width: 768px) {
   .illustration {
     background-color: $white;
+    margin-bottom: 75px;
   }
 
   .illustration__container {
@@ -157,6 +159,7 @@
   .illustration {
     width: 50%;
     background: linear-gradient($white 194px, $special-grey 194px 368px);
+    margin: 0;
   }
 
   .illustration__container {
@@ -167,7 +170,7 @@
   .illustration__title {
     width: 78%;
     text-align: left;
-    padding: 58px 0 145px;
+    padding: 58px 0 150px;
     margin: 0;
   }
 
@@ -195,8 +198,8 @@
   }
 
   .illustration__value {
-    top: 59px;
-    width: 62%;
+    top: 51px;
+    width: 60%;
     background-color: $special-grey;
 
     &--duration {

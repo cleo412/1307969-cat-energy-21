@@ -46,16 +46,19 @@
   margin: 0 auto;
 }
 
-.page-header__nav-toggle {
-  position: absolute;
-  top: 23px;
-  right: 17px;
-  width: 28px;
-  height: 23px;
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  margin: 0;
+.page-header__nav-opened,
+.page-header__nav-closed {
+  .page-header__nav-toggle {
+    position: absolute;
+    top: 23px;
+    right: 17px;
+    width: 28px;
+    height: 23px;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 //todo: opened
@@ -107,6 +110,8 @@
 
 .page-header--nojs .page-header__nav-toggle {
   display: none;
+  border: none;
+  outline: none;
 }
 
 // todo 768
