@@ -13,15 +13,15 @@
 
 .way__list {
   list-style: none;
-  padding: 22px 0 7px;
+  padding: 20px 0 7px;
   margin: 0 auto;
 }
 
 .way__input-wrapper {
   position: relative;
-  box-sizing: border-box;
+  display: flex;
   padding: 5px;
-  margin: 0 0 13px 41px;
+  margin: 0 0 16px 41px;
 }
 
 .way__label {
@@ -89,7 +89,7 @@
   }
 
   .way__input-wrapper {
-    margin: 0 0 14px 67px;
+    margin: 0 0 0 67px;
   }
 
   .way__label {
@@ -132,6 +132,6 @@
   }
 
   .way__input-wrapper {
-    margin: 0 0 14px 70px;
+    margin: 0 0 0 70px;
   }
 }

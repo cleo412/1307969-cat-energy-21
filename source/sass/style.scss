@@ -1,9 +1,10 @@
 //General(other)
-@import "../sass/other/global.scss";
 @import "../sass/other/variables.scss";
 @import "../sass/other/fonts.scss";
+@import "../sass/other/visually-hidden.scss";
 
 //Other
+@import "../sass/blocks/page.scss";
 @import "../sass/blocks/page-body.scss";
 @import "../sass/blocks/page-header.scss";
 @import "../sass/blocks/nav.scss";

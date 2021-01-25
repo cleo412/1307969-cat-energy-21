@@ -1,7 +1,6 @@
 .extra {
   position: relative;
   border: none;
-  margin-bottom: 36px;
 }
 
 .extra__container {
@@ -26,11 +25,13 @@
 
 .extra__list {
   width: 88%;
-  margin: 0 auto;
+  box-sizing: border-box;
+  margin: 0 auto 36px;
 }
 
 .extra__input-wrapper {
   position: relative;
+  box-sizing: border-box;
   padding: 6px 4px 0;
   margin: 0 0 17px 42px;
 }
@@ -88,7 +89,6 @@
 @media (min-width: 768px) {
   .extra {
     padding: 0;
-    margin-bottom: 25px;
   }
 
   .extra__title {
@@ -105,14 +105,14 @@
 
   .extra__list {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 82%;
+    margin: 0 auto 25px;
   }
 
   .extra__input-wrapper {
-    width: 36%;
+    width: 45%;
     padding: 6px 0 35px 59px;
     margin: 0;
   }
@@ -138,25 +138,24 @@
 
 // todo 1440
 @media (min-width: 1440px) {
-  .extra {
-    margin-bottom: 25px;
-  }
-
   .extra__title {
     width: 20%;
     padding: 0 40px;
-    margin: 0 0 64px 70px;
+    margin: 0 0 60px 70px;
   }
 
   .extra__list {
     width: 85%;
-    box-sizing: border-box;
-    justify-content: space-between;
-    margin: 0 auto;
+    justify-content: flex-start;
   }
 
   .extra__input-wrapper {
-    width: 14%;
-    padding: 0 16px 38px 59px;
+    width: 20%;
+    padding: 0 0 40px 59px;
+    margin: 0 81px 0 0;
+
+    &:nth-child(4n + 4) {
+      margin: 0;
+    }
   }
 }
